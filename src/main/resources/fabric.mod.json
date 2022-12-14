@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "frankfurtlin",
+  "version": "${version}",
+  "name": "Frankfurtlin",
+  "description": "Frankfurtlin Minecraft Mod",
+  "authors": [
+    "Frankfurtlin"
+  ],
+  "contact": {
+    "website": "www.frankfurtlin.xyz"
+  },
+  "license": "MIT",
+  "icon": "assets/frankfurtlin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod"
+    ]
+  },
+  "mixins": [
+    "frankfurtlinmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}

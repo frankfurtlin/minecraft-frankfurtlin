@@ -1,0 +1,9 @@
+{
+  "item.frankfurtlin.super_armor_item": "super_item",
+  "item.frankfurtlin.super_armor_helmet": "super_helmet",
+  "item.frankfurtlin.super_armor_chestplate": "super_chestplate",
+  "item.frankfurtlin.super_armor_leggings": "super_leggings",
+  "item.frankfurtlin.super_armor_boots": "super_boots",
+
+  "itemGroup.frankfurtlin.super_item_group": "super_item_group"
+}

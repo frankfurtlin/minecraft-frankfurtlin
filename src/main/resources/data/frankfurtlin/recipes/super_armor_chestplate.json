@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#e#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "frankfurtlin:super_armor_item"
+    },
+    "e": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "frankfurtlin:super_armor_chestplate",
+    "count": 1
+  }
+}
