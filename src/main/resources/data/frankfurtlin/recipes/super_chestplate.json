@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "frankfurtlin:super_armor_item"
+      "item": "frankfurtlin:super_item"
     },
     "e": {
       "item": "minecraft:elytra"
     }
   },
   "result": {
-    "item": "frankfurtlin:super_armor_chestplate",
+    "item": "frankfurtlin:super_chestplate",
     "count": 1
   }
 }

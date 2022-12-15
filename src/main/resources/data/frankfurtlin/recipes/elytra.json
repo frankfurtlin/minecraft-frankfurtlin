@@ -1,16 +1,12 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
-        "#D#",
-        "###"
+        "# #",
+        "# #"
     ],
     "key": {
         "#": {
             "item": "minecraft:phantom_membrane"
-        },
-        "D": {
-            "item": "minecraft:diamond_chestplate"
         }
     },
     "result": {

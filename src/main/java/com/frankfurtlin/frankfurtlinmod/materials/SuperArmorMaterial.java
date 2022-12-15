@@ -41,7 +41,7 @@ public class SuperArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(RegisterItems.SUPER_ARMOR_ITEM);
+        return Ingredient.ofItems(RegisterItems.SUPER_ITEM);
     }
 
     @Override

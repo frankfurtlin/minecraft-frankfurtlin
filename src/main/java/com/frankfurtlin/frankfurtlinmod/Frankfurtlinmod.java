@@ -14,9 +14,9 @@ public class Frankfurtlinmod implements ModInitializer{
     public static final String MOD_ID = "frankfurtlin";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static final ItemGroup SUPER_ARMOR_GROUP = FabricItemGroupBuilder.create(
+    public static final ItemGroup SUPER_ITEM_GROUP = FabricItemGroupBuilder.create(
                     new Identifier(MOD_ID, "super_item_group"))
-            .icon(() -> new ItemStack(RegisterItems.SUPER_ARMOR_ITEM))
+            .icon(() -> new ItemStack(RegisterItems.SUPER_ITEM))
             .build();
 
     @Override

@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.items.superarmor;
+package com.frankfurtlin.frankfurtlinmod.items.super_item;
 
 import net.fabricmc.fabric.api.entity.event.v1.FabricElytraItem;
 import net.minecraft.entity.EquipmentSlot;
@@ -9,8 +9,8 @@ import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.event.GameEvent;
 
-public class SuperArmorChestplate extends ArmorItem implements FabricElytraItem {
-    public SuperArmorChestplate(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+public class SuperChestplate extends ArmorItem implements FabricElytraItem {
+    public SuperChestplate(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 

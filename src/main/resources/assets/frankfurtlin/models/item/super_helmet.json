@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "frankfurtlin:item/super_armor_helmet"
+    "layer0": "frankfurtlin:item/super_helmet"
   }
 }

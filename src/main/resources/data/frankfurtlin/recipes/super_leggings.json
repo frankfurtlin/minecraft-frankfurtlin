@@ -2,15 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "frankfurtlin:super_armor_item"
+      "item": "frankfurtlin:super_item"
     }
   },
   "pattern": [
     "XXX",
+    "X X",
     "X X"
   ],
   "result": {
-    "item": "frankfurtlin:super_armor_helmet",
+    "item": "frankfurtlin:super_leggings",
     "count": 1
   }
 }
