@@ -15,7 +15,7 @@ public class FishingBobberEntityMixin {
     @Shadow
     private boolean caughtFish;
 
-    @Inject(at = {@At("TAIL")}, method = {"onTrackedDataSet"})
+    @Inject(at = @At("TAIL"), method = "onTrackedDataSet")
     public void onTrackedDataSet(TrackedData<?> data, CallbackInfo ci) throws InterruptedException {
 
         MinecraftClient client = MinecraftClient.getInstance();

@@ -29,7 +29,7 @@ public class PiglinBrainMixin {
     @Inject(method = "wearsGoldArmor(Lnet/minecraft/entity/LivingEntity;)Z", at = @At(value = "INVOKE_ASSIGN",
             target = "Lnet/minecraft/item/ItemStack;getItem()Lnet/minecraft/item/Item;"),
             cancellable = true, locals = LocalCapture.CAPTURE_FAILHARD)
-    private static void wearsGoldArmorInject(LivingEntity entity, CallbackInfoReturnable<Boolean> cir,
+    private static void wearSuperArmorInject(LivingEntity entity, CallbackInfoReturnable<Boolean> cir,
                                              Iterable<ItemStack> iterable, Iterator<ItemStack> var2, ItemStack itemStack) {
         Item item = itemStack.getItem();
         if (item instanceof ArmorItem && ((ArmorItem)item).getMaterial() == RegisterItems.SUPER_ARMOR_MATERIAL){
