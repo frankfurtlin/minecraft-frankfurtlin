@@ -16,6 +16,8 @@
   "entrypoints": {
     "main": [
       "com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod"
+    ],
+    "client": [
     ]
   },
   "mixins": [

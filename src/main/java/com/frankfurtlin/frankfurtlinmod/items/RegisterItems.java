@@ -11,18 +11,18 @@ import net.minecraft.util.registry.Registry;
 
 
 public class RegisterItems {
-    public static final ArmorMaterial super_armor_material = new SuperArmorMaterial();
+    public static final ArmorMaterial SUPER_ARMOR_MATERIAL = new SuperArmorMaterial();
 
 
     public static final Item SUPER_ITEM =
             new SuperItem(new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP));
-    public static final Item SUPER_HELMET = new ArmorItem(super_armor_material, EquipmentSlot.HEAD,
+    public static final Item SUPER_HELMET = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.HEAD,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM));
-    public static final Item SUPER_CHESTPLATE = new SuperChestplate(super_armor_material, EquipmentSlot.CHEST,
+    public static final Item SUPER_CHESTPLATE = new SuperChestplate(SUPER_ARMOR_MATERIAL, EquipmentSlot.CHEST,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM));
-    public static final Item SUPER_LEGGINGS = new ArmorItem(super_armor_material, EquipmentSlot.LEGS,
+    public static final Item SUPER_LEGGINGS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.LEGS,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM));
-    public static final Item SUPER_BOOTS = new ArmorItem(super_armor_material, EquipmentSlot.FEET,
+    public static final Item SUPER_BOOTS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.FEET,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM));
 
 
