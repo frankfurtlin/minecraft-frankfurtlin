@@ -60,9 +60,6 @@
 - [自然生成建筑结构显示(Bounding Box Outline Reloaded)](https://www.mcmod.cn/class/1869.html)
   显示自然建筑边界
 
-- [Your Items Are Safe](https://www.mcmod.cn/class/7900.html)
-  死亡物品存箱子
-
 - [更好的F3(BetterF3)](https://www.mcmod.cn/class/3525.html)
   强化F3功能
 
@@ -77,9 +74,6 @@
 
 - [更好的图腾(Inventory Totem)](https://www.mcmod.cn/class/4318.html)
   使图腾在背包就能生效
-
-- [Simple Autofish](https://www.mcmod.cn/class/7587.html)
-  自动钓鱼
 
 - [补种农作物(Replanting Crops)](https://www.mcmod.cn/class/2731.html)
   收获农作物时补种农作物
@@ -139,3 +133,9 @@
 
 - [YUNG的沙漠神殿优化(YUNG's Better Desert Temples)](https://www.mcmod.cn/class/6613.html)
   优化沙漠神殿
+
+- [Simple Autofish](https://www.mcmod.cn/class/7587.html)
+  自动钓鱼
+
+- [Your Items Are Safe](https://www.mcmod.cn/class/7900.html)
+  死亡物品存箱子
