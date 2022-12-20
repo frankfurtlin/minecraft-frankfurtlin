@@ -8,7 +8,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 /**
- * 超级盔甲材料
+ * 原能盔甲材料
  */
 public class SuperArmorMaterial implements ArmorMaterial {
     // 头盔、胸甲、护腿、靴子基础耐久度

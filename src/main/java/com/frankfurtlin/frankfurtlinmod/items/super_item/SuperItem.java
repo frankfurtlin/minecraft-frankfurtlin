@@ -16,6 +16,11 @@ public class SuperItem extends Item {
         super(settings);
     }
 
+    /**
+     * 原能物质右键消耗可破坏基岩
+     * @param context the usage context
+     * @return SUCCESS
+     */
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         BlockPos blockPos = context.getBlockPos();

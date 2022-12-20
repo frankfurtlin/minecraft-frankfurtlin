@@ -11,21 +11,27 @@ import net.minecraft.util.registry.Registry;
 
 
 public class RegisterItems {
+    // 原能盔甲材料
     public static final ArmorMaterial SUPER_ARMOR_MATERIAL = new SuperArmorMaterial();
 
-
+    // 原能物质，可抗火
     public static final Item SUPER_ITEM =
             new SuperItem(new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).fireproof());
+    // 原能头盔
     public static final Item SUPER_HELMET = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.HEAD,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM).fireproof());
+    // 原能胸甲
     public static final Item SUPER_CHESTPLATE = new SuperChestplate(SUPER_ARMOR_MATERIAL, EquipmentSlot.CHEST,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM).fireproof());
+    // 原能护腿
     public static final Item SUPER_LEGGINGS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.LEGS,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM).fireproof());
+    // 原能战靴
     public static final Item SUPER_BOOTS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.FEET,
             new Item.Settings().group(Frankfurtlinmod.SUPER_ITEM_GROUP).recipeRemainder(SUPER_ITEM).fireproof());
 
 
+    // 注册物品
     public static void register() {
         Registry.register(Registry.ITEM,
                 new Identifier(Frankfurtlinmod.MOD_ID, "super_item"), SUPER_ITEM);

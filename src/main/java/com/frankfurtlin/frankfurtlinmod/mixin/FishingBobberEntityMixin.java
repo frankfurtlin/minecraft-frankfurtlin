@@ -15,6 +15,12 @@ public class FishingBobberEntityMixin {
     @Shadow
     private boolean caughtFish;
 
+    /**
+     * 钓到鱼时自动收杆放杆
+     * @param data TrackedData
+     * @param ci CallbackInfo
+     * @throws InterruptedException 中断异常
+     */
     @Inject(at = @At("TAIL"), method = "onTrackedDataSet")
     public void onTrackedDataSet(TrackedData<?> data, CallbackInfo ci) throws InterruptedException {
 

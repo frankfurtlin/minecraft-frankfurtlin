@@ -1,17 +1,13 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
-import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -29,6 +25,14 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     @Shadow public abstract ItemStack getEquippedStack(EquipmentSlot slot);
 
+    /**
+     * 每随机刻检测玩家装备盔甲并给予相应的效果
+     * 原能头盔 潮涌核心 抗火
+     * 原能胸甲 抗性提升 抗火
+     * 原能护腿 抗性提升 抗火
+     * 原能战靴 跳跃提升 速度提升 抗火
+     * @param ci CallbackInfo
+     */
     @Inject(method = "updateTurtleHelmet()V", at = @At("TAIL"))
     public void updateSuperArmorInject(CallbackInfo ci) {
 

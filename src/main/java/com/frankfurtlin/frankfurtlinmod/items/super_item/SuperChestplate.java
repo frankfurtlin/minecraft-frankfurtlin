@@ -9,6 +9,9 @@ import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.event.GameEvent;
 
+/**
+ * 原能胸甲，兼容防御与飞行
+ */
 public class SuperChestplate extends ArmorItem implements FabricElytraItem {
     public SuperChestplate(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
