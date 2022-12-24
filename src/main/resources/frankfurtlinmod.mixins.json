@@ -4,8 +4,12 @@
   "package": "com.frankfurtlin.frankfurtlinmod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "DamageEnchantmentMixin",
+    "InfinityEnchantmentMixin",
+    "MobSpawnerLogicMixin",
     "PiglinBrainMixin",
     "PlayerEntityMixin",
+    "ProtectionEnchantmentMixin",
     "WitherSkeletonEntityMixin",
     "ZombifiedPiglinEntityMixin"
   ],
