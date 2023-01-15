@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "frankfurtlin:super_item"
+    },
+    "E": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+  "result": {
+    "item": "frankfurtlin:super_ender_pack",
+    "count": 1
+  }
+}

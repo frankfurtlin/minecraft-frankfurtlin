@@ -34,7 +34,7 @@ public class SuperItem extends Item {
             world.removeBlock(blockPos, false);
         }
 
-        return ActionResult.SUCCESS;
+        return ActionResult.CONSUME;
     }
 
 

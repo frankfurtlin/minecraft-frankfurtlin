@@ -38,27 +38,27 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
         ItemStack itemStackHelmet = this.getEquippedStack(EquipmentSlot.HEAD);
         if(itemStackHelmet.isOf(RegisterItems.SUPER_HELMET)){
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 200, 0, false, false, true));
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 200, 0, false, false, false));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
         }
 
         ItemStack itemStackChestplate = this.getEquippedStack(EquipmentSlot.CHEST);
         if(itemStackChestplate.isOf(RegisterItems.SUPER_CHESTPLATE)){
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, false));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
         }
 
         ItemStack itemStackLeggings = this.getEquippedStack(EquipmentSlot.LEGS);
         if(itemStackLeggings.isOf(RegisterItems.SUPER_LEGGINGS)){
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, false));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
         }
 
         ItemStack itemStackBoots = this.getEquippedStack(EquipmentSlot.FEET);
         if(itemStackBoots.isOf(RegisterItems.SUPER_BOOTS)){
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 0, false, false, true));
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, true));
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 0, false, false, false));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false, false));
         }
 
 

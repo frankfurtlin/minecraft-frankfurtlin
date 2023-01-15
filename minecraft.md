@@ -20,6 +20,7 @@
 
 - [REI物品管理器(Roughly Enough Items)](https://www.mcmod.cn/class/1674.html)
   REI物品管理器
+  [Curseforge下载界面](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files)
 
 - [简单背包(Simple Backpack)](https://www.mcmod.cn/class/2664.html)
   扩充背包容量
@@ -57,9 +58,6 @@
 - [MaLiLib](https://www.mcmod.cn/class/2298.html)
   masa前置模组
 
-- [自然生成建筑结构显示(Bounding Box Outline Reloaded)](https://www.mcmod.cn/class/1869.html)
-  显示自然建筑边界
-
 - [更好的F3(BetterF3)](https://www.mcmod.cn/class/3525.html)
   强化F3功能
 
@@ -77,9 +75,6 @@
 
 - [补种农作物(Replanting Crops)](https://www.mcmod.cn/class/2731.html)
   收获农作物时补种农作物
-  
-- [Simple Shulker Preview](https://www.mcmod.cn/class/7348.html)
-  显示潜影壳第一个物品
 
 - [可视性(Visuality)](https://www.mcmod.cn/class/6197.html)
   丰富粒子效果
@@ -87,19 +82,33 @@
 - [简单村民交易(EasierVillagerTrading)](https://www.mcmod.cn/class/3466.html)
   快速村民交易
 
-- [村民跟随绿宝石(Villagers follow Emeralds)](https://www.mcmod.cn/class/4926.html)
-  村民跟随绿宝石
-
-- [连接锁链(Connectible Chains)](https://www.mcmod.cn/class/6259.html)
-  使锁链能在栅栏连接
-
 - [FPS减速器(FPS Reducer)](https://www.mcmod.cn/class/1815.html)
   在玩家不操作游戏的时候降低FPS
 
-- [Gamma Utils](https://www.mcmod.cn/class/6720.html)
-  调整客户端亮度
+- [搬运(Carry ON)](https://www.mcmod.cn/class/1081.html)
+  搬运实体
 
+- [砂轮附魔(Grind Enchantments)](https://www.curseforge.com/minecraft/mc-mods/grind-enchantments/files)
+  砂轮转移附魔
+
+- [更好的统计界面(Better Statistics Screen)](https://www.mcmod.cn/class/8030.html)
+  更好的统计界面
+  [Curseforge下载界面](https://www.curseforge.com/minecraft/mc-mods/better-stats/files)
+
+- [结构(Moog's Voyager Structures)](https://www.mcmod.cn/class/8583.html)
+  自然生成的建筑结构
+  [Curseforge下载界面](https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures/files)
 ---
+
+
+
+
+- [不死图腾插槽(Charm of Undying)](https://www.mcmod.cn/class/2236.html)
+  不死图腾插槽
+  [Curseforge下载地址](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-fabric/files)
+
+- [自然生成建筑结构显示(Bounding Box Outline Reloaded)](https://www.mcmod.cn/class/1869.html)
+  显示自然建筑边界
 
 - [Terralith](https://www.mcmod.cn/class/4557.html)
   兼容原版的超多生物群系生成
@@ -110,8 +119,20 @@
 - [伐树(FallingTree)](https://www.mcmod.cn/class/3054.html)
   一键砍树
 
+- [Simple Autofish](https://www.mcmod.cn/class/7587.html)
+  自动钓鱼
+
 - [持续钓鱼(Recast)](https://www.mcmod.cn/class/4308.html)
   钓到鱼后继续钓鱼
+
+- [Simple Shulker Preview](https://www.mcmod.cn/class/7348.html)
+  显示潜影壳第一个物品
+
+- [村民跟随绿宝石(Villagers follow Emeralds)](https://www.mcmod.cn/class/4926.html)
+  村民跟随绿宝石
+
+- [连接锁链(Connectible Chains)](https://www.mcmod.cn/class/6259.html)
+  使锁链能在栅栏连接
 
 - [哥布林商人(Goblin Traders)](https://www.mcmod.cn/class/2353.html)
   哥布林商人 类似于流浪商人，但是物品更多更稀有
@@ -133,9 +154,6 @@
 
 - [YUNG的沙漠神殿优化(YUNG's Better Desert Temples)](https://www.mcmod.cn/class/6613.html)
   优化沙漠神殿
-
-- [Simple Autofish](https://www.mcmod.cn/class/7587.html)
-  自动钓鱼
 
 - [Your Items Are Safe](https://www.mcmod.cn/class/7900.html)
   死亡物品存箱子
