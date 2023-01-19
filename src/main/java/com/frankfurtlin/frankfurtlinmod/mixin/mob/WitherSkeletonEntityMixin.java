@@ -1,5 +1,6 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.mob;
 
+import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.mob.MobEntity;
@@ -19,6 +20,9 @@ public class WitherSkeletonEntityMixin extends MobEntity {
     // 凋零骷髅武器掉落率0，即不掉落石剑
     @Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V", at = @At("TAIL"))
     public void handDropChancesInject(EntityType<? extends WitherSkeletonEntity> entityType, World world, CallbackInfo ci){
-        this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0);
+        if(ModConfig.INSTANCE.witherSkeletonLootTableOptimize){
+            this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0);
+        }
+
     }
 }

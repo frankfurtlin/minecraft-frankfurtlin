@@ -14,7 +14,7 @@ public class SuperArmorMaterial implements ArmorMaterial {
     // 头盔、胸甲、护腿、靴子基础耐久度
     private static final int[] durability = new int[]{11, 16, 15, 13};
     // 耐久度倍率 皮革5 铁、锁链15 龟壳25 金7 钻石33 下届合金37
-    private static final int multiplier = 40;
+    private static final int multiplier = 80;
 
     // 护甲值
     private static final int[] protection = new int[]{3, 8, 6, 3};

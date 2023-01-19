@@ -23,5 +23,7 @@ public class Frankfurtlinmod implements ModInitializer{
     public void onInitialize() {
         LOGGER.info("Frankfurtlin Fabric Mod Initialize!");
         RegisterItems.register();
+
+        ModConfig.init();
     }
 }

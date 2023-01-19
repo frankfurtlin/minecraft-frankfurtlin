@@ -1,5 +1,6 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.mob;
 
+import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.mob.MobEntity;
@@ -19,6 +20,8 @@ public class ZombifiedPiglinEntityMixin extends MobEntity {
     // 僵尸猪灵武器掉落率0，即不掉落金剑
     @Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V", at = @At("TAIL"))
     public void handDropChancesInject(EntityType<? extends ZombifiedPiglinEntity> entityType, World world, CallbackInfo ci){
-        this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0);
+        if(ModConfig.INSTANCE.zombifiedPiglinLootTableOptimize){
+            this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0);
+        }
     }
 }

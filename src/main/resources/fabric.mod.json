@@ -8,7 +8,8 @@
     "Frankfurtlin"
   ],
   "contact": {
-    "website": "www.frankfurtlin.xyz"
+    "homepage": "http://www.frankfurtlin.xyz",
+    "sources": "https://www.github.com/frankfurtlin"
   },
   "license": "MIT",
   "icon": "assets/frankfurtlin/icon.png",
@@ -18,6 +19,9 @@
       "com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod"
     ],
     "client": [
+    ],
+    "modmenu": [
+      "com.frankfurtlin.frankfurtlinmod.gui.ModMenuIntegration"
     ]
   },
   "mixins": [

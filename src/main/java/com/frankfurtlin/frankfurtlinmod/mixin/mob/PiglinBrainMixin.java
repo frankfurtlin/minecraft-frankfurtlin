@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.mob;
 
 import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
 import net.minecraft.entity.LivingEntity;

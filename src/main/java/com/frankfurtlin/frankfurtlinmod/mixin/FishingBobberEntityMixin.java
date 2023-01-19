@@ -1,5 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
+import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.projectile.FishingBobberEntity;
@@ -25,7 +26,7 @@ public class FishingBobberEntityMixin {
     public void onTrackedDataSet(TrackedData<?> data, CallbackInfo ci) throws InterruptedException {
 
         MinecraftClient client = MinecraftClient.getInstance();
-        if (caughtFish) {
+        if (caughtFish && ModConfig.INSTANCE.autoFish) {
             if (client.interactionManager != null) {
                 client.interactionManager.interactItem(client.player, Hand.MAIN_HAND);
             }
