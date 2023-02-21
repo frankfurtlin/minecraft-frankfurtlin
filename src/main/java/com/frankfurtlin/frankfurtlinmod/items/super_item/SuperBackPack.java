@@ -1,7 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.items.super_item;
 
-import com.frankfurtlin.frankfurtlinmod.screen.SuperBackPackInventory;
-import com.frankfurtlin.frankfurtlinmod.screen.SuperBackPackScreenHandler;
+import com.frankfurtlin.frankfurtlinmod.items.screen.SuperBackPackInventory;
+import com.frankfurtlin.frankfurtlinmod.items.screen.SuperBackPackScreenHandler;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

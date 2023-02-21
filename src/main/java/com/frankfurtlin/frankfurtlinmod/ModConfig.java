@@ -27,7 +27,7 @@ public class ModConfig implements ConfigData {
      */
     @ConfigEntry.Gui.PrefixText()
     @Comment("If true, when you throw a fishing rod, you can automatically fish")
-    public boolean autoFish = true;
+    public boolean autoFish = false;
     @Comment("If true, automatically replants crops harvested with seeds from drops when you not sneak")
     public boolean replantingCrops = true;
 

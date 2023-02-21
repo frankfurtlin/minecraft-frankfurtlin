@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.items.super_item;
 
-import com.frankfurtlin.frankfurtlinmod.screen.SuperCraftingScreenHandler;
+import com.frankfurtlin.frankfurtlinmod.items.screen.SuperCraftingScreenHandler;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
