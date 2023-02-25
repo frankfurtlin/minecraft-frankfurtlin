@@ -11,7 +11,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 2.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
@@ -25,7 +25,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:gold_nugget"
+          "name": "minecraft:gunpowder"
         }
       ],
       "rolls": 1.0
@@ -34,32 +34,18 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:killed_by_player"
+          "condition": "minecraft:entity_properties",
+          "entity": "killer",
+          "predicate": {
+            "type": "#minecraft:skeletons"
+          }
         }
       ],
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:gold_ingot"
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "minecraft:creeper_drop_music_discs"
         }
       ],
       "rolls": 1.0
@@ -69,7 +55,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:gunpowder",
           "weight": 1,
           "functions": [
             {
@@ -81,7 +67,7 @@
                 },
                 {
                   "condition": "random_chance",
-                  "chance": 0.5
+                  "chance": 0.3
                 }
               ]
             }

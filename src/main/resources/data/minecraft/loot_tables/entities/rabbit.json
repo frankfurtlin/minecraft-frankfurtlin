@@ -11,21 +11,21 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": -1.0
+                "max": 10.0,
+                "min": 0.0
               },
               "function": "minecraft:set_count"
             },
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 10.0,
                 "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:coal"
+          "name": "minecraft:rabbit_hide"
         }
       ],
       "rolls": 1.0
@@ -38,23 +38,33 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
-              },
+              "count": 10.0,
               "function": "minecraft:set_count"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             },
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 10.0,
                 "min": 0.0
               },
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:bone"
+          "name": "minecraft:rabbit"
         }
       ],
       "rolls": 1.0
@@ -66,15 +76,15 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.7,
+          "chance": 0.1,
           "condition": "minecraft:random_chance_with_looting",
-          "looting_multiplier": 0.1
+          "looting_multiplier": 0.03
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:wither_skeleton_skull"
+          "name": "minecraft:rabbit_foot"
         }
       ],
       "rolls": 1.0
@@ -84,32 +94,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:coal",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 64,
-              "conditions": [
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:bone",
+          "name": "minecraft:rabbit_foot",
           "weight": 1,
           "functions": [
             {

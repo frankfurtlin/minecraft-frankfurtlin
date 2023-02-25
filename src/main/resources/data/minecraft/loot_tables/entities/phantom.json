@@ -3,35 +3,6 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:gold_nugget"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
       "conditions": [
         {
           "condition": "minecraft:killed_by_player"
@@ -59,7 +30,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:gold_ingot"
+          "name": "minecraft:phantom_membrane"
         }
       ],
       "rolls": 1.0
@@ -69,7 +40,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:phantom_membrane",
           "weight": 1,
           "functions": [
             {
@@ -81,7 +52,7 @@
                 },
                 {
                   "condition": "random_chance",
-                  "chance": 0.5
+                  "chance": 0.3
                 }
               ]
             }

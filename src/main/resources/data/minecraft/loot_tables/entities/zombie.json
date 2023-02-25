@@ -11,35 +11,6 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": -1.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:coal"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
                 "max": 2.0,
                 "min": 0.0
               },
@@ -54,7 +25,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:bone"
+          "name": "minecraft:rotten_flesh"
         }
       ],
       "rolls": 1.0
@@ -66,15 +37,39 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.7,
+          "chance": 0.025,
           "condition": "minecraft:random_chance_with_looting",
-          "looting_multiplier": 0.1
+          "looting_multiplier": 0.01
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:wither_skeleton_skull"
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  }
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
+            }
+          ],
+          "name": "minecraft:potato"
         }
       ],
       "rolls": 1.0
@@ -84,7 +79,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:coal",
+          "name": "minecraft:rotten_flesh",
           "weight": 1,
           "functions": [
             {
@@ -96,32 +91,7 @@
                 },
                 {
                   "condition": "random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:bone",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 64,
-              "conditions": [
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "random_chance",
-                  "chance": 0.5
+                  "chance": 0.3
                 }
               ]
             }
