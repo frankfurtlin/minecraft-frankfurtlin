@@ -13,6 +13,7 @@
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",
+  "text.autoconfig.frankfurtlin.option.unLockVillager": "unLockVillager",
   "text.autoconfig.frankfurtlin.option.replantingCrops": "replant crops",
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "remove anvil too expensive",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "decrease anvil enchantment level increase",

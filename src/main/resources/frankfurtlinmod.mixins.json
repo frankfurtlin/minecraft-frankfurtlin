@@ -12,7 +12,8 @@
     "mob.MobSpawnerLogicMixin",
     "mob.PiglinBrainMixin",
     "mob.WitherSkeletonEntityMixin",
-    "mob.ZombifiedPiglinEntityMixin"
+    "mob.ZombifiedPiglinEntityMixin",
+    "villager.TradeOfferMixin"
   ],
   "client": [
     "FishingBobberEntityMixin",
