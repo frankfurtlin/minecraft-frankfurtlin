@@ -21,13 +21,13 @@ public class MobSpawnerLogicMixin {
     @Shadow private int maxNearbyEntities;
 
     /**
-     * 增强刷怪笼效率 每次刷6个怪 每隔1-4秒刷新一次
+     * 增强刷怪笼效率 默认每次刷4个怪 每隔10-40秒刷新一次
      * @param world world
      * @param pos pos
      * @param ci ci
      */
     @Inject(method = "updateSpawns(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)V", at = @At("HEAD"))
-    public void changeMobSpawnerLogic(World world, BlockPos pos, CallbackInfo ci){
+    private void changeMobSpawnerLogic(World world, BlockPos pos, CallbackInfo ci){
         if(ModConfig.INSTANCE.mobSpawnerEnhance){
             this.minSpawnDelay = 20 * ModConfig.INSTANCE.minSpawnDelay;
             this.maxSpawnDelay = 20 * ModConfig.INSTANCE.maxSpawnDelay;

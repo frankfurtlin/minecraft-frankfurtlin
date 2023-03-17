@@ -9,6 +9,7 @@
     "enchantment.DamageEnchantmentMixin",
     "enchantment.InfinityEnchantmentMixin",
     "enchantment.ProtectionEnchantmentMixin",
+    "mob.DrownedEntityMixin",
     "mob.MobSpawnerLogicMixin",
     "mob.PiglinBrainMixin",
     "mob.WitherSkeletonEntityMixin",

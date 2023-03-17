@@ -54,7 +54,7 @@ public class ModConfig implements ConfigData {
     public boolean removeProtectionEnchantmentConflict = true;
 
     /**
-     * 怪物逻辑
+     * 怪物刷怪笼
      */
     @ConfigEntry.Gui.PrefixText()
     @Comment("If true, enhance mob spawner logic")
@@ -68,9 +68,32 @@ public class ModConfig implements ConfigData {
     @Comment("set the mob spawner count")
     @ConfigEntry.BoundedDiscrete(min = 1, max = 8)
     public int spawnCount = 4;
+
+    /**
+     * 僵尸猪灵、凋零骷髅武器掉落优化
+     */
+    @ConfigEntry.Gui.PrefixText()
     @Comment("If true, zombified piglin don't drop golden sword")
     public boolean zombifiedPiglinLootTableOptimize = true;
     @Comment("If true, wither skeleton don't drop stone sword")
     public boolean witherSkeletonLootTableOptimize = true;
+
+    /**
+     * 溺尸生成概率、武器装备概率、武器掉落概率
+     */
+    @ConfigEntry.Gui.PrefixText()
+    @Comment("set the spawn change in river of drowned, the smaller the better")
+    @ConfigEntry.BoundedDiscrete(min = 1, max = 15)
+    public int drownedSpawnInRiverRate = 15;
+
+    @Comment("set the spawn change in ocean of drowned, the smaller the better")
+    @ConfigEntry.BoundedDiscrete(min = 5, max = 40)
+    public int drownedSpawnInOceanRate = 40;
+
+    @Comment("set the change drowned with equipment")
+    public double drownedSpawnWithEquipment = 0.1;
+
+    @Comment("If true, drowned always drop weapon")
+    public boolean drownedAlwaysDropWeapon = true;
 
 }

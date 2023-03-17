@@ -15,21 +15,30 @@
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "unLockVillager",
   "text.autoconfig.frankfurtlin.option.replantingCrops": "replant crops",
+
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "remove anvil too expensive",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "decrease anvil enchantment level increase",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict": "remove damage enchantment conflict",
   "text.autoconfig.frankfurtlin.option.removeInfinityEnchantmentConflict": "remove infinity enchantment conflict",
   "text.autoconfig.frankfurtlin.option.removeProtectionEnchantmentConflict": "remove protection enchantment conflict",
+
   "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance": "mob spawner enhance",
   "text.autoconfig.frankfurtlin.option.minSpawnDelay": "set the min mob spawner delay second(1-20)",
   "text.autoconfig.frankfurtlin.option.maxSpawnDelay": "set the max mob spawner delay second(4-60)",
   "text.autoconfig.frankfurtlin.option.spawnCount": "set the mob spawner count(1-8)",
+
   "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize": "zombified piglin don't drop golden sword",
   "text.autoconfig.frankfurtlin.option.witherSkeletonLootTableOptimize": "wither skeleton don't drop stone sword",
 
+  "text.autoconfig.frankfurtlin.option.drownedSpawnInRiverRate": "set the spawn change in river of drowned, the smaller the better",
+  "text.autoconfig.frankfurtlin.option.drownedSpawnInOceanRate": "set the spawn change in ocean of drowned, the smaller the better",
+  "text.autoconfig.frankfurtlin.option.drownedSpawnWithEquipment": "set the change drowned with equipment",
+  "text.autoconfig.frankfurtlin.option.drownedAlwaysDropWeapon": "If true, drowned always drop weapon",
 
   "text.autoconfig.frankfurtlin.option.autoFish.@PrefixText": "feature",
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit.@PrefixText": "Anvil",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict.@PrefixText": "enchantment",
-  "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance.@PrefixText": "mob"
+  "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance.@PrefixText": "mobSpawner",
+  "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize.@PrefixText": "mobWeaponDropOptimize",
+  "text.autoconfig.frankfurtlin.option.drownedSpawnInRiverRate.@PrefixText": "drowned"
 }
