@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.items.screen;
+package com.frankfurtlin.frankfurtlinmod.gui.screen;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;

@@ -15,6 +15,7 @@
   "text.autoconfig.frankfurtlin.option.autoFish": "自动钓鱼",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "村民无限次交易",
   "text.autoconfig.frankfurtlin.option.replantingCrops": "自动补种农作物",
+  "text.autoconfig.frankfurtlin.option.experienceBottle": "附魔之瓶掉落经验",
 
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "消除铁砧附魔过于昂贵",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "减少铁砧附魔所需经验",

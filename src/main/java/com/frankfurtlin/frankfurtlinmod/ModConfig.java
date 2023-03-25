@@ -32,6 +32,9 @@ public class ModConfig implements ConfigData {
     public boolean unLockVillager = true;
     @Comment("If true, automatically replants crops harvested with seeds from drops when you not sneak")
     public boolean replantingCrops = true;
+    @Comment("set the experience drop by experience bottle")
+    @ConfigEntry.BoundedDiscrete(min = 5, max = 100)
+    public int experienceBottle = 100;
 
     /**
      * 铁砧附魔增强

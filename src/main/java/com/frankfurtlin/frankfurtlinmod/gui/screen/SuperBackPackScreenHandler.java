@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.items.screen;
+package com.frankfurtlin.frankfurtlinmod.gui.screen;
 
 import com.frankfurtlin.frankfurtlinmod.items.super_item.SuperBackPack;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.SuperEnderPack;
