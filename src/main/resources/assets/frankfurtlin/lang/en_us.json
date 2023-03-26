@@ -9,7 +9,13 @@
   "item.frankfurtlin.super_backpack": "super_backpack",
   "item.frankfurtlin.super_crafting_table": "super_crafting_table",
 
+  "item.frankfurtlin.strawberry_crop": "strawberry_crop",
+  "item.frankfurtlin.strawberry_seed": "strawberry_seed",
+  "item.frankfurtlin.strawberry": "strawberry",
+  "item.frankfurtlin.strawberry_smoothie": "strawberry_smoothie",
+
   "itemGroup.frankfurtlin.super_item_group": "super_item",
+  "itemGroup.frankfurtlin.food_group": "food",
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",

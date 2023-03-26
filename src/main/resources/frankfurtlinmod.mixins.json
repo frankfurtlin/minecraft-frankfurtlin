@@ -4,6 +4,7 @@
   "package": "com.frankfurtlin.frankfurtlinmod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ComposterBlockMixin",
     "ExperienceBottleEntityMixin",
     "PlayerEntityMixin",
     "enchantment.AnvilScreenHandlerMixin",

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " S ",
+    " M "
+  ],
+  "key": {
+    "#": {
+      "item": "frankfurtlin:strawberry"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "frankfurtlin:strawberry_smoothie",
+    "count": 3
+  }
+}

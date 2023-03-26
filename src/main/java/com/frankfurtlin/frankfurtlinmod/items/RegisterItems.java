@@ -1,13 +1,21 @@
 package com.frankfurtlin.frankfurtlinmod.items;
 
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
+import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
+import com.frankfurtlin.frankfurtlinmod.blocks.StrawberryBlock;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
 import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.CropBlock;
+import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 
@@ -45,6 +53,23 @@ public class RegisterItems {
             new Item.Settings().recipeRemainder(SUPER_ITEM).fireproof().maxCount(1));
 
 
+    // 草莓种子
+    public static final Item STRAWBERRY_SEED = new AliasedBlockItem(RegisterBlocks.STRAWBERRY_CROP, new Item.Settings());
+    // 草莓
+    public static final Item STRAWBERRY = new Item(new Item.Settings().
+            food(new FoodComponent.Builder().
+            alwaysEdible().hunger(1).saturationModifier(0.3f).
+            statusEffect(new StatusEffectInstance(StatusEffects.LUCK, 2400, 0,
+                            false, false, true), 1.0f).
+            build()));
+    // 草莓奶昔
+    public static final Item STRAWBERRY_SMOOTHIE = new Item(new Item.Settings().recipeRemainder(STRAWBERRY).
+            food(new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).alwaysEdible().
+                    statusEffect(new StatusEffectInstance(StatusEffects.LUCK, 12000, 1,
+                            false, false, true), 1.0f).
+                    build()));
+
+
     // 注册物品
     public static void register() {
         Registry.register(Registries.ITEM,
@@ -66,7 +91,13 @@ public class RegisterItems {
         Registry.register(Registries.ITEM,
                 new Identifier(Frankfurtlinmod.MOD_ID, "super_crafting_table"), SUPER_CRAFTING_TABLE);
 
-        //添加物品到物品组
+
+        Registry.register(Registries.ITEM, new Identifier(Frankfurtlinmod.MOD_ID, "strawberry_seed"), STRAWBERRY_SEED);
+        Registry.register(Registries.ITEM, new Identifier(Frankfurtlinmod.MOD_ID, "strawberry"), STRAWBERRY);
+        Registry.register(Registries.ITEM, new Identifier(Frankfurtlinmod.MOD_ID, "strawberry_smoothie"), STRAWBERRY_SMOOTHIE);
+
+
+        //添加物品到原能物品组
         ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.SUPER_ITEM_GROUP).register(content -> {
             content.add(SUPER_ITEM);
             content.add(SUPER_HELMET);
@@ -79,6 +110,14 @@ public class RegisterItems {
             content.add(SUPER_BACKPACK);
             content.add(SUPER_CRAFTING_TABLE);
 
+        });
+
+
+        //添加物品到农作物物品组
+        ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.FOOD_GROUP).register(content -> {
+            content.add(STRAWBERRY_SEED);
+            content.add(STRAWBERRY);
+            content.add(STRAWBERRY_SMOOTHIE);
 
         });
 

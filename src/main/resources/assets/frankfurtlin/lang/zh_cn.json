@@ -9,7 +9,15 @@
   "item.frankfurtlin.super_backpack": "原能背包",
   "item.frankfurtlin.super_crafting_table": "原能工作台",
 
+  "item.frankfurtlin.strawberry_crop": "草莓丛",
+  "item.frankfurtlin.strawberry_seed": "草莓种子",
+  "item.frankfurtlin.strawberry": "草莓",
+  "item.frankfurtlin.strawberry_smoothie": "草莓奶昔",
+
+
   "itemGroup.frankfurtlin.super_item_group": "原能物品组",
+  "itemGroup.frankfurtlin.food_group": "农作物",
+
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "自动钓鱼",

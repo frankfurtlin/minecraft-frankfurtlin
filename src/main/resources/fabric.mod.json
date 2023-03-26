@@ -19,6 +19,7 @@
       "com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod"
     ],
     "client": [
+      "com.frankfurtlin.frankfurtlinmod.FrankfurtlinmodClient"
     ],
     "modmenu": [
       "com.frankfurtlin.frankfurtlinmod.gui.ModMenuIntegration"

@@ -24,8 +24,6 @@ public abstract class FishingBobberEntityMixin {
     @Shadow public abstract @Nullable PlayerEntity getPlayerOwner();
 
 
-    @Shadow @Final private static Logger LOGGER;
-
     /**
      * 钓到鱼时自动收杆放杆
      * @param data TrackedData
@@ -51,7 +49,7 @@ public abstract class FishingBobberEntityMixin {
             if (client.interactionManager != null) {
                 client.interactionManager.interactItem(owner, Hand.MAIN_HAND);
             }
-            Thread.sleep(10L);
+            Thread.sleep(30L);
             if (client.interactionManager != null) {
                 client.interactionManager.interactItem(owner, Hand.MAIN_HAND);
             }

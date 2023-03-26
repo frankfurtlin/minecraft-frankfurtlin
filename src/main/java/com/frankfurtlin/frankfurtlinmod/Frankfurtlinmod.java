@@ -1,5 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod;
 
+import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -19,9 +20,15 @@ public class Frankfurtlinmod implements ModInitializer{
             .icon(() -> new ItemStack(RegisterItems.SUPER_ITEM))
             .build();
 
+    public static final ItemGroup FOOD_GROUP = FabricItemGroup.builder(
+                    new Identifier(MOD_ID, "food_group"))
+            .icon(() -> new ItemStack(RegisterItems.STRAWBERRY))
+            .build();
+
     @Override
     public void onInitialize() {
         LOGGER.info("Frankfurtlin Fabric Mod Initialize!");
+        RegisterBlocks.register();
         RegisterItems.register();
 
         ModConfig.init();
