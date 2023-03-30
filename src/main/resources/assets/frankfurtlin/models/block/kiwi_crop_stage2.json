@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "frankfurtlin:block/kiwi_crop_stage2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "frankfurtlin:block/pineapple_crop_stage1"
+  }
+}

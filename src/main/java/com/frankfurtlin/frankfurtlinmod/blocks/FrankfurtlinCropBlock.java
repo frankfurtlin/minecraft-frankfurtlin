@@ -33,12 +33,10 @@ public class FrankfurtlinCropBlock extends CropBlock {
         this.seed = seed;
     }
 
-
     @Override
     protected ItemConvertible getSeedsItem() {
         return seed;
     }
-
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "juice",
+  "pattern": [
+    "###",
+    "###",
+    " P "
+  ],
+  "key": {
+    "#": {
+      "item": "frankfurtlin:strawberry"
+    },
+    "P": {
+      "item": "minecraft:potion"
+    }
+  },
+  "result": {
+    "item": "frankfurtlin:strawberry_juice",
+    "count": 1
+  }
+}

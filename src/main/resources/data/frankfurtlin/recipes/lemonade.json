@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " P "
+  ],
+  "key": {
+    "#": {
+      "item": "frankfurtlin:lemon"
+    },
+    "P": {
+      "item": "minecraft:potion"
+    }
+  },
+  "result": {
+    "item": "frankfurtlin:lemonade",
+    "count": 1
+  }
+}
