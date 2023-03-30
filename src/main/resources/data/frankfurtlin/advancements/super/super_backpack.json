@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:super_backpack"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "frankfurtlin:super/super_item",
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.super_backpack.description"
+    },
+    "icon": {
+      "item": "frankfurtlin:super_backpack"
+    },
+    "title": {
+      "translate": "advancements.frankfurtlin.super.super_backpack.title"
+    }
+  }
+}
