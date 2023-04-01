@@ -37,67 +37,46 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "chance": 0.025,
+          "chance": 0.7,
           "condition": "minecraft:random_chance_with_looting",
-          "looting_multiplier": 0.01
+          "looting_multiplier": 0.1
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ingot"
+          "name": "frankfurtlin:banana"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot"
+          "name": "frankfurtlin:cherry"
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "flags": {
-                      "is_on_fire": true
-                    }
-                  }
-                }
-              ],
-              "function": "minecraft:furnace_smelt"
-            }
-          ],
-          "name": "minecraft:potato"
+          "name": "frankfurtlin:coconut"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "frankfurtlin:dragonfruit"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "frankfurtlin:lemon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "frankfurtlin:mango"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "frankfurtlin:orange"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "frankfurtlin:starfruit"
         }
       ],
       "rolls": 1.0
-    },
-    {
-      "rolls": 1.0,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:rotten_flesh",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 64,
-              "conditions": [
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "random_chance",
-                  "chance": 0.3
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
