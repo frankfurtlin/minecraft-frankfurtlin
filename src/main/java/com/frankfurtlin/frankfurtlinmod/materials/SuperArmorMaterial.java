@@ -2,6 +2,7 @@ package com.frankfurtlin.frankfurtlinmod.materials;
 
 import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -20,13 +21,13 @@ public class SuperArmorMaterial implements ArmorMaterial {
     private static final int[] protection = new int[]{3, 8, 6, 3};
 
     @Override
-    public int getDurability(EquipmentSlot slot) {
-        return durability[3 - slot.getEntitySlotId()] * multiplier;
+    public int getDurability(ArmorItem.Type type) {
+        return durability[4 - type.getEquipmentSlot().getArmorStandSlotId()] * multiplier;
     }
 
     @Override
-    public int getProtectionAmount(EquipmentSlot slot) {
-        return protection[3 - slot.getEntitySlotId()];
+    public int getProtection(ArmorItem.Type type) {
+        return protection[4 - type.getEquipmentSlot().getArmorStandSlotId()];
     }
 
     @Override

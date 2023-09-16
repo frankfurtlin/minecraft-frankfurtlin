@@ -150,7 +150,7 @@ public class SuperBackPackScreenHandler extends ScreenHandler {
     }
 
     public void close(PlayerEntity player) {
-        super.close(player);
+        //super.close(player);
         this.inventory.onClose(player);
     }
 

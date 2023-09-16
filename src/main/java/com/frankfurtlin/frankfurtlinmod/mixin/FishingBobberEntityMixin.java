@@ -34,7 +34,7 @@ public abstract class FishingBobberEntityMixin {
     public void onTrackedDataSet(TrackedData<?> data, CallbackInfo ci) throws InterruptedException {
         PlayerEntity owner = this.getPlayerOwner();
 
-        if(owner == null || !owner.world.isClient()){
+        if(owner == null || !owner.getWorld().isClient()){
             return;
         }
 

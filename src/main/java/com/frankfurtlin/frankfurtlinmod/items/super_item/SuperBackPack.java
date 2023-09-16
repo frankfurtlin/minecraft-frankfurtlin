@@ -28,7 +28,7 @@ public class SuperBackPack extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand)
     {
-        if(player.world.isClient) {
+        if(player.getWorld().isClient) {
             return TypedActionResult.pass(player.getStackInHand(hand));
         }
 

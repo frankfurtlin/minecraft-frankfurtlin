@@ -52,8 +52,8 @@
   "item.frankfurtlin.orange_juice.tooltip": "DOLPHINS_GRACE",
   "item.frankfurtlin.beer.tooltip": "HASTE",
 
-  "itemGroup.frankfurtlin.super_item_group": "super_item",
-  "itemGroup.frankfurtlin.food_group": "food",
+  "frankfurtlin.super_item_group": "super_item",
+  "frankfurtlin.food_group": "food",
 
   "advancements.frankfurtlin.super.root.title": "super",
   "advancements.frankfurtlin.super.root.description": "super",

@@ -31,10 +31,10 @@ public class WhereCommand {
 
         BlockPos playerPos = target.getBlockPos();
         String pos = "(" + playerPos.getX() + ", " + playerPos.getY() + ", " + playerPos.getZ() + ") in " +
-                target.world.getRegistryKey().getValue().toString();
+                target.getWorld().getRegistryKey().getValue().toString();
 
         String text = target.getEntityName() + "'s position is: " + pos;
-        source.sendFeedback(Text.literal(text), true);
+        source.sendFeedback(() -> Text.literal(text), true);
 
         return Command.SINGLE_SUCCESS;
     }

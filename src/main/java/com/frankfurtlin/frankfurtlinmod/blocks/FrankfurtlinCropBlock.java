@@ -1,11 +1,9 @@
 package com.frankfurtlin.frankfurtlinmod.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.CropBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -28,7 +26,7 @@ public class FrankfurtlinCropBlock extends CropBlock {
 
     private final Item seed;
 
-    public FrankfurtlinCropBlock(Item seed, Settings settings) {
+    public FrankfurtlinCropBlock(Item seed, AbstractBlock.Settings settings) {
         super(settings);
         this.seed = seed;
     }
@@ -36,6 +34,12 @@ public class FrankfurtlinCropBlock extends CropBlock {
     @Override
     protected ItemConvertible getSeedsItem() {
         return seed;
+    }
+
+    @Override
+    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+        return ItemStack.EMPTY;
+        //return new ItemStack(seed);
     }
 
     @Override

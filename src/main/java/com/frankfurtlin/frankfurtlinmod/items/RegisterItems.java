@@ -5,7 +5,6 @@ import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
 import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -24,16 +23,16 @@ public class RegisterItems {
     public static final Item SUPER_ITEM =
             new SuperItem(new Item.Settings().rarity(Rarity.EPIC).fireproof());
     // 原能头盔
-    public static final Item SUPER_HELMET = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.HEAD,
+    public static final Item SUPER_HELMET = new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
             new Item.Settings().rarity(Rarity.EPIC).fireproof());
     // 原能胸甲
-    public static final Item SUPER_CHESTPLATE = new SuperChestplate(SUPER_ARMOR_MATERIAL, EquipmentSlot.CHEST,
+    public static final Item SUPER_CHESTPLATE = new SuperChestplate(SUPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
             new Item.Settings().rarity(Rarity.EPIC).fireproof());
     // 原能护腿
-    public static final Item SUPER_LEGGINGS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.LEGS,
+    public static final Item SUPER_LEGGINGS = new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
             new Item.Settings().rarity(Rarity.EPIC).fireproof());
     // 原能战靴
-    public static final Item SUPER_BOOTS = new ArmorItem(SUPER_ARMOR_MATERIAL, EquipmentSlot.FEET,
+    public static final Item SUPER_BOOTS = new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
             new Item.Settings().rarity(Rarity.EPIC).fireproof());
 
 
@@ -67,7 +66,7 @@ public class RegisterItems {
     public static final Item COCONUT = new Item(
             new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build()));
     // 玉米
-    public static final Item CORN = new AliasedBlockItem(RegisterBlocks.CORN_CROP, new Item.Settings());
+    public static final Item CORN = (Item) new AliasedBlockItem(RegisterBlocks.CORN_CROP, new Item.Settings());
     // 火龙果
     public static final Item DRAGONFRUIT = new Item(
             new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build()));
@@ -198,7 +197,7 @@ public class RegisterItems {
 
 
         //添加物品到原能物品组
-        ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.SUPER_ITEM_GROUP).register(content -> {
+        ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.SUPER_ITEM_GROUP_KEY).register(content -> {
             content.add(SUPER_ITEM);
             content.add(SUPER_HELMET);
             content.add(SUPER_CHESTPLATE);
@@ -214,7 +213,7 @@ public class RegisterItems {
 
 
         //添加物品到食物物品组
-        ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.FOOD_GROUP).register(content -> {
+        ItemGroupEvents.modifyEntriesEvent(Frankfurtlinmod.FOOD_GROUP_KEY).register(content -> {
             content.add(STRAWBERRY);
             content.add(BLACKBERRY);
             content.add(BLUEBERRY);

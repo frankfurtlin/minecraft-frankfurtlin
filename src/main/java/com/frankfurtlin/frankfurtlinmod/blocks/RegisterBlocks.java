@@ -4,7 +4,7 @@ import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.CropBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -13,35 +13,35 @@ import net.minecraft.util.Identifier;
 public class RegisterBlocks {
     // 草莓
     public static final CropBlock STRAWBERRY_CROP = new FrankfurtlinCropBlock(RegisterItems.STRAWBERRY,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
     // 黑莓
     public static final CropBlock BLACKBERRY_CROP = new FrankfurtlinCropBlock(RegisterItems.BLACKBERRY,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
     // 蓝莓
     public static final CropBlock BLUEBERRY_CROP = new FrankfurtlinCropBlock(RegisterItems.BLUEBERRY,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
     // 玉米
     public static final CropBlock CORN_CROP = new FrankfurtlinCropBlock(RegisterItems.CORN,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
 
     // 葡萄
     public static final CropBlock GRAPE_CROP = new FrankfurtlinCropBlock(RegisterItems.CORN,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
 
     // 猕猴桃
     public static final CropBlock KIWI_CROP = new FrankfurtlinCropBlock(RegisterItems.CORN,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
 
     // 菠萝
     public static final CropBlock PINEAPPLE_CROP = new FrankfurtlinCropBlock(RegisterItems.PINEAPPLE,
-            AbstractBlock.Settings.of(Material.PLANT).nonOpaque().noCollision().ticksRandomly().
-                    breakInstantly().sounds(BlockSoundGroup.CROP));
+            AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly()
+                    .sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
 
 
 

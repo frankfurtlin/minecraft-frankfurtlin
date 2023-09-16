@@ -13,8 +13,8 @@ import net.minecraft.world.event.GameEvent;
  * 原能胸甲，兼容防御与飞行
  */
 public class SuperChestplate extends ArmorItem implements FabricElytraItem {
-    public SuperChestplate(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
-        super(material, slot, settings);
+    public SuperChestplate(ArmorMaterial material, ArmorItem.Type type, Settings settings) {
+        super(material, type, settings);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class SuperChestplate extends ArmorItem implements FabricElytraItem {
     public void doVanillaElytraTick(LivingEntity entity, ItemStack chestStack) {
         int nextRoll = entity.getRoll() + 1;
 
-        if (!entity.world.isClient && nextRoll % 10 == 0) {
+        if (!entity.getWorld().isClient && nextRoll % 10 == 0) {
             if ((nextRoll / 10) % 2 == 0) {
                 chestStack.damage(1, entity, p -> p.sendEquipmentBreakStatus(EquipmentSlot.CHEST));
             }
