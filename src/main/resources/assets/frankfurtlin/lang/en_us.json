@@ -89,6 +89,9 @@
   "text.autoconfig.frankfurtlin.option.replantingCrops": "replant crops",
   "text.autoconfig.frankfurtlin.option.experienceBottle": "set exp drop by experience bottle",
 
+  "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "use TOTEM_OF_UNDYING in your inventory",
+  "text.autoconfig.frankfurtlin.option.canTotemOFUndyingBeStack": "TOTEM_OF_UNDYING can be stack to 64",
+
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "remove anvil too expensive",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "decrease anvil enchantment level increase",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict": "remove damage enchantment conflict",
@@ -109,6 +112,7 @@
   "text.autoconfig.frankfurtlin.option.drownedAlwaysDropWeapon": "If true, drowned always drop weapon",
 
   "text.autoconfig.frankfurtlin.option.autoFish.@PrefixText": "feature",
+  "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory.@PrefixText": "items",
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit.@PrefixText": "Anvil",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict.@PrefixText": "enchantment",
   "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance.@PrefixText": "mobSpawner",

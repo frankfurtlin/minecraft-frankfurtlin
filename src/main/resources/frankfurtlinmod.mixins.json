@@ -6,6 +6,8 @@
   "mixins": [
     "ComposterBlockMixin",
     "ExperienceBottleEntityMixin",
+    "ItemMixin",
+    "LivingEntityMixin",
     "PlayerEntityMixin",
     "enchantment.AnvilScreenHandlerMixin",
     "enchantment.DamageEnchantmentMixin",

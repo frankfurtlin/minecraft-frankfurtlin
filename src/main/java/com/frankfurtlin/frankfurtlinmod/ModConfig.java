@@ -37,6 +37,15 @@ public class ModConfig implements ConfigData {
     public int experienceBottle = 100;
 
     /**
+     * 物品相关
+     */
+    @ConfigEntry.Gui.PrefixText()
+    @Comment("If true, you can use TOTEM_OF_UNDYING in your inventory")
+    public boolean useTotemOFUndyingInInventory = true;
+    @Comment("If true, TOTEM_OF_UNDYING can be stack to 64")
+    public boolean canTotemOFUndyingBeStack = true;
+
+    /**
      * 铁砧附魔增强
      */
     @ConfigEntry.Gui.PrefixText()
@@ -88,14 +97,11 @@ public class ModConfig implements ConfigData {
     @Comment("set the spawn change in river of drowned, the smaller the better")
     @ConfigEntry.BoundedDiscrete(min = 1, max = 15)
     public int drownedSpawnInRiverRate = 15;
-
     @Comment("set the spawn change in ocean of drowned, the smaller the better")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 40)
     public int drownedSpawnInOceanRate = 40;
-
     @Comment("set the change drowned with equipment")
     public double drownedSpawnWithEquipment = 0.1;
-
     @Comment("If true, drowned always drop weapon")
     public boolean drownedAlwaysDropWeapon = true;
 

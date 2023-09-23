@@ -89,6 +89,9 @@
   "text.autoconfig.frankfurtlin.option.replantingCrops": "自动补种农作物",
   "text.autoconfig.frankfurtlin.option.experienceBottle": "附魔之瓶掉落经验",
 
+  "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "不死图腾可在背包里生效",
+  "text.autoconfig.frankfurtlin.option.canTotemOFUndyingBeStack": "不死图腾可堆叠至64",
+
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "消除铁砧附魔过于昂贵",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "减少铁砧附魔所需经验",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict": "消除剑的锋利、亡灵杀手、节肢杀手冲突",
@@ -111,6 +114,7 @@
 
 
   "text.autoconfig.frankfurtlin.option.autoFish.@PrefixText": "特性",
+  "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory.@PrefixText": "物品相关",
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit.@PrefixText": "铁砧",
   "text.autoconfig.frankfurtlin.option.removeDamageEnchantmentConflict.@PrefixText": "附魔",
   "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance.@PrefixText": "刷怪笼",
