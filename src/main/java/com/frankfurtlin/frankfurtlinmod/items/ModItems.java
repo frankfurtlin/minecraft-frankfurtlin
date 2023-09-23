@@ -3,9 +3,9 @@ package com.frankfurtlin.frankfurtlinmod.items;
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
+import com.frankfurtlin.frankfurtlinmod.materials.ModToolMaterial;
 import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -41,8 +41,8 @@ public class ModItems {
         new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
 
     // 原能锄
-    /*public static final Item SUPER_HOE = registerItem("super_hoe",
-        new SuperHoe(ModToolMaterial.RUBY, -3, 0.0f, new Item.Settings().rarity(Rarity.EPIC).fireproof()));*/
+    public static final Item SUPER_HOE = registerItem("hello",
+        new SuperHoe(ModToolMaterial.SUPER_ITEM, -3, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
 
     // 原能末影箱，可右键打开
     public static final Item SUPER_ENDER_PACK = registerItem("super_ender_pack",
@@ -163,60 +163,11 @@ public class ModItems {
         new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(6).saturationModifier(0.8f).build())));
 
 
-    private static void addItemsToSuperItemGroup(FabricItemGroupEntries entries) {
-        entries.add(ModItems.SUPER_ITEM);
-        entries.add(ModItems.SUPER_HELMET);
-        entries.add(ModItems.SUPER_CHESTPLATE);
-        entries.add(ModItems.SUPER_LEGGINGS);
-        entries.add(ModItems.SUPER_BOOTS);
-
-//        entries.add(ModItems.SUPER_HOE);
-
-        entries.add(ModItems.SUPER_ENDER_PACK);
-        entries.add(ModItems.SUPER_BACKPACK);
-        entries.add(ModItems.SUPER_CRAFTING_TABLE);
-    }
-
-    private static void addItemsToFoodsGroup(FabricItemGroupEntries entries) {
-        entries.add(ModItems.STRAWBERRY);
-        entries.add(ModItems.BLACKBERRY);
-        entries.add(ModItems.BLUEBERRY);
-        entries.add(ModItems.BANANA);
-        entries.add(ModItems.CHERRY);
-        entries.add(ModItems.COCONUT);
-        entries.add(ModItems.CORN);
-        entries.add(ModItems.DRAGONFRUIT);
-        entries.add(ModItems.GRAPE);
-        entries.add(ModItems.KIWI);
-        entries.add(ModItems.LEMON);
-        entries.add(ModItems.MANGO);
-        entries.add(ModItems.ORANGE);
-        entries.add(ModItems.PINEAPPLE);
-        entries.add(ModItems.STARFRUIT);
-
-        entries.add(ModItems.STRAWBERRY_JUICE);
-        entries.add(ModItems.COCONUT_JUICE);
-        entries.add(ModItems.GRAPE_JUICE);
-        entries.add(ModItems.LEMONADE);
-        entries.add(ModItems.MANGO_JUICE);
-        entries.add(ModItems.ORANGE_JUICE);
-
-        entries.add(ModItems.BEER);
-
-        entries.add(ModItems.SHRIMP);
-        entries.add(ModItems.FRIED_SHRIMP);
-        entries.add(ModItems.CRAB);
-        entries.add(ModItems.STEAMED_CRAB);
-    }
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Frankfurtlinmod.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
         Frankfurtlinmod.LOGGER.info("Registering Mod Items for " + Frankfurtlinmod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.SUPER_ITEM_GROUP_KEY).register(ModItems::addItemsToSuperItemGroup);
-        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.FOOD_GROUP_KEY).register(ModItems::addItemsToFoodsGroup);
     }
 }

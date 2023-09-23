@@ -2,7 +2,6 @@ package com.frankfurtlin.frankfurtlinmod.materials;
 
 
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;

@@ -32,7 +32,7 @@ public class ModItemGroups {
             entries.add(ModItems.SUPER_LEGGINGS);
             entries.add(ModItems.SUPER_BOOTS);
 
-//            entries.add(ModItems.SUPER_HOE);
+            entries.add(ModItems.SUPER_HOE);
             
             entries.add(ModItems.SUPER_ENDER_PACK);
             entries.add(ModItems.SUPER_BACKPACK);

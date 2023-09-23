@@ -1,6 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.materials;
 
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -9,11 +10,11 @@ import java.util.function.Supplier;
 /**
  * @author Frankfurtlin
  * @version 1.0
- * @date 2023/9/23 20:35
+ * @date 2023/9/23 15:36
+ * 原能工具材料
  */
 public enum ModToolMaterial implements ToolMaterial {
-    RUBY(3, 1561, 8.0f, 3.0f, 10,
-        () -> Ingredient.ofItems(ModItems.SUPER_ITEM));
+    SUPER_ITEM(MiningLevels.NETHERITE + 1, 3031, 15.0f, 6.0f, 30, () -> Ingredient.ofItems(ModItems.SUPER_ITEM));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -22,7 +23,8 @@ public enum ModToolMaterial implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage,
+                      int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

@@ -18,7 +18,6 @@ import net.minecraft.screen.slot.SlotActionType;
 import java.util.Set;
 
 public class SuperBackPackScreenHandler extends ScreenHandler {
-    private static final int field_30780 = 9;
     private final Inventory inventory;
     private final int rows;
     public static final Set<Item> SHULKER_BOXES;
@@ -128,7 +127,7 @@ public class SuperBackPackScreenHandler extends ScreenHandler {
             return ItemStack.EMPTY;
         }
 
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             ItemStack itemStack2 = slot.getStack();
             itemStack = itemStack2.copy();
             if (index < this.rows * 9) {
