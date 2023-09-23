@@ -1,9 +1,11 @@
+/*
 package com.frankfurtlin.frankfurtlinmod.items;
 
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
 import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
+import com.frankfurtlin.frankfurtlinmod.materials.SuperToolMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -34,6 +36,10 @@ public class RegisterItems {
     // 原能战靴
     public static final Item SUPER_BOOTS = new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
             new Item.Settings().rarity(Rarity.EPIC).fireproof());
+
+    // 原能锄
+    public static final Item CUDA = new SuperHoe(SuperToolMaterial.SUPER_ITEM_MATERIAL, -4, 0.0f,
+        new Item.Settings().rarity(Rarity.EPIC).fireproof());
 
 
     // 原能末影箱，可右键打开
@@ -66,7 +72,7 @@ public class RegisterItems {
     public static final Item COCONUT = new Item(
             new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build()));
     // 玉米
-    public static final Item CORN = (Item) new AliasedBlockItem(RegisterBlocks.CORN_CROP, new Item.Settings());
+    public static final Item CORN = new AliasedBlockItem(RegisterBlocks.CORN_CROP, new Item.Settings());
     // 火龙果
     public static final Item DRAGONFRUIT = new Item(
             new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build()));
@@ -159,6 +165,9 @@ public class RegisterItems {
         Registry.register(Registries.ITEM,
                 new Identifier(Frankfurtlinmod.MOD_ID, "super_boots"), SUPER_BOOTS);
 
+        Registry.register(Registries.ITEM,
+                new Identifier(Frankfurtlinmod.MOD_ID, "super_hoe"), CUDA);
+
 
         Registry.register(Registries.ITEM,
                 new Identifier(Frankfurtlinmod.MOD_ID, "super_ender_pack"), SUPER_ENDER_PACK);
@@ -204,6 +213,7 @@ public class RegisterItems {
             content.add(SUPER_LEGGINGS);
             content.add(SUPER_BOOTS);
 
+            content.add(CUDA);
 
             content.add(SUPER_ENDER_PACK);
             content.add(SUPER_BACKPACK);
@@ -249,3 +259,4 @@ public class RegisterItems {
     }
 }
 
+*/

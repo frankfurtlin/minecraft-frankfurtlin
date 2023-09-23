@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.blocks.cropBlocks;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.math.BlockPos;
@@ -29,7 +29,7 @@ public class StrawberryBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return RegisterItems.STRAWBERRY;
+        return ModItems.STRAWBERRY;
     }
 
     @Override

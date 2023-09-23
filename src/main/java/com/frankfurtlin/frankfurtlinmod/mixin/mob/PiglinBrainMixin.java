@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.mixin.mob;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.PiglinBrain;
 import net.minecraft.item.ArmorItem;
@@ -32,7 +32,7 @@ public class PiglinBrainMixin {
     private static void wearSuperArmorInject(LivingEntity entity, CallbackInfoReturnable<Boolean> cir,
                                              Iterable<ItemStack> iterable, Iterator<ItemStack> var2, ItemStack itemStack) {
         Item item = itemStack.getItem();
-        if (item instanceof ArmorItem && ((ArmorItem)item).getMaterial() == RegisterItems.SUPER_ARMOR_MATERIAL){
+        if (item instanceof ArmorItem && ((ArmorItem)item).getMaterial() == ModItems.SUPER_ARMOR_MATERIAL){
             cir.setReturnValue(true);
         }
 

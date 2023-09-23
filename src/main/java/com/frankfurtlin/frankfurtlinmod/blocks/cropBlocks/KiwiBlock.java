@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.blocks.cropBlocks;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -32,7 +32,7 @@ public class KiwiBlock extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return RegisterItems.KIWI;
+        return ModItems.KIWI;
     }
 
     @Override

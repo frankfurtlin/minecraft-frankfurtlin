@@ -2,7 +2,8 @@ package com.frankfurtlin.frankfurtlinmod;
 
 import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
 import com.frankfurtlin.frankfurtlinmod.commands.RegisterCommands;
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItemGroups;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -21,7 +22,7 @@ public class Frankfurtlinmod implements ModInitializer{
     public static final String MOD_ID = "frankfurtlin";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static final RegistryKey<ItemGroup> SUPER_ITEM_GROUP_KEY = RegistryKey.of(
+    /*public static final RegistryKey<ItemGroup> SUPER_ITEM_GROUP_KEY = RegistryKey.of(
             RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, "super_item_group"));
 
     public static final RegistryKey<ItemGroup> FOOD_GROUP_KEY = RegistryKey.of(
@@ -36,6 +37,8 @@ public class Frankfurtlinmod implements ModInitializer{
                 entries.add(RegisterItems.SUPER_CHESTPLATE);
                 entries.add(RegisterItems.SUPER_LEGGINGS);
                 entries.add(RegisterItems.SUPER_BOOTS);
+
+                entries.add(RegisterItems.CUDA);
 
 
                 entries.add(RegisterItems.SUPER_ENDER_PACK);
@@ -78,15 +81,17 @@ public class Frankfurtlinmod implements ModInitializer{
                 entries.add(RegisterItems.CRAB);
                 entries.add(RegisterItems.STEAMED_CRAB);
             })
-            .build();
+            .build();*/
 
     @Override
     public void onInitialize() {
         LOGGER.info("Frankfurtlin Fabric Mod Initialize!");
+        ModItems.registerModItems();
+        ModItemGroups.registerItemGroups();
         RegisterBlocks.register();
-        RegisterItems.register();
+       /* RegisterItems.register();
         Registry.register(Registries.ITEM_GROUP, SUPER_ITEM_GROUP_KEY, SUPER_ITEM_GROUP);
-        Registry.register(Registries.ITEM_GROUP, FOOD_GROUP_KEY, FOOD_GROUP);
+        Registry.register(Registries.ITEM_GROUP, FOOD_GROUP_KEY, FOOD_GROUP);*/
         RegisterCommands.register();
 
         ModConfig.init();

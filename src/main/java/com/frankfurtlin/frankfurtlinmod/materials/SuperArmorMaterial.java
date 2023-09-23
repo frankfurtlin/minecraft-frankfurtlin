@@ -1,6 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.materials;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -42,7 +43,7 @@ public class SuperArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(RegisterItems.SUPER_ITEM);
+        return Ingredient.ofItems(ModItems.SUPER_ITEM);
     }
 
     @Override

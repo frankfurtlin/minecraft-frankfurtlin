@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -37,24 +37,24 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     public void updateSuperArmorInject(CallbackInfo ci) {
 
         ItemStack itemStackHelmet = this.getEquippedStack(EquipmentSlot.HEAD);
-        if(itemStackHelmet.isOf(RegisterItems.SUPER_HELMET)){
+        if(itemStackHelmet.isOf(ModItems.SUPER_HELMET)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 200, 0, false, false, false));
         }
 
         ItemStack itemStackChestplate = this.getEquippedStack(EquipmentSlot.CHEST);
         ItemStack itemStackLeggings = this.getEquippedStack(EquipmentSlot.LEGS);
-        if(itemStackChestplate.isOf(RegisterItems.SUPER_CHESTPLATE) || itemStackLeggings.isOf(RegisterItems.SUPER_LEGGINGS)){
+        if(itemStackChestplate.isOf(ModItems.SUPER_CHESTPLATE) || itemStackLeggings.isOf(ModItems.SUPER_LEGGINGS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, false));
         }
 
         ItemStack itemStackBoots = this.getEquippedStack(EquipmentSlot.FEET);
-        if(itemStackBoots.isOf(RegisterItems.SUPER_BOOTS)){
+        if(itemStackBoots.isOf(ModItems.SUPER_BOOTS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 0, false, false, false));
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false, false));
         }
 
-        if(itemStackHelmet.isOf(RegisterItems.SUPER_HELMET) || itemStackChestplate.isOf(RegisterItems.SUPER_CHESTPLATE) ||
-                itemStackLeggings.isOf(RegisterItems.SUPER_LEGGINGS) || itemStackBoots.isOf(RegisterItems.SUPER_BOOTS)){
+        if(itemStackHelmet.isOf(ModItems.SUPER_HELMET) || itemStackChestplate.isOf(ModItems.SUPER_CHESTPLATE) ||
+                itemStackLeggings.isOf(ModItems.SUPER_LEGGINGS) || itemStackBoots.isOf(ModItems.SUPER_BOOTS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 200, 0, false, false, false));
         }

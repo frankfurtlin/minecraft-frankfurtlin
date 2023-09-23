@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
-import com.frankfurtlin.frankfurtlinmod.items.RegisterItems;
+import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.block.ComposterBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,20 +18,20 @@ public class ComposterBlockMixin {
      */
     @Inject(method = "<init>", at = @At("TAIL"))
     private void makeSeedComposter(CallbackInfo ci){
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.STRAWBERRY, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.BLACKBERRY, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.BLUEBERRY, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.BANANA, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.CHERRY, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.COCONUT, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.CORN, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.DRAGONFRUIT, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.GRAPE, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.KIWI, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.LEMON, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.MANGO, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.ORANGE, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.PINEAPPLE, 0.3f);
-        ITEM_TO_LEVEL_INCREASE_CHANCE.put(RegisterItems.STARFRUIT, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STRAWBERRY, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BLACKBERRY, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BLUEBERRY, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BANANA, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.CHERRY, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.COCONUT, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.CORN, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.DRAGONFRUIT, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.GRAPE, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.KIWI, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.LEMON, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.MANGO, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.ORANGE, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.PINEAPPLE, 0.3f);
+        ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STARFRUIT, 0.3f);
     }
 }
