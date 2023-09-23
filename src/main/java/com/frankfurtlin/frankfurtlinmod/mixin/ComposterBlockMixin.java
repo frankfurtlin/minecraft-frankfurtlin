@@ -16,8 +16,8 @@ public class ComposterBlockMixin {
      * 植物、水果可堆肥
      * @param ci callback
      */
-    @Inject(method = "<init>", at = @At("TAIL"))
-    private void makeSeedComposter(CallbackInfo ci){
+    @Inject(method = "registerCompostableItem", at = @At("TAIL"))
+    private static void makeComposter(CallbackInfo ci){
         ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STRAWBERRY, 0.3f);
         ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BLACKBERRY, 0.3f);
         ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BLUEBERRY, 0.3f);
@@ -34,4 +34,5 @@ public class ComposterBlockMixin {
         ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.PINEAPPLE, 0.3f);
         ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STARFRUIT, 0.3f);
     }
+
 }

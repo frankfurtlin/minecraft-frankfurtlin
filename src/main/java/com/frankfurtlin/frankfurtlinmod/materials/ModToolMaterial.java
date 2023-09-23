@@ -14,7 +14,7 @@ import java.util.function.Supplier;
  * 原能工具材料
  */
 public enum ModToolMaterial implements ToolMaterial {
-    SUPER_ITEM(MiningLevels.NETHERITE + 1, 3031, 15.0f, 6.0f, 30, () -> Ingredient.ofItems(ModItems.SUPER_ITEM));
+    SUPER_ITEM(MiningLevels.NETHERITE + 1, 3592, 15.0f, 6.0f, 30, () -> Ingredient.ofItems(ModItems.SUPER_ITEM));
 
     private final int miningLevel;
     private final int itemDurability;

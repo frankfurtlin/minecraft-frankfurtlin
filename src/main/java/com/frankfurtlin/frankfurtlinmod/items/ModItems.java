@@ -41,7 +41,7 @@ public class ModItems {
         new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
 
     // 原能锄
-    public static final Item SUPER_HOE = registerItem("hello",
+    public static final Item SUPER_HOE = registerItem("super_hoe",
         new SuperHoe(ModToolMaterial.SUPER_ITEM, -3, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
 
     // 原能末影箱，可右键打开
