@@ -20,8 +20,12 @@ public class ModItemGroups {
     public static final RegistryKey<ItemGroup> SUPER_ITEM_GROUP_KEY = RegistryKey.of(
         RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "super_item_group"));
 
+    public static final RegistryKey<ItemGroup> ADDITION_ITEM_GROUP_KEY = RegistryKey.of(
+        RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "addition_item_group"));
+
     public static final RegistryKey<ItemGroup> FOOD_GROUP_KEY = RegistryKey.of(
         RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "food_group"));
+
     public static final ItemGroup SUPER_ITEM_GROUP = FabricItemGroup.builder()
         .displayName(Text.translatable("frankfurtlin.super_item_group"))
         .icon(() -> new ItemStack(ModItems.SUPER_ITEM))
@@ -39,6 +43,12 @@ public class ModItemGroups {
             entries.add(ModItems.SUPER_CRAFTING_TABLE);
         }).build();
 
+    public static final ItemGroup ADDITION_ITEM_GROUP = FabricItemGroup.builder()
+        .displayName(Text.translatable("frankfurtlin.addition_item_group"))
+        .icon(() -> new ItemStack(ModItems.GLOW_STICK))
+        .entries((context, entries) -> {
+            entries.add(ModItems.GLOW_STICK);
+        }).build();
 
     public static final ItemGroup FOOD_GROUP = FabricItemGroup.builder()
         .displayName(Text.translatable("frankfurtlin.food_group"))
@@ -78,6 +88,7 @@ public class ModItemGroups {
 
     public static void registerItemGroups() {
         Registry.register(Registries.ITEM_GROUP, SUPER_ITEM_GROUP_KEY, SUPER_ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, ADDITION_ITEM_GROUP_KEY, ADDITION_ITEM_GROUP);
         Registry.register(Registries.ITEM_GROUP, FOOD_GROUP_KEY, FOOD_GROUP);
         Frankfurtlinmod.LOGGER.info("Registering Item Groups for " + Frankfurtlinmod.MOD_ID);
     }

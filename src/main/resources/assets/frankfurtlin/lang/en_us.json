@@ -11,6 +11,10 @@
   "item.frankfurtlin.super_backpack": "super_backpack",
   "item.frankfurtlin.super_crafting_table": "super_crafting_table",
 
+  "item.frankfurtlin.glow_stick": "glow_stick",
+  "block.frankfurtlin.glow_stick": "glow_stick",
+  "entity.frankfurtlin.glow_stick": "glow_stick",
+
   "block.frankfurtlin.strawberry_crop": "strawberry_crop",
   "item.frankfurtlin.strawberry": "strawberry",
   "item.frankfurtlin.strawberry_juice": "strawberry_juice",
@@ -55,6 +59,7 @@
   "item.frankfurtlin.beer.tooltip": "HASTE",
 
   "frankfurtlin.super_item_group": "super_item",
+  "frankfurtlin.addition_item_group": "addition_item",
   "frankfurtlin.food_group": "food",
 
   "advancements.frankfurtlin.super.root.title": "super",

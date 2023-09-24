@@ -1,7 +1,8 @@
 package com.frankfurtlin.frankfurtlinmod;
 
-import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
+import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.commands.RegisterCommands;
+import com.frankfurtlin.frankfurtlinmod.entity.ModEntities;
 import com.frankfurtlin.frankfurtlinmod.items.ModItemGroups;
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,10 +19,11 @@ public class Frankfurtlinmod implements ModInitializer{
         LOGGER.info("Frankfurtlin Fabric Mod Initialize!");
 
         ModItems.registerModItems();
-
         ModItemGroups.registerItemGroups();
 
-        RegisterBlocks.register();
+        ModBlocks.registerModBlocks();
+
+        ModEntities.registerModEntities();
 
         RegisterCommands.register();
 

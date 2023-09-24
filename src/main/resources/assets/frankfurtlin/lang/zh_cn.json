@@ -11,6 +11,10 @@
   "item.frankfurtlin.super_backpack": "原能背包",
   "item.frankfurtlin.super_crafting_table": "原能工作台",
 
+  "item.frankfurtlin.glow_stick": "荧光棒",
+  "block.frankfurtlin.glow_stick": "荧光棒",
+  "entity.frankfurtlin.glow_stick": "荧光棒",
+
   "block.frankfurtlin.strawberry_crop": "草莓丛",
   "item.frankfurtlin.strawberry": "草莓",
   "item.frankfurtlin.strawberry_juice": "草莓汁",
@@ -55,6 +59,7 @@
   "item.frankfurtlin.beer.tooltip": "急迫",
 
   "frankfurtlin.super_item_group": "原能物品",
+  "frankfurtlin.addition_item_group": "杂项物品",
   "frankfurtlin.food_group": "食物",
 
   "advancements.frankfurtlin.super.root.title": "科技",

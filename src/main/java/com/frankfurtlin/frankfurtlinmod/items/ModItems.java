@@ -1,7 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.items;
 
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
-import com.frankfurtlin.frankfurtlinmod.blocks.RegisterBlocks;
+import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
 import com.frankfurtlin.frankfurtlinmod.materials.ModToolMaterial;
 import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
@@ -20,6 +20,7 @@ import net.minecraft.util.Rarity;
  * @date 2023/9/23 19:39
  */
 public class ModItems {
+    // ----------------------------------------------------------------------------------------------------------------
     // 原能盔甲材料
     public static final ArmorMaterial SUPER_ARMOR_MATERIAL = new SuperArmorMaterial();
 
@@ -55,17 +56,28 @@ public class ModItems {
         new SuperCraftingTable(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
 
 
+    // ----------------------------------------------------------------------------------------------------------------
+
+    public static final Item GLOW_STICK = registerItem("glow_stick",
+        new GlowStickItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
+
+
+
+
+
+    // ----------------------------------------------------------------------------------------------------------------
+
     // 草莓
     public static final Item STRAWBERRY = registerItem("strawberry",
-        new AliasedBlockItem(RegisterBlocks.STRAWBERRY_CROP,
+        new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).build())));
     // 黑莓
     public static final Item BLACKBERRY = registerItem("blackberry",
-        new AliasedBlockItem(RegisterBlocks.BLACKBERRY_CROP,
+        new AliasedBlockItem(ModBlocks.BLACKBERRY_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).build())));
     // 蓝莓
     public static final Item BLUEBERRY = registerItem("blueberry",
-        new AliasedBlockItem(RegisterBlocks.BLUEBERRY_CROP,
+        new AliasedBlockItem(ModBlocks.BLUEBERRY_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).build())));
     // 香蕉
     public static final Item BANANA = registerItem("banana",
@@ -78,17 +90,17 @@ public class ModItems {
         new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
     // 玉米
     public static final Item CORN = registerItem("corn",
-        new AliasedBlockItem(RegisterBlocks.CORN_CROP, new Item.Settings()));
+        new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
     // 火龙果
     public static final Item DRAGONFRUIT = registerItem("dragonfruit",
         new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
     // 葡萄
     public static final Item GRAPE = registerItem("grape",
-        new AliasedBlockItem(RegisterBlocks.GRAPE_CROP,
+        new AliasedBlockItem(ModBlocks.GRAPE_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(1).saturationModifier(0.3f).build())));
     // 猕猴桃
     public static final Item KIWI = registerItem("kiwi",
-        new AliasedBlockItem(RegisterBlocks.KIWI_CROP,
+        new AliasedBlockItem(ModBlocks.KIWI_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
     // 柠檬
     public static final Item LEMON = registerItem("lemon",
@@ -101,7 +113,7 @@ public class ModItems {
         new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build())));
     // 菠萝
     public static final Item PINEAPPLE = registerItem("pineapple",
-        new AliasedBlockItem(RegisterBlocks.PINEAPPLE_CROP,
+        new AliasedBlockItem(ModBlocks.PINEAPPLE_CROP,
             new Item.Settings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     // 杨桃
     public static final Item STARFRUIT = registerItem("starfruit",
@@ -161,6 +173,9 @@ public class ModItems {
     // 蒸大闸蟹
     public static final Item STEAMED_CRAB = registerItem("steamed_crab",
         new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(6).saturationModifier(0.8f).build())));
+
+
+    // ----------------------------------------------------------------------------------------------------------------
 
 
     private static Item registerItem(String name, Item item) {
