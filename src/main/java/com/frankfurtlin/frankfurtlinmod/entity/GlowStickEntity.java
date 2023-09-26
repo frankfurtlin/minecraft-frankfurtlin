@@ -1,5 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.entity;
 
+import com.frankfurtlin.frankfurtlinmod.blocks.GlowStickBlock;
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.entity.EntityType;
@@ -15,7 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class GlowStickEntity extends ThrownItemEntity{
-    public GlowStickEntity(EntityType<? extends GlowStickEntity> entityType, World world) {
+    public GlowStickEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -33,9 +34,10 @@ public class GlowStickEntity extends ThrownItemEntity{
         super.onCollision(hitResult);
         if (!this.getWorld().isClient()) {
             this.remove(RemovalReason.DISCARDED);
-            BlockPos pos = this.getBlockPos();
+            BlockPos pos = BlockPos.ofFloored(this.getX(), this.getY(), this.getZ());
             if (this.getWorld().getBlockState(pos).isAir()) {
-                this.getWorld().setBlockState(pos, ModBlocks.GLOW_STICK_BLOCK.getDefaultState());
+                this.getWorld().setBlockState(pos, ModBlocks.GLOW_STICK_BLOCK.getDefaultState()
+                    .with(GlowStickBlock.FLIPPED, getWorld().getRandom().nextBoolean()));
                 this.getWorld().playSound(null, pos.getX(), pos.getY(), pos.getZ(),
                     SoundEvents.BLOCK_GLASS_PLACE, SoundCategory.BLOCKS, 1.0f, 1.0f);
             } else {

@@ -4,6 +4,7 @@ import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.blocks.cropBlocks.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,9 +19,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     // ----------------------------------------------------------------------------------------------------------------
 
-    // 发光棒
+    // 荧光棒
     public static final Block GLOW_STICK_BLOCK = registerBlock("glow_stick", new GlowStickBlock(
-        AbstractBlock.Settings.create().nonOpaque().noCollision().breakInstantly()
+        AbstractBlock.Settings.create().mapColor(MapColor.CLEAR).noCollision().breakInstantly()
             .luminance((state) -> 14).pistonBehavior(PistonBehavior.DESTROY)));
 
 
