@@ -58,6 +58,9 @@
   "item.frankfurtlin.orange_juice.tooltip": "DOLPHINS_GRACE",
   "item.frankfurtlin.beer.tooltip": "HASTE",
 
+  "enchantment.frankfurtlin.auto_smelt": "Smelting Touch",
+  "enchantment.frankfurtlin.auto_smelt.desc": "Smelts blocks you mine",
+
   "frankfurtlin.super_item_group": "super_item",
   "frankfurtlin.addition_item_group": "addition_item",
   "frankfurtlin.food_group": "food",
