@@ -22,6 +22,7 @@
     "villager.TradeOfferMixin"
   ],
   "client": [
+    "ClientPlayerEntityMixin",
     "FishingBobberEntityMixin",
     "enchantment.AnvilScreenmixin"
   ],
