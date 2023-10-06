@@ -10,6 +10,7 @@
     "ItemMixin",
     "LivingEntityMixin",
     "PlayerEntityMixin",
+    "WanderingTraderEntityMixin",
     "enchantment.AnvilScreenHandlerMixin",
     "enchantment.DamageEnchantmentMixin",
     "enchantment.InfinityEnchantmentMixin",
