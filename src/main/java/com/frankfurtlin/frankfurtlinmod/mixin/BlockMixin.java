@@ -22,6 +22,9 @@ import java.util.List;
 @Mixin(Block.class)
 public abstract class BlockMixin {
 
+    /**
+     * 熔炼采集可以熔炼矿物
+     */
     @Inject(
             method = "getDroppedStacks(Lnet/minecraft/block/BlockState;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/entity/BlockEntity;Lnet/minecraft/entity/Entity;Lnet/minecraft/item/ItemStack;)Ljava/util/List;",
             at = @At("RETURN"),

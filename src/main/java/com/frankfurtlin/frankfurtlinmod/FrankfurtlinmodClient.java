@@ -2,6 +2,7 @@ package com.frankfurtlin.frankfurtlinmod;
 
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.entity.ModEntities;
+import com.frankfurtlin.frankfurtlinmod.event.KeyBindings;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -15,6 +16,8 @@ public class FrankfurtlinmodClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        KeyBindings.registerBindings();
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACKBERRY_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_CROP, RenderLayer.getCutout());

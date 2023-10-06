@@ -15,10 +15,10 @@
     "enchantment.InfinityEnchantmentMixin",
     "enchantment.ProtectionEnchantmentMixin",
     "mob.DrownedEntityMixin",
+    "mob.MobSpawnerBlockEntityMixin",
     "mob.MobSpawnerLogicMixin",
     "mob.PiglinBrainMixin",
     "mob.SpawnerBlockMixin",
-    "mob.SpawnerBlockPermissionsMixin",
     "mob.WitherSkeletonEntityMixin",
     "mob.ZombifiedPiglinEntityMixin",
     "villager.TradeOfferMixin"
@@ -26,6 +26,7 @@
   "client": [
     "ClientPlayerEntityMixin",
     "FishingBobberEntityMixin",
+    "LightMapTextureManagerMixin",
     "enchantment.AnvilScreenmixin"
   ],
   "injectors": {

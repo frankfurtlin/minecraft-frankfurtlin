@@ -91,16 +91,19 @@
   "advancements.frankfurtlin.foods.seafood.title": "seafood",
   "advancements.frankfurtlin.foods.seafood.description": "get shrimp and crab",
 
+  "key.categories.frankfurtlin": "frankfurtlin",
+  "key.frankfurtlin.gamma_toggle": "gamma toggle",
 
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "unLockVillager",
-  "text.autoconfig.frankfurtlin.option.replantingCrops": "replant crops",
-  "text.autoconfig.frankfurtlin.option.experienceBottle": "set exp drop by experience bottle",
+  "text.autoconfig.frankfurtlin.option.canBreakSpawner": "break spawner with silk touch",
+  "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "open gui in nether portal",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "use TOTEM_OF_UNDYING in your inventory",
   "text.autoconfig.frankfurtlin.option.canTotemOFUndyingBeStack": "TOTEM_OF_UNDYING can be stack to 64",
+  "text.autoconfig.frankfurtlin.option.experienceBottle": "set exp drop by experience bottle",
 
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "remove anvil too expensive",
   "text.autoconfig.frankfurtlin.option.removeAnvilExponentialIncrease": "decrease anvil enchantment level increase",
