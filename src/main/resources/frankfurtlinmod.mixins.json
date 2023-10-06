@@ -17,6 +17,8 @@
     "mob.DrownedEntityMixin",
     "mob.MobSpawnerLogicMixin",
     "mob.PiglinBrainMixin",
+    "mob.SpawnerBlockMixin",
+    "mob.SpawnerBlockPermissionsMixin",
     "mob.WitherSkeletonEntityMixin",
     "mob.ZombifiedPiglinEntityMixin",
     "villager.TradeOfferMixin"
