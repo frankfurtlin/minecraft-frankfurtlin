@@ -1,6 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
-import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantment;
+import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -32,7 +32,7 @@ public abstract class BlockMixin {
     private static void getDroppedStacks(BlockState state, ServerWorld world, BlockPos pos, BlockEntity blockEntity, Entity entity, ItemStack stack, CallbackInfoReturnable<List<ItemStack>> cir) {
         List<ItemStack> items = new ArrayList<>();
         List<ItemStack> returnValue = cir.getReturnValue();
-        if (EnchantmentHelper.getLevel(ModEnchantment.AUTO_SMELT, stack) == 0) {
+        if (EnchantmentHelper.getLevel(ModEnchantments.AUTO_SMELT, stack) == 0) {
             cir.setReturnValue(returnValue);
             return;
         }

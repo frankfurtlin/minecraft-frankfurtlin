@@ -1,15 +1,19 @@
 {
-  "item.frankfurtlin.super_item": "原能物质",
-  "item.frankfurtlin.super_helmet": "原能头盔",
-  "item.frankfurtlin.super_chestplate": "原能战甲",
-  "item.frankfurtlin.super_leggings": "原能护腿",
-  "item.frankfurtlin.super_boots": "原能战靴",
+  "item.frankfurtlin.white_gold_ingot": "白金锭",
+  "item.frankfurtlin.white_gold_block": "白金块",
+  "item.frankfurtlin.white_gold_helmet": "白金战盔",
+  "item.frankfurtlin.white_gold_chestplate": "白金战甲",
+  "item.frankfurtlin.white_gold_leggings": "白金护腿",
+  "item.frankfurtlin.white_gold_boots": "白金战靴",
+  "item.frankfurtlin.white_gold_sword": "白金战剑",
+  "item.frankfurtlin.white_gold_axe": "白金战斧",
+  "item.frankfurtlin.white_gold_hoe": "白金战锄",
+  "item.frankfurtlin.white_gold_pickaxe": "白金掘镐",
+  "item.frankfurtlin.white_gold_shovel": "白金战铲",
 
-  "item.frankfurtlin.super_hoe": "原能锄",
-
-  "item.frankfurtlin.super_ender_pack": "末影背包",
-  "item.frankfurtlin.super_backpack": "原能背包",
-  "item.frankfurtlin.super_crafting_table": "原能工作台",
+  "item.frankfurtlin.ender_pack": "末影背包",
+  "item.frankfurtlin.backpack": "背包",
+  "item.frankfurtlin.crafting_table": "手持工作台",
 
   "item.frankfurtlin.glow_stick": "荧光棒",
   "block.frankfurtlin.glow_stick": "荧光棒",
@@ -49,7 +53,7 @@
   "item.frankfurtlin.shrimp": "虾",
   "item.frankfurtlin.fried_shrimp": "炸虾",
 
-  "item.frankfurtlin.super_item.tooltip": "外星科技的原材料",
+  "item.frankfurtlin.white_gold_ingot.tooltip": "可破坏基岩,可升级装备及工具",
   "item.frankfurtlin.strawberry_juice.tooltip": "幸运",
   "item.frankfurtlin.coconut_juice.tooltip": "隐身",
   "item.frankfurtlin.grape_juice.tooltip": "夜视",
@@ -61,22 +65,23 @@
   "enchantment.frankfurtlin.auto_smelt": "熔炼采集",
   "enchantment.frankfurtlin.auto_smelt.desc": "熔炼你采集的矿物",
 
-  "frankfurtlin.super_item_group": "原能物品",
+  "frankfurtlin.super_group": "物品",
   "frankfurtlin.addition_item_group": "杂项物品",
   "frankfurtlin.food_group": "食物",
 
   "advancements.frankfurtlin.super.root.title": "科技",
   "advancements.frankfurtlin.super.root.description": "外星科技",
-  "advancements.frankfurtlin.super.super_item.title": "外星陨石?",
-  "advancements.frankfurtlin.super.super_item.description": "获取原能物质",
-  "advancements.frankfurtlin.super.super_armor.title": "铠甲勇士，合体",
-  "advancements.frankfurtlin.super.super_armor.description": "装备一整套原能盔甲",
-  "advancements.frankfurtlin.super.super_backpack.title": "背着包，去寻诗和远方",
-  "advancements.frankfurtlin.super.super_backpack.description": "拥有原能背包",
-  "advancements.frankfurtlin.super.super_ender_pack.title": "保险柜还是密码箱",
-  "advancements.frankfurtlin.super.super_ender_pack.description": "拥有末影背包",
-  "advancements.frankfurtlin.super.super_crafting_table.title": "手工大师再现",
-  "advancements.frankfurtlin.super.super_crafting_table.description": "拥有原能工作台",
+  "advancements.frankfurtlin.super.white_gold_ingot.title": "白金锭",
+  "advancements.frankfurtlin.super.white_gold_ingot.description": "获取白金锭",
+  "advancements.frankfurtlin.super.white_gold_armor.title": "铠甲勇士，合体",
+  "advancements.frankfurtlin.super.white_gold_armor.description": "装备一整套白金盔甲",
+
+  "advancements.frankfurtlin.super.backpack.title": "背着包，去寻诗和远方",
+  "advancements.frankfurtlin.super.backpack.description": "拥有背包",
+  "advancements.frankfurtlin.super.ender_pack.title": "保险柜还是密码箱",
+  "advancements.frankfurtlin.super.ender_pack.description": "拥有末影背包",
+  "advancements.frankfurtlin.super.crafting_table.title": "手工大师再现",
+  "advancements.frankfurtlin.super.crafting_table.description": "手持工作台",
 
   "advancements.frankfurtlin.foods.root.title": "食物",
   "advancements.frankfurtlin.foods.root.description": "丰富的食物",
@@ -93,7 +98,6 @@
 
   "key.categories.frankfurtlin": "frankfurtlin",
   "key.frankfurtlin.gamma_toggle": "切换夜视",
-
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "自动钓鱼",
@@ -113,9 +117,9 @@
   "text.autoconfig.frankfurtlin.option.removeProtectionEnchantmentConflict": "消除盔甲保护、火焰保护、爆炸保护、弹射物保护冲突",
 
   "text.autoconfig.frankfurtlin.option.mobSpawnerEnhance": "刷怪笼增强",
-  "text.autoconfig.frankfurtlin.option.minSpawnDelay": "刷怪笼最小生成间隔（1-20秒）",
-  "text.autoconfig.frankfurtlin.option.maxSpawnDelay": "刷怪笼最大生成间隔（4-60秒）",
-  "text.autoconfig.frankfurtlin.option.spawnCount": "刷怪笼每次生成数量（1-8个）",
+  "text.autoconfig.frankfurtlin.option.minSpawnDelay": "刷怪笼最小生成间隔(1-20秒)",
+  "text.autoconfig.frankfurtlin.option.maxSpawnDelay": "刷怪笼最大生成间隔(4-60秒)",
+  "text.autoconfig.frankfurtlin.option.spawnCount": "刷怪笼每次生成数量(1-8个)",
 
   "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize": "僵尸猪灵不掉落金剑",
   "text.autoconfig.frankfurtlin.option.witherSkeletonLootTableOptimize": "凋零骷髅不掉落石剑",
@@ -124,8 +128,6 @@
   "text.autoconfig.frankfurtlin.option.drownedSpawnInOceanRate": "溺尸在海洋生成概率，越小越好",
   "text.autoconfig.frankfurtlin.option.drownedSpawnWithEquipment": "溺尸生成带武器的概率",
   "text.autoconfig.frankfurtlin.option.drownedAlwaysDropWeapon": "溺尸总是掉落武器",
-
-
 
   "text.autoconfig.frankfurtlin.option.autoFish.@PrefixText": "特性",
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory.@PrefixText": "物品相关",

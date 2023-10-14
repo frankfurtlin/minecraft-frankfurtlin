@@ -17,8 +17,8 @@ import net.minecraft.util.Identifier;
  * @date 2023/9/23 19:40
  */
 public class ModItemGroups {
-    public static final RegistryKey<ItemGroup> SUPER_ITEM_GROUP_KEY = RegistryKey.of(
-        RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "super_item_group"));
+    public static final RegistryKey<ItemGroup> SUPER_GROUP_KEY = RegistryKey.of(
+        RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "super_group"));
 
     public static final RegistryKey<ItemGroup> ADDITION_ITEM_GROUP_KEY = RegistryKey.of(
         RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "addition_item_group"));
@@ -26,18 +26,22 @@ public class ModItemGroups {
     public static final RegistryKey<ItemGroup> FOOD_GROUP_KEY = RegistryKey.of(
         RegistryKeys.ITEM_GROUP, new Identifier(Frankfurtlinmod.MOD_ID, "food_group"));
 
-    public static final ItemGroup SUPER_ITEM_GROUP = FabricItemGroup.builder()
-        .displayName(Text.translatable("frankfurtlin.super_item_group"))
-        .icon(() -> new ItemStack(ModItems.SUPER_ITEM))
+    public static final ItemGroup SUPER_GROUP = FabricItemGroup.builder()
+        .displayName(Text.translatable("frankfurtlin.super_group"))
+        .icon(() -> new ItemStack(ModItems.WHITE_GOLD_INGOT))
         .entries((context, entries) -> {
-            entries.add(ModItems.SUPER_ITEM);
-            entries.add(ModItems.SUPER_HELMET);
-            entries.add(ModItems.SUPER_CHESTPLATE);
-            entries.add(ModItems.SUPER_LEGGINGS);
-            entries.add(ModItems.SUPER_BOOTS);
+            entries.add(ModItems.WHITE_GOLD_INGOT);
+            entries.add(ModItems.WHITE_GOLD_HELMET);
+            entries.add(ModItems.WHITE_GOLD_CHESTPLATE);
+            entries.add(ModItems.WHITE_GOLD_LEGGINGS);
+            entries.add(ModItems.WHITE_GOLD_BOOTS);
 
-            entries.add(ModItems.SUPER_HOE);
-            
+            entries.add(ModItems.WHITE_GOLD_SWORD);
+            entries.add(ModItems.WHITE_GOLD_PICKAXE);
+            entries.add(ModItems.WHITE_GOLD_AXE);
+            entries.add(ModItems.WHITE_GOLD_SHOVEL);
+            entries.add(ModItems.WHITE_GOLD_HOE);
+
             entries.add(ModItems.SUPER_ENDER_PACK);
             entries.add(ModItems.SUPER_BACKPACK);
             entries.add(ModItems.SUPER_CRAFTING_TABLE);
@@ -87,7 +91,7 @@ public class ModItemGroups {
         .build();
 
     public static void registerItemGroups() {
-        Registry.register(Registries.ITEM_GROUP, SUPER_ITEM_GROUP_KEY, SUPER_ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, SUPER_GROUP_KEY, SUPER_GROUP);
         Registry.register(Registries.ITEM_GROUP, ADDITION_ITEM_GROUP_KEY, ADDITION_ITEM_GROUP);
         Registry.register(Registries.ITEM_GROUP, FOOD_GROUP_KEY, FOOD_GROUP);
         Frankfurtlinmod.LOGGER.info("Registering Item Groups for " + Frankfurtlinmod.MOD_ID);

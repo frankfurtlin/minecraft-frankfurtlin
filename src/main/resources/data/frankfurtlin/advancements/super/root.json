@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "netherite_ingot": {
+    "white_gold_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:netherite_ingot"
+              "frankfurtlin:white_gold_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:netherite_ingot"
+      "item": "frankfurtlin:white_gold_ingot"
     },
     "show_toast": false,
     "title": {
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "netherite_ingot"
+      "white_gold_ingot"
     ]
   ]
 }

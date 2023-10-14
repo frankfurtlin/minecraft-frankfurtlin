@@ -2,9 +2,14 @@ package com.frankfurtlin.frankfurtlinmod.items;
 
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
-import com.frankfurtlin.frankfurtlinmod.items.super_item.*;
+import com.frankfurtlin.frankfurtlinmod.items.usefulItems.BackPack;
+import com.frankfurtlin.frankfurtlinmod.items.usefulItems.CraftingTable;
+import com.frankfurtlin.frankfurtlinmod.items.usefulItems.EnderPack;
+import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldChestplate;
+import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldHoe;
+import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldIngot;
 import com.frankfurtlin.frankfurtlinmod.materials.ModToolMaterial;
-import com.frankfurtlin.frankfurtlinmod.materials.SuperArmorMaterial;
+import com.frankfurtlin.frankfurtlinmod.materials.WhiteGoldArmorMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -21,39 +26,53 @@ import net.minecraft.util.Rarity;
  */
 public class ModItems {
     // ----------------------------------------------------------------------------------------------------------------
-    // 原能盔甲材料
-    public static final ArmorMaterial SUPER_ARMOR_MATERIAL = new SuperArmorMaterial();
+    // 白金盔甲材料
+    public static final ArmorMaterial WHITE_GOLD_ARMOR_MATERIAL = new WhiteGoldArmorMaterial();
 
 
-    // 原能物质，可抗火
-    public static final Item SUPER_ITEM = registerItem("super_item",
-        new SuperItem(new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 原能头盔
-    public static final Item SUPER_HELMET = registerItem("super_helmet",
-        new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 原能胸甲
-    public static final Item SUPER_CHESTPLATE = registerItem("super_chestplate",
-        new SuperChestplate(SUPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 原能护腿
-    public static final Item SUPER_LEGGINGS = registerItem("super_leggings",
-        new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 原能战靴
-    public static final Item SUPER_BOOTS = registerItem("super_boots",
-        new ArmorItem(SUPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金锭，可抗火
+    public static final Item WHITE_GOLD_INGOT = registerItem("white_gold_ingot",
+        new WhiteGoldIngot(new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金战盔
+    public static final Item WHITE_GOLD_HELMET = registerItem("white_gold_helmet",
+        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金战甲
+    public static final Item WHITE_GOLD_CHESTPLATE = registerItem("white_gold_chestplate",
+        new WhiteGoldChestplate(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金护腿
+    public static final Item WHITE_GOLD_LEGGINGS = registerItem("white_gold_leggings",
+        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金战靴
+    public static final Item WHITE_GOLD_BOOTS = registerItem("white_gold_boots",
+        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
 
-    // 原能锄
-    public static final Item SUPER_HOE = registerItem("super_hoe",
-        new SuperHoe(ModToolMaterial.SUPER_ITEM, -3, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
 
-    // 原能末影箱，可右键打开
-    public static final Item SUPER_ENDER_PACK = registerItem("super_ender_pack",
-        new SuperEnderPack(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
-    // 原能背包,可右键打开
-    public static final Item SUPER_BACKPACK = registerItem("super_backpack",
-        new SuperBackPack(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
-    // 超级工作台,可右键打开
-    public static final Item SUPER_CRAFTING_TABLE = registerItem("super_crafting_table",
-        new SuperCraftingTable(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
+    // 白金剑
+    public static final Item WHITE_GOLD_SWORD = registerItem("white_gold_sword",
+        new SwordItem(ModToolMaterial.WHITE_GOLD, 3, -2.3f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 白金镐
+    public static final Item WHITE_GOLD_PICKAXE = registerItem("white_gold_pickaxe",
+        new PickaxeItem(ModToolMaterial.WHITE_GOLD, 1, -2.7f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 白金斧
+    public static final Item WHITE_GOLD_AXE = registerItem("white_gold_axe",
+        new AxeItem(ModToolMaterial.WHITE_GOLD, 5.0f, -2.8f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 白金铲
+    public static final Item WHITE_GOLD_SHOVEL= registerItem("white_gold_shovel",
+        new ShovelItem(ModToolMaterial.WHITE_GOLD, 1.5f, -3.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 白金锄
+    public static final Item WHITE_GOLD_HOE = registerItem("white_gold_hoe",
+        new WhiteGoldHoe(ModToolMaterial.WHITE_GOLD, -5, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+
+
+    // 末影背包，可右键打开
+    public static final Item SUPER_ENDER_PACK = registerItem("ender_pack",
+        new EnderPack(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
+    // 大容量背包,可右键打开
+    public static final Item SUPER_BACKPACK = registerItem("backpack",
+        new BackPack(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
+    // 手持工作台,可右键打开
+    public static final Item SUPER_CRAFTING_TABLE = registerItem("crafting_table",
+        new CraftingTable(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
 
 
     // ----------------------------------------------------------------------------------------------------------------

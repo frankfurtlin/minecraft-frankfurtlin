@@ -1,15 +1,19 @@
 {
-  "item.frankfurtlin.super_item": "super_item",
-  "item.frankfurtlin.super_helmet": "super_helmet",
-  "item.frankfurtlin.super_chestplate": "super_chestplate",
-  "item.frankfurtlin.super_leggings": "super_leggings",
-  "item.frankfurtlin.super_boots": "super_boots",
+  "item.frankfurtlin.white_gold_ingot": "white_gold_ingot",
+  "item.frankfurtlin.white_gold_block": "white_gold_block",
+  "item.frankfurtlin.white_gold_helmet": "white_gold_helmet",
+  "item.frankfurtlin.white_gold_chestplate": "white_gold_chestplate",
+  "item.frankfurtlin.white_gold_leggings": "white_gold_leggings",
+  "item.frankfurtlin.white_gold_boots": "white_gold_boots",
+  "item.frankfurtlin.white_gold_sword": "white_gold_sword",
+  "item.frankfurtlin.white_gold_axe": "white_gold_axe",
+  "item.frankfurtlin.white_gold_hoe": "white_gold_hoe",
+  "item.frankfurtlin.white_gold_pickaxe": "white_gold_pickaxe",
+  "item.frankfurtlin.white_gold_shovel": "white_gold_shovel",
 
-  "item.frankfurtlin.super_hoe": "super_hoe",
-
-  "item.frankfurtlin.super_ender_pack": "super_ender_pack",
-  "item.frankfurtlin.super_backpack": "super_backpack",
-  "item.frankfurtlin.super_crafting_table": "super_crafting_table",
+  "item.frankfurtlin.ender_pack": "ender_pack",
+  "item.frankfurtlin.backpack": "backpack",
+  "item.frankfurtlin.crafting_table": "crafting_table",
 
   "item.frankfurtlin.glow_stick": "glow_stick",
   "block.frankfurtlin.glow_stick": "glow_stick",
@@ -49,7 +53,7 @@
   "item.frankfurtlin.shrimp": "shrimp",
   "item.frankfurtlin.fried_shrimp": "fried_shrimp",
 
-  "item.frankfurtlin.super_item.tooltip": "super_item",
+  "item.frankfurtlin.white_gold_ingot.tooltip": "white_gold_ingot",
   "item.frankfurtlin.strawberry_juice.tooltip": "LUCK",
   "item.frankfurtlin.coconut_juice.tooltip": "INVISIBILITY",
   "item.frankfurtlin.grape_juice.tooltip": "NIGHT_VISION",
@@ -61,22 +65,23 @@
   "enchantment.frankfurtlin.auto_smelt": "Smelting Touch",
   "enchantment.frankfurtlin.auto_smelt.desc": "Smelts blocks you mine",
 
-  "frankfurtlin.super_item_group": "super_item",
+  "frankfurtlin.super_group": "super",
   "frankfurtlin.addition_item_group": "addition_item",
   "frankfurtlin.food_group": "food",
 
   "advancements.frankfurtlin.super.root.title": "super",
   "advancements.frankfurtlin.super.root.description": "super",
-  "advancements.frankfurtlin.super.super_item.title": "super item",
-  "advancements.frankfurtlin.super.super_item.description": "get super item",
-  "advancements.frankfurtlin.super.super_armor.title": "super armor",
-  "advancements.frankfurtlin.super.super_armor.description": "get all super armor",
-  "advancements.frankfurtlin.super.super_backpack.title": "super backpack",
-  "advancements.frankfurtlin.super.super_backpack.description": "get super backpack",
-  "advancements.frankfurtlin.super.super_ender_pack.title": "super super ender pack",
-  "advancements.frankfurtlin.super.super_ender_pack.description": "get super ender pack",
-  "advancements.frankfurtlin.super.super_crafting_table.title": "super craft table",
-  "advancements.frankfurtlin.super.super_crafting_table.description": "get super craft table",
+  "advancements.frankfurtlin.super.white_gold_ingot.title": "white gold ingot",
+  "advancements.frankfurtlin.super.white_gold_ingot.description": "get white gold ingot",
+  "advancements.frankfurtlin.super.white_gold_armor.title": "white gold armor",
+  "advancements.frankfurtlin.super.white_gold_armor.description": "get all white gold armor",
+
+  "advancements.frankfurtlin.super.backpack.title": "backpack",
+  "advancements.frankfurtlin.super.backpack.description": "get backpack",
+  "advancements.frankfurtlin.super.ender_pack.title": "super ender pack",
+  "advancements.frankfurtlin.super.ender_pack.description": "get ender pack",
+  "advancements.frankfurtlin.super.crafting_table.title": "craft table",
+  "advancements.frankfurtlin.super.crafting_table.description": "get craft table",
 
   "advancements.frankfurtlin.foods.root.title": "foods",
   "advancements.frankfurtlin.foods.root.description": "foods",
@@ -93,7 +98,6 @@
 
   "key.categories.frankfurtlin": "frankfurtlin",
   "key.frankfurtlin.gamma_toggle": "gamma toggle",
-
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",

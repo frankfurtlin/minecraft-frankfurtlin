@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:ender_pack"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "frankfurtlin:super/white_gold_ingot",
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.ender_pack.description"
+    },
+    "icon": {
+      "item": "frankfurtlin:ender_pack"
+    },
+    "title": {
+      "translate": "advancements.frankfurtlin.super.ender_pack.title"
+    }
+  }
+}

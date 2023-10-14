@@ -34,27 +34,27 @@ public abstract class PlayerEntityMixin extends LivingEntity {
      * @param ci CallbackInfo
      */
     @Inject(method = "updateTurtleHelmet()V", at = @At("TAIL"))
-    public void updateSuperArmorInject(CallbackInfo ci) {
+    public void updateWhiteGoldArmorInject(CallbackInfo ci) {
 
         ItemStack itemStackHelmet = this.getEquippedStack(EquipmentSlot.HEAD);
-        if(itemStackHelmet.isOf(ModItems.SUPER_HELMET)){
+        if(itemStackHelmet.isOf(ModItems.WHITE_GOLD_HELMET)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 200, 0, false, false, false));
         }
 
         ItemStack itemStackChestplate = this.getEquippedStack(EquipmentSlot.CHEST);
         ItemStack itemStackLeggings = this.getEquippedStack(EquipmentSlot.LEGS);
-        if(itemStackChestplate.isOf(ModItems.SUPER_CHESTPLATE) || itemStackLeggings.isOf(ModItems.SUPER_LEGGINGS)){
+        if(itemStackChestplate.isOf(ModItems.WHITE_GOLD_CHESTPLATE) || itemStackLeggings.isOf(ModItems.WHITE_GOLD_LEGGINGS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, false));
         }
 
         ItemStack itemStackBoots = this.getEquippedStack(EquipmentSlot.FEET);
-        if(itemStackBoots.isOf(ModItems.SUPER_BOOTS)){
+        if(itemStackBoots.isOf(ModItems.WHITE_GOLD_BOOTS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 0, false, false, false));
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false, false));
         }
 
-        if(itemStackHelmet.isOf(ModItems.SUPER_HELMET) || itemStackChestplate.isOf(ModItems.SUPER_CHESTPLATE) ||
-                itemStackLeggings.isOf(ModItems.SUPER_LEGGINGS) || itemStackBoots.isOf(ModItems.SUPER_BOOTS)){
+        if(itemStackHelmet.isOf(ModItems.WHITE_GOLD_HELMET) || itemStackChestplate.isOf(ModItems.WHITE_GOLD_CHESTPLATE) ||
+                itemStackLeggings.isOf(ModItems.WHITE_GOLD_LEGGINGS) || itemStackBoots.isOf(ModItems.WHITE_GOLD_BOOTS)){
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 0, false, false, false));
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 200, 0, false, false, false));
         }

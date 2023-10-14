@@ -2,7 +2,7 @@ package com.frankfurtlin.frankfurtlinmod;
 
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.commands.RegisterCommands;
-import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantment;
+import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import com.frankfurtlin.frankfurtlinmod.entity.ModEntities;
 import com.frankfurtlin.frankfurtlinmod.items.ModItemGroups;
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
@@ -24,7 +24,7 @@ public class Frankfurtlinmod implements ModInitializer{
 
         ModBlocks.registerModBlocks();
 
-        ModEnchantment.registerModEnchantments();
+        ModEnchantments.registerModEnchantments();
 
         ModEntities.registerModEntities();
 

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "frankfurtlin:blocks/white_gold_block",
+    "particle": "frankfurtlin:blocks/white_gold_block"
+  }
+}

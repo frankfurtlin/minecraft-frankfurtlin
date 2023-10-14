@@ -35,7 +35,7 @@ public class ModConfig implements ConfigData {
     @Comment("If true, you can open gui in nether portal")
     public boolean canOpenGuiInPortal = false;
     @Comment("If true, replace wander trade")
-    public boolean replaceWanderTrade = true;
+    public boolean replaceWanderTrade = false;
 
 
     /**
