@@ -9,6 +9,7 @@
     "ExperienceBottleEntityMixin",
     "ItemMixin",
     "LivingEntityMixin",
+    "OreConfiguredFeaturesMixin",
     "PlayerEntityMixin",
     "WanderingTraderEntityMixin",
     "enchantment.AnvilScreenHandlerMixin",
