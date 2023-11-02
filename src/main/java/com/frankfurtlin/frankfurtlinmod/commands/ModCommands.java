@@ -7,8 +7,8 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
  * @version 1.0
  * @date 2023/4/17 9:28
  */
-public class RegisterCommands {
-    public static void register(){
+public class ModCommands {
+    public static void registerCommands(){
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
                 WhereCommand.register(dispatcher));
     }

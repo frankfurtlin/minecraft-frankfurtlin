@@ -1,6 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.items;
 
 import com.frankfurtlin.frankfurtlinmod.Frankfurtlinmod;
+import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -31,17 +32,22 @@ public class ModItemGroups {
         .icon(() -> new ItemStack(ModItems.WHITE_GOLD_INGOT))
         .entries((context, entries) -> {
             entries.add(ModItems.WHITE_GOLD_INGOT);
+            entries.add(ModBlocks.WHITE_GOLD_BLOCK);
+
+            // 白金盔甲
             entries.add(ModItems.WHITE_GOLD_HELMET);
             entries.add(ModItems.WHITE_GOLD_CHESTPLATE);
             entries.add(ModItems.WHITE_GOLD_LEGGINGS);
             entries.add(ModItems.WHITE_GOLD_BOOTS);
 
+            // 白金工具
             entries.add(ModItems.WHITE_GOLD_SWORD);
             entries.add(ModItems.WHITE_GOLD_PICKAXE);
             entries.add(ModItems.WHITE_GOLD_AXE);
             entries.add(ModItems.WHITE_GOLD_SHOVEL);
             entries.add(ModItems.WHITE_GOLD_HOE);
 
+            // 实用物品
             entries.add(ModItems.SUPER_ENDER_PACK);
             entries.add(ModItems.SUPER_BACKPACK);
             entries.add(ModItems.SUPER_CRAFTING_TABLE);
@@ -58,6 +64,7 @@ public class ModItemGroups {
         .displayName(Text.translatable("frankfurtlin.food_group"))
         .icon(() -> new ItemStack(ModItems.STRAWBERRY))
         .entries((context, entries) -> {
+            // 农作物
             entries.add(ModItems.STRAWBERRY);
             entries.add(ModItems.BLACKBERRY);
             entries.add(ModItems.BLUEBERRY);
@@ -74,6 +81,7 @@ public class ModItemGroups {
             entries.add(ModItems.PINEAPPLE);
             entries.add(ModItems.STARFRUIT);
 
+            // 饮料
             entries.add(ModItems.STRAWBERRY_JUICE);
             entries.add(ModItems.COCONUT_JUICE);
             entries.add(ModItems.GRAPE_JUICE);
@@ -83,6 +91,7 @@ public class ModItemGroups {
 
             entries.add(ModItems.BEER);
 
+            // 虾蟹
             entries.add(ModItems.SHRIMP);
             entries.add(ModItems.FRIED_SHRIMP);
             entries.add(ModItems.CRAB);

@@ -26,6 +26,7 @@ public class FrankfurtlinmodClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KIWI_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINEAPPLE_CROP, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_GOLD_BLOCK, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOW_STICK_BLOCK, RenderLayer.getCutout());
 
         EntityRendererRegistry.register(ModEntities.GLOW_STICK_ENTITY, FlyingItemEntityRenderer::new);

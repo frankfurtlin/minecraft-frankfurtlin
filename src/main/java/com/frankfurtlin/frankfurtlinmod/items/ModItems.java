@@ -33,6 +33,11 @@ public class ModItems {
     // 白金锭，可抗火
     public static final Item WHITE_GOLD_INGOT = registerItem("white_gold_ingot",
         new WhiteGoldIngot(new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 白金块
+    /*public static final Item WHITE_GOLD_BLOCK = registerItem("white_gold_block",
+        new AliasedBlockItem(ModBlocks.WHITE_GOLD_BLOCK, new Item.Settings().rarity(Rarity.EPIC).fireproof()));*/
+
+
     // 白金战盔
     public static final Item WHITE_GOLD_HELMET = registerItem("white_gold_helmet",
         new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
@@ -77,11 +82,9 @@ public class ModItems {
 
     // ----------------------------------------------------------------------------------------------------------------
 
+    // 荧光棒
     public static final Item GLOW_STICK = registerItem("glow_stick",
         new GlowStickItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
-
-
-
 
 
     // ----------------------------------------------------------------------------------------------------------------

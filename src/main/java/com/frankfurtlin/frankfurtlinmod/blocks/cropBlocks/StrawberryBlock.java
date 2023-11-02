@@ -11,6 +11,7 @@ import net.minecraft.world.BlockView;
  * @author Frankfurtlin
  * @version 1.0
  * @date 2023/9/17 13:36
+ * 草莓作物
  */
 public class StrawberryBlock extends CropBlock {
     private static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{

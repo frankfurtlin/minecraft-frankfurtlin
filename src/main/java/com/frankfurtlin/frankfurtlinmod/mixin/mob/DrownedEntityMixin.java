@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+// 溺尸 mixin
 @Mixin(DrownedEntity.class)
 public class DrownedEntityMixin extends MobEntity {
 

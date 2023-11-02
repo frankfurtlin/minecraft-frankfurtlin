@@ -17,6 +17,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
+/**
+ * 白金锭，可破坏基岩
+ */
+
 public class WhiteGoldIngot extends Item {
     public WhiteGoldIngot(Settings settings) {
         super(settings);

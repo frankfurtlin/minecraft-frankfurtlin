@@ -19,6 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * @author Frankfurtlin
  * @version 1.0
  * @date 2023/10/6 22:32
+ * 流浪商人 mixin
  */
 @Mixin(WanderingTraderEntity.class)
 public abstract class WanderingTraderEntityMixin extends MerchantEntity {

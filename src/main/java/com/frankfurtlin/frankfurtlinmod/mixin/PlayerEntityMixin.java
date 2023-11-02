@@ -27,10 +27,10 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     /**
      * 每随机刻检测玩家装备盔甲并给予相应的效果
-     * 原能头盔 潮涌核心 抗火 荧光
-     * 原能胸甲 抗性提升 抗火 荧光
-     * 原能护腿 抗性提升 抗火 荧光
-     * 原能战靴 跳跃提升 速度提升 抗火 荧光
+     * 白金头盔 潮涌核心 抗火 荧光
+     * 白金胸甲 抗性提升 抗火 荧光
+     * 白金护腿 抗性提升 抗火 荧光
+     * 白金战靴 跳跃提升 速度提升 抗火 荧光
      * @param ci CallbackInfo
      */
     @Inject(method = "updateTurtleHelmet()V", at = @At("TAIL"))

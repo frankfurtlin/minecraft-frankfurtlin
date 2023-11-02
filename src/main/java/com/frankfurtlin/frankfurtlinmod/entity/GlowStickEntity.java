@@ -15,6 +15,9 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+/**
+ * 荧光棒实体
+ */
 public class GlowStickEntity extends ThrownItemEntity{
     public GlowStickEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);

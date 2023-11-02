@@ -5,6 +5,9 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 
+/**
+ * 自动熔炼附魔（镐子）
+ */
 public class AutoSmeltEnchantment extends Enchantment {
     protected AutoSmeltEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND});

@@ -18,6 +18,7 @@ import java.util.List;
  * @author Frankfurtlin
  * @version 1.0
  * @date 2023/10/16 20:31
+ * 修改矿物生成概率
  */
 @Mixin(OreConfiguredFeatures.class)
 public class OreConfiguredFeaturesMixin {
