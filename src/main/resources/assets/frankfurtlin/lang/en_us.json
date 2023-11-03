@@ -120,6 +120,9 @@
   "text.autoconfig.frankfurtlin.option.minSpawnDelay": "set the min mob spawner delay second(1-20)",
   "text.autoconfig.frankfurtlin.option.maxSpawnDelay": "set the max mob spawner delay second(4-60)",
   "text.autoconfig.frankfurtlin.option.spawnCount": "set the mob spawner count(1-8)",
+  "text.autoconfig.frankfurtlin.option.maxNearbyEntities": "set the mob max nearby count(1-12)",
+  "text.autoconfig.frankfurtlin.option.needPlayerNearby": "If false, player not in nearby can spawn mob",
+  "text.autoconfig.frankfurtlin.option.canSpawnerUseOnEntity": "If true, mob spawner can use on entity",
 
   "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize": "zombified piglin don't drop golden sword",
   "text.autoconfig.frankfurtlin.option.witherSkeletonLootTableOptimize": "wither skeleton don't drop stone sword",

@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 // 刷怪笼逻辑 mixin
 @Mixin(MobSpawnerLogic.class)
@@ -33,7 +34,20 @@ public class MobSpawnerLogicMixin {
             this.minSpawnDelay = 20 * ModConfig.INSTANCE.minSpawnDelay;
             this.maxSpawnDelay = 20 * ModConfig.INSTANCE.maxSpawnDelay;
             this.spawnCount = ModConfig.INSTANCE.spawnCount;
-            this.maxNearbyEntities = ModConfig.INSTANCE.spawnCount * 3 / 2;
+            this.maxNearbyEntities = ModConfig.INSTANCE.maxNearbyEntities;
+        }
+    }
+
+    /**
+     * 刷怪笼是否需要玩家在附近
+     * @param world world
+     * @param pos pos
+     * @param cir cir
+     */
+    @Inject(method = "isPlayerInRange", at = @At("HEAD"), cancellable = true)
+    private void changeNeedPlayerInNearby(World world, BlockPos pos, CallbackInfoReturnable<Boolean> cir){
+        if(!ModConfig.INSTANCE.needPlayerNearby){
+            cir.setReturnValue(true);
         }
     }
 }

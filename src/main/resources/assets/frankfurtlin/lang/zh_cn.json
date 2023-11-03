@@ -120,6 +120,9 @@
   "text.autoconfig.frankfurtlin.option.minSpawnDelay": "刷怪笼最小生成间隔(1-20秒)",
   "text.autoconfig.frankfurtlin.option.maxSpawnDelay": "刷怪笼最大生成间隔(4-60秒)",
   "text.autoconfig.frankfurtlin.option.spawnCount": "刷怪笼每次生成数量(1-8个)",
+  "text.autoconfig.frankfurtlin.option.maxNearbyEntities": "刷怪笼附近最大的生物数量(1-12)",
+  "text.autoconfig.frankfurtlin.option.needPlayerNearby": "刷怪笼是否需要玩家在附近",
+  "text.autoconfig.frankfurtlin.option.canSpawnerUseOnEntity": "刷怪笼是否可以右键实体更改NBT标签",
 
   "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize": "僵尸猪灵不掉落金剑",
   "text.autoconfig.frankfurtlin.option.witherSkeletonLootTableOptimize": "凋零骷髅不掉落石剑",

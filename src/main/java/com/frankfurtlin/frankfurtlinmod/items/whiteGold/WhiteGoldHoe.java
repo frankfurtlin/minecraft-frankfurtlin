@@ -73,59 +73,67 @@ public class WhiteGoldHoe extends HoeItem {
             Block block = blockState.getBlock();
             BlockState defaultState = block.getDefaultState();
 
-            if(block instanceof Fertilizable){
-                if(!((Fertilizable) block).isFertilizable(world, blockPos, blockState)){
-                    if(block instanceof CropBlock){
-                        world.breakBlock(blockPos, true);
-                        world.setBlockState(blockPos, defaultState);
-                    }
-                    else if (block instanceof CaveVinesBodyBlock || block instanceof CaveVinesHeadBlock) {
-                        if (CaveVines.hasBerries(blockState)) {
-                            CaveVines.pickBerries(user, blockState, world, blockPos);
-                        }
-                    }
-                    else if (block instanceof CocoaBlock) {
-                        world.breakBlock(blockPos, true);
-                        world.setBlockState(blockPos, defaultState);
-                    }
-                    else if (block instanceof BambooBlock) {
-                        Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
-                        if (!(floorBlock instanceof BambooBlock) && !(floorBlock instanceof BambooSaplingBlock) && floorBlock != Blocks.AIR) {
-                            world.breakBlock(blockPos.up(), true);
-                            world.setBlockState(blockPos, Blocks.BAMBOO_SAPLING.getDefaultState());
-                        }
-                    }
-                } else if (block instanceof MelonBlock || block instanceof PumpkinBlock) {
+            if(block instanceof Fertilizable && !((Fertilizable) block).isFertilizable(world, blockPos, blockState)){
+                if(block instanceof CropBlock){
                     world.breakBlock(blockPos, true);
-                } else if (block instanceof SugarCaneBlock) {
-                    Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
-                    if (!(floorBlock instanceof SugarCaneBlock)) {
-                        world.breakBlock(blockPos.up(), true);
+                    world.setBlockState(blockPos, defaultState);
+                }
+                else if (block instanceof SweetBerryBushBlock ||
+                    block instanceof CaveVinesBodyBlock ||
+                    block instanceof CaveVinesHeadBlock) {
+                    if (CaveVines.hasBerries(blockState)) {
+                        CaveVines.pickBerries(user, blockState, world, blockPos);
                     }
-                } else if (block instanceof CactusBlock) {
+                }
+                else if (block instanceof CocoaBlock) {
+                    world.breakBlock(blockPos, true);
+                    world.setBlockState(blockPos, defaultState);
+                }
+                else if (block instanceof BambooBlock) {
                     Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
-                    if (!(floorBlock instanceof CactusBlock)) {
+                    if (!(floorBlock instanceof BambooBlock) && !(floorBlock instanceof BambooSaplingBlock) && floorBlock != Blocks.AIR) {
                         world.breakBlock(blockPos.up(), true);
+                        world.setBlockState(blockPos, Blocks.BAMBOO_SAPLING.getDefaultState());
                     }
-                } else if (block instanceof ChorusPlantBlock) {
-                    BlockState floor = world.getBlockState(blockPos.down());
-                    if (floor.getBlock() == Blocks.END_STONE) {
-                        AtomicBoolean foundMatureFlower = new AtomicBoolean(false);
-                        BlockPos.iterateOutwards(pos, 5, 50, 5).forEach(chorusPos -> {
-                            BlockState chorusBlockState = world.getBlockState(chorusPos);
-                            Block chorusBlock = chorusBlockState.getBlock();
-                            if (chorusBlock instanceof ChorusFlowerBlock) {
-                                if (chorusBlockState.get(ChorusFlowerBlock.AGE) >= 3) {
-                                    foundMatureFlower.set(true);
-                                    BlockHitResult hitResult = new BlockHitResult(new Box(chorusPos).getCenter(), Direction.WEST, chorusPos, false);
-                                    chorusBlockState.onProjectileHit(world, blockState, hitResult, EntityType.SNOWBALL.create(world));
-                                }
+                }
+                else if (block instanceof KelpPlantBlock) {
+                    Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
+                    if (!(floorBlock instanceof KelpBlock) && !(floorBlock instanceof KelpPlantBlock) && floorBlock != Blocks.WATER) {
+                        world.breakBlock(blockPos.up(), true);
+                        world.setBlockState(blockPos, Blocks.KELP.getDefaultState());
+                    }
+                }
+            }
+            else if (block instanceof MelonBlock || block instanceof PumpkinBlock) {
+                world.breakBlock(blockPos, true);
+            } else if (block instanceof SugarCaneBlock) {
+                Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
+                if (!(floorBlock instanceof SugarCaneBlock)) {
+                    world.breakBlock(blockPos.up(), true);
+                }
+            } else if (block instanceof CactusBlock) {
+                Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
+                if (!(floorBlock instanceof CactusBlock)) {
+                    world.breakBlock(blockPos.up(), true);
+                }
+            } else if (block instanceof ChorusPlantBlock) {
+                BlockState floor = world.getBlockState(blockPos.down());
+                if (floor.getBlock() == Blocks.END_STONE) {
+                    AtomicBoolean foundMatureFlower = new AtomicBoolean(false);
+                    BlockPos.iterateOutwards(pos, 5, 50, 5).forEach(chorusPos -> {
+                        BlockState chorusBlockState = world.getBlockState(chorusPos);
+                        Block chorusBlock = chorusBlockState.getBlock();
+                        if (chorusBlock instanceof ChorusFlowerBlock) {
+                            if (chorusBlockState.get(ChorusFlowerBlock.AGE) >= 3) {
+                                foundMatureFlower.set(true);
+                                BlockHitResult hitResult = new BlockHitResult(new Box(chorusPos).getCenter(), Direction.WEST, chorusPos, false);
+                                chorusBlockState.onProjectileHit(world, blockState, hitResult, EntityType.SNOWBALL.create(world));
                             }
-                        });
-
-                        if (foundMatureFlower.get()) {
-                            world.setBlockState(blockPos, Blocks.CHORUS_FLOWER.getDefaultState());
                         }
+                    });
+
+                    if (foundMatureFlower.get()) {
+                        world.setBlockState(blockPos, Blocks.CHORUS_FLOWER.getDefaultState());
                     }
                 }
             }

@@ -85,6 +85,13 @@ public class ModConfig implements ConfigData {
     @Comment("set the mob spawner count")
     @ConfigEntry.BoundedDiscrete(min = 1, max = 8)
     public int spawnCount = 4;
+    @Comment("set the mob max nearby count")
+    @ConfigEntry.BoundedDiscrete(min = 1, max = 12)
+    public int maxNearbyEntities = 6;
+    @Comment("If false, player not in nearby can spawn mob")
+    public boolean needPlayerNearby = true;
+    @Comment("If true, mob spawner can use on entity")
+    public boolean canSpawnerUseOnEntity = false;
 
     /**
      * 僵尸猪灵、凋零骷髅武器掉落优化
