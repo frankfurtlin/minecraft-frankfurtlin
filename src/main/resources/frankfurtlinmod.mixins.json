@@ -6,6 +6,7 @@
   "mixins": [
     "BlockItemMixin",
     "BlockMixin",
+    "BlocksMixin",
     "ExperienceBottleEntityMixin",
     "ItemMixin",
     "LivingEntityMixin",
