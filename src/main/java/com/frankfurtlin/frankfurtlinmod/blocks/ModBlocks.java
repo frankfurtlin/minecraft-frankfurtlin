@@ -24,7 +24,185 @@ public class ModBlocks {
     public static final Block WHITE_GOLD_BLOCK = registerBlock("white_gold_block",
         new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    // 煤炭簇
+    public static final Block BUDDING_COAL = registerBlock("budding_coal",
+        new BuddingOreBlock("coal", 2, AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block COAL_CLUSTER = registerBlock("coal_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.STONE_GRAY).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_COAL_BUD = registerBlock("large_coal_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(COAL_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_COAL_BUD = registerBlock("medium_coal_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(COAL_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_COAL_BUD = registerBlock("small_coal_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(COAL_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
 
+    // 铁簇
+    public static final Block BUDDING_IRON = registerBlock("budding_iron",
+        new BuddingOreBlock("iron", 3, AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block IRON_CLUSTER = registerBlock("iron_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.IRON_GRAY).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_IRON_BUD = registerBlock("large_iron_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(IRON_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_IRON_BUD = registerBlock("medium_iron_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(IRON_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_IRON_BUD = registerBlock("small_iron_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(IRON_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 铜簇
+    public static final Block BUDDING_COPPER = registerBlock("budding_copper",
+        new BuddingOreBlock("copper", 3, AbstractBlock.Settings.create().mapColor(MapColor.ORANGE)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block COPPER_CLUSTER = registerBlock("copper_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.ORANGE).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_COPPER_BUD = registerBlock("large_copper_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(COPPER_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_COPPER_BUD = registerBlock("medium_copper_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(COPPER_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_COPPER_BUD = registerBlock("small_copper_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(COPPER_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 金簇
+    public static final Block BUDDING_GOLD = registerBlock("budding_gold",
+        new BuddingOreBlock("gold", 3, AbstractBlock.Settings.create().mapColor(MapColor.GOLD)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block GOLD_CLUSTER = registerBlock("gold_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.GOLD).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_GOLD_BUD = registerBlock("large_gold_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(GOLD_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_GOLD_BUD = registerBlock("medium_gold_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(GOLD_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_GOLD_BUD = registerBlock("small_gold_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(GOLD_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 青金石簇
+    public static final Block BUDDING_LAPIS = registerBlock("budding_lapis",
+        new BuddingOreBlock("lapis", 3, AbstractBlock.Settings.create().mapColor(MapColor.LAPIS_BLUE)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block LAPIS_CLUSTER = registerBlock("lapis_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.LAPIS_BLUE).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_LAPIS_BUD = registerBlock("large_lapis_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(LAPIS_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_LAPIS_BUD = registerBlock("medium_lapis_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(LAPIS_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_LAPIS_BUD = registerBlock("small_lapis_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(LAPIS_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 红石簇
+    public static final Block BUDDING_REDSTONE = registerBlock("budding_redstone",
+        new BuddingOreBlock("redstone", 3, AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_RED)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block REDSTONE_CLUSTER = registerBlock("redstone_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.BRIGHT_RED).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_REDSTONE_BUD = registerBlock("large_redstone_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(REDSTONE_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_REDSTONE_BUD = registerBlock("medium_redstone_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(REDSTONE_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_REDSTONE_BUD = registerBlock("small_redstone_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(REDSTONE_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 钻石簇
+    public static final Block BUDDING_DIAMOND = registerBlock("budding_diamond",
+        new BuddingOreBlock("diamond", 4, AbstractBlock.Settings.create().mapColor(MapColor.DIAMOND_BLUE)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block DIAMOND_CLUSTER = registerBlock("diamond_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.DIAMOND_BLUE).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_DIAMOND_BUD = registerBlock("large_diamond_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(DIAMOND_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_DIAMOND_BUD = registerBlock("medium_diamond_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(DIAMOND_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_DIAMOND_BUD = registerBlock("small_diamond_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(DIAMOND_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 绿宝石簇
+    public static final Block BUDDING_EMERALD = registerBlock("budding_emerald",
+        new BuddingOreBlock("emerald", 4, AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block EMERALD_CLUSTER = registerBlock("emerald_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.EMERALD_GREEN).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_EMERALD_BUD = registerBlock("large_emerald_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(EMERALD_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_EMERALD_BUD = registerBlock("medium_emerald_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(EMERALD_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_EMERALD_BUD = registerBlock("small_emerald_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(EMERALD_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 石英簇
+    public static final Block BUDDING_QUARTZ = registerBlock("budding_quartz",
+        new BuddingOreBlock("quartz", 2, AbstractBlock.Settings.create().mapColor(MapColor.OFF_WHITE)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block QUARTZ_CLUSTER = registerBlock("quartz_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.OFF_WHITE).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_QUARTZ_BUD = registerBlock("large_quartz_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(QUARTZ_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_QUARTZ_BUD = registerBlock("medium_quartz_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(QUARTZ_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_QUARTZ_BUD = registerBlock("small_quartz_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(QUARTZ_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 远古残骸簇
+    public static final Block BUDDING_NETHERITE = registerBlock("budding_netherite",
+        new BuddingOreBlock("netherite", 4, AbstractBlock.Settings.create().mapColor(MapColor.BLACK)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block NETHERITE_CLUSTER = registerBlock("netherite_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.BLACK).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_NETHERITE_BUD = registerBlock("large_netherite_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(NETHERITE_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_NETHERITE_BUD = registerBlock("medium_netherite_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(NETHERITE_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_NETHERITE_BUD = registerBlock("small_netherite_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(NETHERITE_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
 
     // ----------------------------------------------------------------------------------------------------------------
 
@@ -73,7 +251,7 @@ public class ModBlocks {
 
 
     private static Block registerBlock(String name, Block block) {
-        if(!(block instanceof GlowStickBlock)){
+        if(!(block instanceof GlowStickBlock) && !(block instanceof CropBlock)){
             registerBlockItem(name, block);
         }
         return Registry.register(Registries.BLOCK, new Identifier(Frankfurtlinmod.MOD_ID, name), block);

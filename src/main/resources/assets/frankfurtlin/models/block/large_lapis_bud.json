@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "frankfurtlin:block/large_lapis_bud"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "frankfurtlin:block/iron_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "frankfurtlin:block/iron_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "frankfurtlin:block/iron_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "frankfurtlin:block/iron_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "frankfurtlin:block/iron_cluster"
+    },
+    "facing=west": {
+      "model": "frankfurtlin:block/iron_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

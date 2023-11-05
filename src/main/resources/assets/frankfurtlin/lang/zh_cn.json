@@ -11,6 +11,67 @@
   "item.frankfurtlin.white_gold_pickaxe": "白金掘镐",
   "item.frankfurtlin.white_gold_shovel": "白金战铲",
 
+  "block.frankfurtlin.budding_coal": "煤炭母岩",
+  "block.frankfurtlin.coal_cluster": "煤炭簇",
+  "block.frankfurtlin.small_coal_bud": "小型煤炭簇",
+  "block.frankfurtlin.medium_coal_bud": "中型煤炭簇",
+  "block.frankfurtlin.large_coal_bud": "大型煤炭簇",
+
+  "block.frankfurtlin.budding_iron": "铁矿母岩",
+  "block.frankfurtlin.iron_cluster": "铁矿簇",
+  "block.frankfurtlin.small_iron_bud": "小型铁矿簇",
+  "block.frankfurtlin.medium_iron_bud": "中型铁矿簇",
+  "block.frankfurtlin.large_iron_bud": "大型铁矿簇",
+
+  "block.frankfurtlin.budding_copper": "铜矿母岩",
+  "block.frankfurtlin.copper_cluster": "铜矿簇",
+  "block.frankfurtlin.small_copper_bud": "小型铜矿簇",
+  "block.frankfurtlin.medium_copper_bud": "中型铜矿簇",
+  "block.frankfurtlin.large_copper_bud": "大型铜矿簇",
+
+  "block.frankfurtlin.budding_gold": "金矿母岩",
+  "block.frankfurtlin.gold_cluster": "金矿簇",
+  "block.frankfurtlin.small_gold_bud": "小型金矿簇",
+  "block.frankfurtlin.medium_gold_bud": "中型金矿簇",
+  "block.frankfurtlin.large_gold_bud": "大型金矿簇",
+
+  "block.frankfurtlin.budding_lapis": "青金石母岩",
+  "block.frankfurtlin.lapis_cluster": "青金石簇",
+  "block.frankfurtlin.small_lapis_bud": "小型青金石簇",
+  "block.frankfurtlin.medium_lapis_bud": "中型青金石簇",
+  "block.frankfurtlin.large_lapis_bud": "大型青金石簇",
+
+  "block.frankfurtlin.budding_emerald": "绿宝石母岩",
+  "block.frankfurtlin.emerald_cluster": "绿宝石簇",
+  "block.frankfurtlin.small_emerald_bud": "小型绿宝石簇",
+  "block.frankfurtlin.medium_emerald_bud": "中型绿宝石簇",
+  "block.frankfurtlin.large_emerald_bud": "大型绿宝石簇",
+
+  "block.frankfurtlin.budding_diamond": "钻石母岩",
+  "block.frankfurtlin.diamond_cluster": "钻石簇",
+  "block.frankfurtlin.small_diamond_bud": "小型钻石簇",
+  "block.frankfurtlin.medium_diamond_bud": "中型钻石簇",
+  "block.frankfurtlin.large_diamond_bud": "大型钻石簇",
+
+  "block.frankfurtlin.budding_redstone": "红石母岩",
+  "block.frankfurtlin.redstone_cluster": "红石簇",
+  "block.frankfurtlin.small_redstone_bud": "小型红石簇",
+  "block.frankfurtlin.medium_redstone_bud": "中型红石簇",
+  "block.frankfurtlin.large_redstone_bud": "大型红石簇",
+
+  "block.frankfurtlin.budding_quartz": "石英母岩",
+  "block.frankfurtlin.quartz_cluster": "石英簇",
+  "block.frankfurtlin.small_quartz_bud": "小型石英簇",
+  "block.frankfurtlin.medium_quartz_bud": "中型石英簇",
+  "block.frankfurtlin.large_quartz_bud": "大型石英簇",
+
+  "block.frankfurtlin.budding_netherite": "远古残骸母岩",
+  "block.frankfurtlin.netherite_cluster": "远古残骸簇",
+  "block.frankfurtlin.small_netherite_bud": "小型远古残骸簇",
+  "block.frankfurtlin.medium_netherite_bud": "中型远古残骸簇",
+  "block.frankfurtlin.large_netherite_bud": "大型远古残骸簇",
+
+
   "item.frankfurtlin.ender_pack": "末影背包",
   "item.frankfurtlin.backpack": "背包",
   "item.frankfurtlin.crafting_table": "手持工作台",

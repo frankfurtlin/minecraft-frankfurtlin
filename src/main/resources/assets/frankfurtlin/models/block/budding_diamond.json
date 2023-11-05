@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "frankfurtlin:block/budding_diamond"
+  }
+}
