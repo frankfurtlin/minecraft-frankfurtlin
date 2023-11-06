@@ -71,6 +71,17 @@
   "block.frankfurtlin.medium_netherite_bud": "medium_netherite_bud",
   "block.frankfurtlin.large_netherite_bud": "large_netherite_bud",
 
+  "block.frankfurtlin.coal_cane": "coal_cane",
+  "block.frankfurtlin.iron_cane": "iron_cane",
+  "block.frankfurtlin.copper_cane": "copper_cane",
+  "block.frankfurtlin.gold_cane": "gold_cane",
+  "block.frankfurtlin.lapis_cane": "lapis_cane",
+  "block.frankfurtlin.emerald_cane": "emerald_cane",
+  "block.frankfurtlin.diamond_cane": "diamond_cane",
+  "block.frankfurtlin.redstone_cane": "redstone_cane",
+  "block.frankfurtlin.quartz_cane": "quartz_cane",
+  "block.frankfurtlin.netherite_cane": "netherite_cane",
+
   "item.frankfurtlin.ender_pack": "ender_pack",
   "item.frankfurtlin.backpack": "backpack",
   "item.frankfurtlin.crafting_table": "crafting_table",

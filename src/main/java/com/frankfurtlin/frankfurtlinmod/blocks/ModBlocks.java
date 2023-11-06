@@ -204,6 +204,40 @@ public class ModBlocks {
         new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(NETHERITE_CLUSTER)
             .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
 
+    //矿物甘蔗方块
+    public static final Block COAL_CANE = registerBlock("coal_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block IRON_CANE = registerBlock("iron_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block COPPER_CANE = registerBlock("copper_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block GOLD_CANE = registerBlock("gold_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.GOLD).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block LAPIS_CANE = registerBlock("lapis_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.LAPIS_BLUE).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block EMERALD_CANE = registerBlock("emerald_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block DIAMOND_CANE = registerBlock("diamond_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIAMOND_BLUE).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block REDSTONE_CANE = registerBlock("redstone_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_RED).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block QUARTZ_CANE = registerBlock("quartz_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.OFF_WHITE).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block NETHERITE_CANE = registerBlock("netherite_cane",
+        new OreCaneBlock(AbstractBlock.Settings.create().mapColor(MapColor.BLACK).noCollision()
+            .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)));
+
+
+
     // ----------------------------------------------------------------------------------------------------------------
 
     // 荧光棒

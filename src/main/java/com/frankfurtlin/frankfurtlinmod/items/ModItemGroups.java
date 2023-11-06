@@ -104,6 +104,18 @@ public class ModItemGroups {
             entries.add(ModBlocks.MEDIUM_NETHERITE_BUD);
             entries.add(ModBlocks.SMALL_NETHERITE_BUD);
 
+            // 矿物甘蔗块
+            entries.add(ModBlocks.COAL_CANE);
+            entries.add(ModBlocks.IRON_CANE);
+            entries.add(ModBlocks.COPPER_CANE);
+            entries.add(ModBlocks.GOLD_CANE);
+            entries.add(ModBlocks.LAPIS_CANE);
+            entries.add(ModBlocks.DIAMOND_CANE);
+            entries.add(ModBlocks.REDSTONE_CANE);
+            entries.add(ModBlocks.EMERALD_CANE);
+            entries.add(ModBlocks.QUARTZ_CANE);
+            entries.add(ModBlocks.NETHERITE_CANE);
+
 
             // 白金盔甲
             entries.add(ModItems.WHITE_GOLD_HELMET);

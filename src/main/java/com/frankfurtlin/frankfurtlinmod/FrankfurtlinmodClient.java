@@ -92,6 +92,18 @@ public class FrankfurtlinmodClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MEDIUM_NETHERITE_BUD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LARGE_NETHERITE_BUD, RenderLayer.getCutout());
 
+        // 矿物甘蔗块
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.COAL_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.IRON_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.COPPER_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GOLD_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAPIS_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DIAMOND_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REDSTONE_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EMERALD_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.QUARTZ_CANE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NETHERITE_CANE, RenderLayer.getCutout());
+
         EntityRendererRegistry.register(ModEntities.GLOW_STICK_ENTITY, FlyingItemEntityRenderer::new);
     }
 }

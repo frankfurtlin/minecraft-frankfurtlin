@@ -80,6 +80,47 @@ public abstract class WanderingTraderEntityMixin extends MerchantEntity {
                 new ItemStack(Items.EMERALD, 1),
                 new ItemStack(ModBlocks.BUDDING_NETHERITE, 1),
                 1, 20, 0.02f));
+
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.COAL_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.IRON_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.COPPER_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.GOLD_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.LAPIS_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.EMERALD_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.DIAMOND_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.REDSTONE_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.QUARTZ_CANE, 1),
+                1, 20, 0.02f));
+            tradeOfferList.add(new TradeOffer(
+                new ItemStack(Items.EMERALD, 1),
+                new ItemStack(ModBlocks.NETHERITE_CANE, 1),
+                1, 20, 0.02f));
         }
 
     }

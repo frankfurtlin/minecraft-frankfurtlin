@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "frankfurtlin:quartz"
+              "name": "frankfurtlin:quartz_cluster"
             },
             {
               "type": "minecraft:alternatives",
@@ -65,7 +65,7 @@
                       "function": "minecraft:explosion_decay"
                     }
                   ],
-                  "name": "minecraft:quartz_ingot"
+                  "name": "minecraft:quartz"
                 }
               ]
             }

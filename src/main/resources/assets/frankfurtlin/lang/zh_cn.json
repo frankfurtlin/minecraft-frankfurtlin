@@ -71,6 +71,16 @@
   "block.frankfurtlin.medium_netherite_bud": "中型远古残骸簇",
   "block.frankfurtlin.large_netherite_bud": "大型远古残骸簇",
 
+  "block.frankfurtlin.coal_cane": "煤炭甘蔗",
+  "block.frankfurtlin.iron_cane": "铁矿甘蔗",
+  "block.frankfurtlin.copper_cane": "铜矿甘蔗",
+  "block.frankfurtlin.gold_cane": "金矿甘蔗",
+  "block.frankfurtlin.lapis_cane": "青金石甘蔗",
+  "block.frankfurtlin.emerald_cane": "绿宝石甘蔗",
+  "block.frankfurtlin.diamond_cane": "钻石甘蔗",
+  "block.frankfurtlin.redstone_cane": "红石甘蔗",
+  "block.frankfurtlin.quartz_cane": "石英甘蔗",
+  "block.frankfurtlin.netherite_cane": "下届合金甘蔗",
 
   "item.frankfurtlin.ender_pack": "末影背包",
   "item.frankfurtlin.backpack": "背包",
