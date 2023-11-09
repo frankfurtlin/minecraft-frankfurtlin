@@ -173,6 +173,7 @@
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "自动钓鱼",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "村民无限次交易",
+  "text.autoconfig.frankfurtlin.option.tradeCount": "设置每一级村民解锁的最大交易种类",
   "text.autoconfig.frankfurtlin.option.canBreakSpawner": "精准采集破坏刷怪笼",
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "地狱门可打开背包",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "优化流浪商人交易选项",

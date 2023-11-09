@@ -173,6 +173,7 @@
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "unLockVillager",
+  "text.autoconfig.frankfurtlin.option.tradeCount": "set the trade count every level villager have",
   "text.autoconfig.frankfurtlin.option.canBreakSpawner": "break spawner with silk touch",
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "open gui in nether portal",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "replace wander trade",

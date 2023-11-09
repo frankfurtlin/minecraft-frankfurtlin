@@ -1,5 +1,6 @@
 package com.frankfurtlin.frankfurtlinmod.items.whiteGold;
 
+import com.frankfurtlin.frankfurtlinmod.blocks.OreCaneBlock;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
@@ -111,7 +112,12 @@ public class WhiteGoldHoe extends HoeItem {
                 if (!(floorBlock instanceof SugarCaneBlock)) {
                     world.breakBlock(blockPos.up(), true);
                 }
-            } else if (block instanceof CactusBlock) {
+            } else if (block instanceof OreCaneBlock) {
+                Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
+                if (!(floorBlock instanceof OreCaneBlock)) {
+                    world.breakBlock(blockPos.up(), true);
+                }
+            }else if (block instanceof CactusBlock) {
                 Block floorBlock = world.getBlockState(blockPos.down()).getBlock();
                 if (!(floorBlock instanceof CactusBlock)) {
                     world.breakBlock(blockPos.up(), true);

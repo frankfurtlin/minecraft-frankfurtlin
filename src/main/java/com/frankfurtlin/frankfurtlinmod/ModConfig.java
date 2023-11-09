@@ -30,6 +30,9 @@ public class ModConfig implements ConfigData {
     public boolean autoFish = false;
     @Comment("If true, villager trade will be infinity")
     public boolean unLockVillager = false;
+    @Comment("set the trade count every level villager have")
+    @ConfigEntry.BoundedDiscrete(min = 1, max = 40)
+    public int tradeCount = 2;
     @Comment("If true, you can break spawner with silk touch")
     public boolean canBreakSpawner = false;
     @Comment("If true, you can open gui in nether portal")

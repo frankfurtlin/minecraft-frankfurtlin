@@ -10,6 +10,7 @@
     "ExperienceBottleEntityMixin",
     "ItemMixin",
     "LivingEntityMixin",
+    "VillagerEntityMixin",
     "OreConfiguredFeaturesMixin",
     "PlayerEntityMixin",
     "WanderingTraderEntityMixin",
