@@ -172,6 +172,7 @@
 
   "text.autoconfig.frankfurtlin.title": "Frankfurtlin",
   "text.autoconfig.frankfurtlin.option.autoFish": "autoFish",
+  "text.autoconfig.frankfurtlin.option.buffFish": "buffFish",
   "text.autoconfig.frankfurtlin.option.unLockVillager": "unLockVillager",
   "text.autoconfig.frankfurtlin.option.tradeCount": "set the trade count every level villager have",
   "text.autoconfig.frankfurtlin.option.canBreakSpawner": "break spawner with silk touch",

@@ -28,6 +28,8 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Gui.PrefixText()
     @Comment("If true, when you throw a fishing rod, you can automatically fish")
     public boolean autoFish = false;
+    @Comment("If true, ticking buff fish")
+    public boolean buffFish = false;
     @Comment("If true, villager trade will be infinity")
     public boolean unLockVillager = false;
     @Comment("set the trade count every level villager have")
