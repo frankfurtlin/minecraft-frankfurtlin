@@ -180,7 +180,7 @@
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "replace wander trade",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "use TOTEM_OF_UNDYING in your inventory",
-  "text.autoconfig.frankfurtlin.option.canTotemOFUndyingBeStack": "TOTEM_OF_UNDYING can be stack to 64",
+  "text.autoconfig.frankfurtlin.option.canStackTo64": "item can be stack to 64",
   "text.autoconfig.frankfurtlin.option.experienceBottle": "set exp drop by experience bottle",
 
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "remove anvil too expensive",

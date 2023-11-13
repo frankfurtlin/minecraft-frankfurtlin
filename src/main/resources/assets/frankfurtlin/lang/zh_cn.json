@@ -180,7 +180,7 @@
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "优化流浪商人交易选项",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "不死图腾可在背包里生效",
-  "text.autoconfig.frankfurtlin.option.canTotemOFUndyingBeStack": "不死图腾可堆叠至64",
+  "text.autoconfig.frankfurtlin.option.canStackTo64": "某些物品可堆叠至64",
   "text.autoconfig.frankfurtlin.option.experienceBottle": "附魔之瓶掉落经验",
 
   "text.autoconfig.frankfurtlin.option.removeAnvilLimit": "消除铁砧附魔过于昂贵",

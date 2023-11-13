@@ -24,7 +24,9 @@ public abstract class ItemMixin {
      */
     @Inject(method = "getMaxCount", at = @At("HEAD"), cancellable = true)
     private void changeItemsStack(CallbackInfoReturnable<Integer> cir){
-        if(this.asItem() == Items.TOTEM_OF_UNDYING && ModConfig.INSTANCE.canTotemOFUndyingBeStack){
+        if((this.asItem() == Items.TOTEM_OF_UNDYING || this.asItem() == Items.SADDLE || this.asItem() == Items.POTION
+           || this.asItem() == Items.WATER_BUCKET || this.asItem() == Items.LAVA_BUCKET)
+            && ModConfig.INSTANCE.canStackTo64){
             cir.setReturnValue(Item.DEFAULT_MAX_COUNT);
         }
     }

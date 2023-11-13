@@ -49,8 +49,8 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Gui.PrefixText()
     @Comment("If true, you can use TOTEM_OF_UNDYING in your inventory")
     public boolean useTotemOFUndyingInInventory = false;
-    @Comment("If true, TOTEM_OF_UNDYING can be stack to 64")
-    public boolean canTotemOFUndyingBeStack = false;
+    @Comment("If true, item can be stack to 64")
+    public boolean canStackTo64 = false;
     @Comment("set the experience drop by experience bottle")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 100)
     public int experienceBottle = 5;
