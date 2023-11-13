@@ -30,6 +30,8 @@ public class ModConfig implements ConfigData {
     public boolean autoFish = false;
     @Comment("If true, ticking buff fish")
     public boolean buffFish = false;
+    @Comment("If true, buff fishing only get enchanted book")
+    public boolean buffFishOnlyEnchantedBook = false;
     @Comment("If true, villager trade will be infinity")
     public boolean unLockVillager = false;
     @Comment("set the trade count every level villager have")

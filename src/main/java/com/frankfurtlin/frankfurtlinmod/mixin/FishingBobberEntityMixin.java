@@ -12,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.context.LootContextParameterSet;
@@ -92,6 +93,9 @@ public abstract class FishingBobberEntityMixin extends ProjectileEntity {
                     ObjectArrayList<ItemStack> list = lootTable.generateLoot(lootContextParameterSet);
                     Criteria.FISHING_ROD_HOOKED.trigger((ServerPlayerEntity)playerEntity, itemStack, this.getPlayerOwner().fishHook, list);
                     for (ItemStack itemStack1 : list) {
+                        if(ModConfig.INSTANCE.buffFishOnlyEnchantedBook && !itemStack1.isOf(Items.ENCHANTED_BOOK)){
+                            continue;
+                        }
                         ItemEntity itemEntity = new ItemEntity(this.getWorld(), this.getX(), this.getY(), this.getZ(), itemStack1);
                         double d = playerEntity.getX() - this.getX();
                         double e = playerEntity.getY() - this.getY();
