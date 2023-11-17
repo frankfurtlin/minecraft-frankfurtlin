@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "frankfurtlin:block/white_gold_block"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mango": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:mango"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "frankfurtlin:mango_juice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mango"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "frankfurtlin:mango_juice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

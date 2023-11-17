@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:crab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:steamed_crab_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:steamed_crab_from_campfire_cooking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

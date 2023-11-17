@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orange": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:orange"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "frankfurtlin:orange_juice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_orange"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "frankfurtlin:orange_juice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

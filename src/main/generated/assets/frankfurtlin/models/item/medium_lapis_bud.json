@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "frankfurtlin:block/medium_lapis_bud"
+  }
+}

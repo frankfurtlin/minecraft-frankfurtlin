@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "frankfurtlin:strawberry"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " B "
+  ],
+  "result": {
+    "item": "frankfurtlin:strawberry_juice"
+  },
+  "show_notification": true
+}

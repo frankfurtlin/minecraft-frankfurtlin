@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "frankfurtlin:budding_lapis",
+    "frankfurtlin:budding_gold",
+    "frankfurtlin:budding_emerald",
+    "frankfurtlin:budding_diamond",
+    "frankfurtlin:budding_redstone",
+    "frankfurtlin:gold_cluster",
+    "frankfurtlin:lapis_cluster",
+    "frankfurtlin:emerald_cluster",
+    "frankfurtlin:diamond_cluster",
+    "frankfurtlin:redstone_cluster",
+    "frankfurtlin:small_gold_bud",
+    "frankfurtlin:small_lapis_bud",
+    "frankfurtlin:small_emerald_bud",
+    "frankfurtlin:small_diamond_bud",
+    "frankfurtlin:small_redstone_bud",
+    "frankfurtlin:medium_gold_bud",
+    "frankfurtlin:medium_lapis_bud",
+    "frankfurtlin:medium_emerald_bud",
+    "frankfurtlin:medium_diamond_bud",
+    "frankfurtlin:medium_redstone_bud",
+    "frankfurtlin:large_gold_bud",
+    "frankfurtlin:large_lapis_bud",
+    "frankfurtlin:large_emerald_bud",
+    "frankfurtlin:large_diamond_bud",
+    "frankfurtlin:large_redstone_bud"
+  ]
+}

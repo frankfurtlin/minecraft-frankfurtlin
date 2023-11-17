@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "L": {
+      "item": "frankfurtlin:lemon"
+    }
+  },
+  "pattern": [
+    "LLL",
+    " B "
+  ],
+  "result": {
+    "item": "frankfurtlin:lemonade"
+  },
+  "show_notification": true
+}

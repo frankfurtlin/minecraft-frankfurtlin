@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "frankfurtlin:budding_coal",
+    "frankfurtlin:budding_iron",
+    "frankfurtlin:budding_copper",
+    "frankfurtlin:budding_quartz",
+    "frankfurtlin:coal_cluster",
+    "frankfurtlin:iron_cluster",
+    "frankfurtlin:copper_cluster",
+    "frankfurtlin:quartz_cluster",
+    "frankfurtlin:small_coal_bud",
+    "frankfurtlin:small_iron_bud",
+    "frankfurtlin:small_copper_bud",
+    "frankfurtlin:small_quartz_bud",
+    "frankfurtlin:medium_coal_bud",
+    "frankfurtlin:medium_iron_bud",
+    "frankfurtlin:medium_copper_bud",
+    "frankfurtlin:medium_quartz_bud",
+    "frankfurtlin:large_coal_bud",
+    "frankfurtlin:large_iron_bud",
+    "frankfurtlin:large_copper_bud",
+    "frankfurtlin:large_quartz_bud"
+  ]
+}

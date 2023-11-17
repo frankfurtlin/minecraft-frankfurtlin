@@ -21,6 +21,9 @@
     "client": [
       "com.frankfurtlin.frankfurtlinmod.FrankfurtlinmodClient"
     ],
+    "fabric-datagen": [
+      "com.frankfurtlin.frankfurtlinmod.FrankfurtlinmodDataGenerator"
+    ],
     "modmenu": [
       "com.frankfurtlin.frankfurtlinmod.gui.ModMenuIntegration"
     ]

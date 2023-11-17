@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "X": {
+      "item": "frankfurtlin:white_gold_ingot"
+    }
+  },
+  "pattern": [
+    "X X",
+    "XEX",
+    "XXX"
+  ],
+  "result": {
+    "item": "frankfurtlin:white_gold_chestplate"
+  },
+  "show_notification": true
+}

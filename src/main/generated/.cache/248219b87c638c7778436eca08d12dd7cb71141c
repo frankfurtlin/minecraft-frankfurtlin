@@ -1,0 +1,5 @@
+// 1.20.2	2023-11-17T19:13:22.7157709	Frankfurtlin/Tags for minecraft:block
+3524dd751083284d23189a5ae41d5845c86b967e data\minecraft\tags\blocks\mineable\pickaxe.json
+b3c0348986086d31505461b31ccfdf680f70e69a data\minecraft\tags\blocks\needs_diamond_tool.json
+0c03352cff9a190214917894c1e90c965698e3de data\minecraft\tags\blocks\needs_stone_tool.json
+17e998a9aef2969c36c446ea9ebdfcb0a1240e86 data\minecraft\tags\blocks\needs_iron_tool.json
