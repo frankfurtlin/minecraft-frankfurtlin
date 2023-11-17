@@ -141,6 +141,7 @@ public class ModItemGroups {
         .icon(() -> new ItemStack(ModItems.GLOW_STICK))
         .entries((context, entries) -> {
             entries.add(ModItems.GLOW_STICK);
+            entries.add(ModItems.AQUATIC_TORCH);
         }).build();
 
     public static final ItemGroup FOOD_GROUP = FabricItemGroup.builder()

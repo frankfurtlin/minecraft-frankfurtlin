@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "frankfurtlin:block/aquatic_wall_torch"
+    },
+    "facing=north": {
+      "model": "frankfurtlin:block/aquatic_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "frankfurtlin:block/aquatic_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "frankfurtlin:block/aquatic_wall_torch",
+      "y": 180
+    }
+  }
+}

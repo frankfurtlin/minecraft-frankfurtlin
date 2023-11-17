@@ -89,6 +89,8 @@
   "item.frankfurtlin.glow_stick": "glow_stick",
   "block.frankfurtlin.glow_stick": "glow_stick",
   "entity.frankfurtlin.glow_stick": "glow_stick",
+  "block.frankfurtlin.aquatic_torch": "aquatic_torch",
+  "block.frankfurtlin.aquatic_wall_torch": "aquatic_wall_torch",
 
   "block.frankfurtlin.strawberry_crop": "strawberry_crop",
   "item.frankfurtlin.strawberry": "strawberry",

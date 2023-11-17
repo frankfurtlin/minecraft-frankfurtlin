@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -244,6 +245,14 @@ public class ModBlocks {
     public static final Block GLOW_STICK_BLOCK = registerBlock("glow_stick", new GlowStickBlock(
         AbstractBlock.Settings.create().mapColor(MapColor.CLEAR).noCollision().breakInstantly()
             .luminance((state) -> 14).pistonBehavior(PistonBehavior.DESTROY)));
+    // 水蜡烛
+    public static final Block AQUATIC_TORCH = registerBlock("aquatic_torch", new AquaticTorchBlock(
+        AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14)
+            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.GLOW_SQUID_INK));
+    // 墙壁水蜡烛
+    public static final Block AQUATIC_WALL_TORCH = registerBlock("aquatic_wall_torch", new AquaticWallTorchBlock(
+        AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14)
+            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.GLOW_SQUID_INK));
 
 
     // ----------------------------------------------------------------------------------------------------------------
@@ -285,7 +294,7 @@ public class ModBlocks {
 
 
     private static Block registerBlock(String name, Block block) {
-        if(!(block instanceof GlowStickBlock) && !(block instanceof CropBlock)){
+        if(!(block instanceof GlowStickBlock) && !(block instanceof CropBlock) && !(block instanceof TorchBlock)){
             registerBlockItem(name, block);
         }
         return Registry.register(Registries.BLOCK, new Identifier(Frankfurtlinmod.MOD_ID, name), block);

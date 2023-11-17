@@ -22,9 +22,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // 荧光棒
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModItems.GLOW_STICK, 3)
             .input('#', Items.STICK).input('I', Items.GLOW_INK_SAC)
+            .pattern("I ").pattern(" #")
+            .criterion("has_glow_ink_sac", VanillaRecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC)).offerTo(exporter);
+        // 水蜡烛
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.AQUATIC_TORCH, 4)
+            .input('#', Items.STICK).input('I', Items.GLOW_INK_SAC)
             .pattern("I").pattern("#")
             .criterion("has_glow_ink_sac", VanillaRecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC)).offerTo(exporter);
-        
+
+        // 实用物品
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SUPER_BACKPACK).input('X', Items.LEATHER)
             .pattern("X X").pattern(" X ").pattern("X X")
             .criterion("has_leather", VanillaRecipeProvider.conditionsFromItem(Items.LEATHER)).offerTo(exporter);

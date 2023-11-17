@@ -10,12 +10,12 @@
     }
   },
   "pattern": [
-    "I ",
-    " #"
+    "I",
+    "#"
   ],
   "result": {
-    "count": 3,
-    "item": "frankfurtlin:glow_stick"
+    "count": 4,
+    "item": "frankfurtlin:aquatic_torch"
   },
   "show_notification": true
 }

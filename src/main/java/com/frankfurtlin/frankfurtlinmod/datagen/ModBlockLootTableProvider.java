@@ -32,6 +32,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.GLOW_STICK_BLOCK);
+        addDrop(ModBlocks.AQUATIC_TORCH);
+        addDrop(ModBlocks.AQUATIC_WALL_TORCH);
 
         addDrop(ModBlocks.WHITE_GOLD_BLOCK);
 
@@ -131,9 +133,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REDSTONE_CANE);
         addDrop(ModBlocks.QUARTZ_CANE);
         addDrop(ModBlocks.NETHERITE_CANE);
-
-
-
 
     }
 

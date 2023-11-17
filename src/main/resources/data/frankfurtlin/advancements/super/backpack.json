@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:backpack"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "frankfurtlin:super/white_gold_ingot",
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.backpack.description"
+    },
+    "icon": {
+      "item": "frankfurtlin:backpack"
+    },
+    "title": {
+      "translate": "advancements.frankfurtlin.super.backpack.title"
+    }
+  }
+}

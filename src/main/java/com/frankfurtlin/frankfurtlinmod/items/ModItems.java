@@ -18,6 +18,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.Direction;
 
 /**
  * @author Frankfurtlin
@@ -85,6 +86,11 @@ public class ModItems {
     // 荧光棒
     public static final Item GLOW_STICK = registerItem("glow_stick",
         new GlowStickItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    // 水蜡烛
+    public static final Item AQUATIC_TORCH = registerItem("aquatic_torch",
+        new VerticallyAttachableBlockItem(ModBlocks.AQUATIC_TORCH, ModBlocks.AQUATIC_WALL_TORCH,
+            new Item.Settings(), Direction.DOWN));
+
 
 
     // ----------------------------------------------------------------------------------------------------------------
