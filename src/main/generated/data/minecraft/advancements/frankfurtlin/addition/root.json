@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "seeds": {
+    "got_leather": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:wheat_seeds"
+              "minecraft:leather"
             ]
           }
         ]
@@ -15,23 +15,24 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "description": {
-      "translate": "advancements.frankfurtlin.foods.root.description"
+      "translate": "advancements.frankfurtlin.addition.root.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:wheat_seeds"
+      "item": "minecraft:leather"
     },
     "show_toast": false,
     "title": {
-      "translate": "advancements.frankfurtlin.foods.root.title"
+      "translate": "advancements.frankfurtlin.addition.root.title"
     }
   },
   "requirements": [
     [
-      "seeds"
+      "got_leather"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

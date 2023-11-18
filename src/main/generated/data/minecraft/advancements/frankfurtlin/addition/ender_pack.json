@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/backpack",
+  "criteria": {
+    "got_ender_pack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:ender_pack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.ender_pack.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:ender_pack"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.ender_pack.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_ender_pack"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

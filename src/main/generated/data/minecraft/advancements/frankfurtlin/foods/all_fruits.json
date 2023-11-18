@@ -1,0 +1,236 @@
+{
+  "parent": "minecraft:frankfurtlin/foods/root",
+  "criteria": {
+    "got_banana": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:banana"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_blackberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:blackberry"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_blueberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:blueberry"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_cherry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:cherry"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_coconut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:coconut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_dragonfruit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:dragonfruit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_grape": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:grape"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_kiwi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:kiwi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_lemon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:lemon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_mango": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:mango"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_orange": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:orange"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_pineapple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:pineapple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_starfruit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:starfruit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_strawberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:strawberry"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.foods.all_fruits.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:starfruit"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.foods.all_fruits.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_strawberry"
+    ],
+    [
+      "got_blackberry"
+    ],
+    [
+      "got_blueberry"
+    ],
+    [
+      "got_banana"
+    ],
+    [
+      "got_cherry"
+    ],
+    [
+      "got_coconut"
+    ],
+    [
+      "got_starfruit"
+    ],
+    [
+      "got_grape"
+    ],
+    [
+      "got_kiwi"
+    ],
+    [
+      "got_mango"
+    ],
+    [
+      "got_lemon"
+    ],
+    [
+      "got_orange"
+    ],
+    [
+      "got_dragonfruit"
+    ],
+    [
+      "got_pineapple"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

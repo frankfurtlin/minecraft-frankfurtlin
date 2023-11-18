@@ -1,7 +1,7 @@
 {
+  "parent": "minecraft:frankfurtlin/foods/corn",
   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
+    "got_beer": {
       "conditions": {
         "items": [
           {
@@ -10,20 +10,32 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
-  "parent": "frankfurtlin:foods/corn",
   "display": {
     "announce_to_chat": true,
     "description": {
       "translate": "advancements.frankfurtlin.foods.beer.description"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "frankfurtlin:beer"
     },
+    "show_toast": true,
     "title": {
       "translate": "advancements.frankfurtlin.foods.beer.title"
     }
-  }
+  },
+  "requirements": [
+    [
+      "got_beer"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
 }

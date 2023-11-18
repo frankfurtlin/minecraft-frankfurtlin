@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:frankfurtlin/foods/root",
+  "criteria": {
+    "got_crab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:crab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_shrimp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:shrimp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.foods.seafood.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:shrimp"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.foods.seafood.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_shrimp"
+    ],
+    [
+      "got_crab"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

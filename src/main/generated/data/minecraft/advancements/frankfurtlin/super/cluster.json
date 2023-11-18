@@ -1,0 +1,191 @@
+{
+  "parent": "minecraft:frankfurtlin/super/root",
+  "criteria": {
+    "amethyst_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "coal_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:coal_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "copper_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:copper_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:diamond_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "emerald_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:emerald_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gold_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:gold_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "iron_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:iron_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "lapis_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:lapis_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherite_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:netherite_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "quartz_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:quartz_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "redstone_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:redstone_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.cluster.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:diamond_cluster"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.super.cluster.title"
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_cluster"
+    ],
+    [
+      "coal_cluster"
+    ],
+    [
+      "iron_cluster"
+    ],
+    [
+      "copper_cluster"
+    ],
+    [
+      "gold_cluster"
+    ],
+    [
+      "lapis_cluster"
+    ],
+    [
+      "emerald_cluster"
+    ],
+    [
+      "diamond_cluster"
+    ],
+    [
+      "redstone_cluster"
+    ],
+    [
+      "quartz_cluster"
+    ],
+    [
+      "netherite_cluster"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

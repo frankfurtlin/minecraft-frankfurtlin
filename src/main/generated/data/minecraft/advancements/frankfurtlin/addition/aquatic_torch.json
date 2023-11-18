@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/root",
+  "criteria": {
+    "got_aquatic_torch": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:aquatic_torch"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.aquatic_torch.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:aquatic_torch"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.aquatic_torch.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_aquatic_torch"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

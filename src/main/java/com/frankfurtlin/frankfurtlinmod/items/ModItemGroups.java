@@ -34,6 +34,19 @@ public class ModItemGroups {
             entries.add(ModItems.WHITE_GOLD_INGOT);
             entries.add(ModBlocks.WHITE_GOLD_BLOCK);
 
+            // 白金盔甲
+            entries.add(ModItems.WHITE_GOLD_HELMET);
+            entries.add(ModItems.WHITE_GOLD_CHESTPLATE);
+            entries.add(ModItems.WHITE_GOLD_LEGGINGS);
+            entries.add(ModItems.WHITE_GOLD_BOOTS);
+
+            // 白金工具
+            entries.add(ModItems.WHITE_GOLD_SWORD);
+            entries.add(ModItems.WHITE_GOLD_PICKAXE);
+            entries.add(ModItems.WHITE_GOLD_AXE);
+            entries.add(ModItems.WHITE_GOLD_SHOVEL);
+            entries.add(ModItems.WHITE_GOLD_HOE);
+
             // 煤炭簇
             entries.add(ModBlocks.BUDDING_COAL);
             entries.add(ModBlocks.COAL_CLUSTER);
@@ -116,30 +129,17 @@ public class ModItemGroups {
             entries.add(ModBlocks.QUARTZ_CANE);
             entries.add(ModBlocks.NETHERITE_CANE);
 
-
-            // 白金盔甲
-            entries.add(ModItems.WHITE_GOLD_HELMET);
-            entries.add(ModItems.WHITE_GOLD_CHESTPLATE);
-            entries.add(ModItems.WHITE_GOLD_LEGGINGS);
-            entries.add(ModItems.WHITE_GOLD_BOOTS);
-
-            // 白金工具
-            entries.add(ModItems.WHITE_GOLD_SWORD);
-            entries.add(ModItems.WHITE_GOLD_PICKAXE);
-            entries.add(ModItems.WHITE_GOLD_AXE);
-            entries.add(ModItems.WHITE_GOLD_SHOVEL);
-            entries.add(ModItems.WHITE_GOLD_HOE);
-
-            // 实用物品
-            entries.add(ModItems.SUPER_ENDER_PACK);
-            entries.add(ModItems.SUPER_BACKPACK);
-            entries.add(ModItems.SUPER_CRAFTING_TABLE);
         }).build();
 
     public static final ItemGroup ADDITION_ITEM_GROUP = FabricItemGroup.builder()
         .displayName(Text.translatable("frankfurtlin.addition_item_group"))
         .icon(() -> new ItemStack(ModItems.GLOW_STICK))
         .entries((context, entries) -> {
+            // 实用物品
+            entries.add(ModItems.SUPER_ENDER_PACK);
+            entries.add(ModItems.SUPER_BACKPACK);
+            entries.add(ModItems.SUPER_CRAFTING_TABLE);
+
             entries.add(ModItems.GLOW_STICK);
             entries.add(ModItems.AQUATIC_TORCH);
         }).build();

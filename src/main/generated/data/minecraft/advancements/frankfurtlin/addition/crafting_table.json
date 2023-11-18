@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/root",
+  "criteria": {
+    "got_crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.crafting_table.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:crafting_table"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.crafting_table.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_crafting_table"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,116 @@
+{
+  "parent": "minecraft:frankfurtlin/foods/root",
+  "criteria": {
+    "got_coconut_juice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:coconut_juice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_grape_juice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:grape_juice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_lemonade": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:lemonade"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_mango_juice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:mango_juice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_orange_juice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:orange_juice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_strawberry_juice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:strawberry_juice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.foods.all_juice.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:lemonade"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.foods.all_juice.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_coconut_juice"
+    ],
+    [
+      "got_lemonade"
+    ],
+    [
+      "got_grape_juice"
+    ],
+    [
+      "got_mango_juice"
+    ],
+    [
+      "got_strawberry_juice"
+    ],
+    [
+      "got_orange_juice"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

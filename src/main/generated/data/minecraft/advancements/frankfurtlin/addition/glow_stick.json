@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/root",
+  "criteria": {
+    "got_glow_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:glow_stick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.glow_stick.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:glow_stick"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.glow_stick.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_glow_stick"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

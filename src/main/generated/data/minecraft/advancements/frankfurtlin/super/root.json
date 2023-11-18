@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "got_white_gold_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:white_gold_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancements.frankfurtlin.super.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:white_gold_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.super.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_white_gold_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

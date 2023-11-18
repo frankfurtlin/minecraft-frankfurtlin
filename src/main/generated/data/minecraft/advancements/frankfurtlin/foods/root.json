@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "white_gold_ingot": {
+    "got_wheat_seed": {
       "conditions": {
         "items": [
           {
             "items": [
-              "frankfurtlin:white_gold_ingot"
+              "minecraft:wheat_seeds"
             ]
           }
         ]
@@ -15,23 +15,24 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
     "description": {
-      "translate": "advancements.frankfurtlin.super.root.description"
+      "translate": "advancements.frankfurtlin.foods.root.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "frankfurtlin:white_gold_ingot"
+      "item": "minecraft:wheat_seeds"
     },
     "show_toast": false,
     "title": {
-      "translate": "advancements.frankfurtlin.super.root.title"
+      "translate": "advancements.frankfurtlin.foods.root.title"
     }
   },
   "requirements": [
     [
-      "white_gold_ingot"
+      "got_wheat_seed"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

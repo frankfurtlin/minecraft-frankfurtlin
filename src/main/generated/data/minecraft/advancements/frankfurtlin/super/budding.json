@@ -1,0 +1,191 @@
+{
+  "parent": "minecraft:frankfurtlin/super/root",
+  "criteria": {
+    "budding_amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:budding_amethyst"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_coal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_copper": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_copper"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_emerald"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_gold"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_iron"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_lapis": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_lapis"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_netherite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_netherite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "budding_redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_redstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.budding.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:budding_diamond"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.super.budding.title"
+    }
+  },
+  "requirements": [
+    [
+      "budding_amethyst"
+    ],
+    [
+      "budding_coal"
+    ],
+    [
+      "budding_iron"
+    ],
+    [
+      "budding_copper"
+    ],
+    [
+      "budding_gold"
+    ],
+    [
+      "budding_lapis"
+    ],
+    [
+      "budding_emerald"
+    ],
+    [
+      "budding_diamond"
+    ],
+    [
+      "budding_redstone"
+    ],
+    [
+      "budding_quartz"
+    ],
+    [
+      "budding_netherite"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

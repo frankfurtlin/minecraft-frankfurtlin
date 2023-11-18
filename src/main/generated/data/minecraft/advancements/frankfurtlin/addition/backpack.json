@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/root",
+  "criteria": {
+    "got_backpack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:backpack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.backpack.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:backpack"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.backpack.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_backpack"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

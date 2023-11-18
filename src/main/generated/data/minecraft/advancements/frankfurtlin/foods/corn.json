@@ -1,7 +1,7 @@
 {
+  "parent": "minecraft:frankfurtlin/foods/root",
   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
+    "got_corn": {
       "conditions": {
         "items": [
           {
@@ -10,20 +10,32 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
-  "parent": "frankfurtlin:foods/root",
   "display": {
     "announce_to_chat": true,
     "description": {
       "translate": "advancements.frankfurtlin.foods.corn.description"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "frankfurtlin:corn"
     },
+    "show_toast": true,
     "title": {
       "translate": "advancements.frankfurtlin.foods.corn.title"
     }
-  }
+  },
+  "requirements": [
+    [
+      "got_corn"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
 }
