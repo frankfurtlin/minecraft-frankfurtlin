@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "frankfurtlin:packed_ice_ball"
+    },
+    "I": {
+      "item": "minecraft:ice"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "count": 9,
+    "item": "frankfurtlin:blue_ice_ball"
+  },
+  "show_notification": true
+}

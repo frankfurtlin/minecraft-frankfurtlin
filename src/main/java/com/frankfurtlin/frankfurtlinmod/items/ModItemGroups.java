@@ -142,6 +142,9 @@ public class ModItemGroups {
 
             entries.add(ModItems.GLOW_STICK);
             entries.add(ModItems.AQUATIC_TORCH);
+            entries.add(ModItems.ICE_BALL);
+            entries.add(ModItems.PACKED_ICE_BALL);
+            entries.add(ModItems.BLUE_ICE_BALL);
         }).build();
 
     public static final ItemGroup FOOD_GROUP = FabricItemGroup.builder()

@@ -91,6 +91,9 @@
   "entity.frankfurtlin.glow_stick": "荧光棒",
   "block.frankfurtlin.aquatic_torch": "水火把",
   "block.frankfurtlin.aquatic_wall_torch": "水火把",
+  "item.frankfurtlin.ice_ball": "冰球",
+  "item.frankfurtlin.packed_ice_ball": "浮冰球",
+  "item.frankfurtlin.blue_ice_ball": "蓝冰球",
 
   "block.frankfurtlin.strawberry_crop": "草莓丛",
   "item.frankfurtlin.strawberry": "草莓",
@@ -167,6 +170,8 @@
   "advancements.frankfurtlin.addition.glow_stick.description": "获取荧光棒",
   "advancements.frankfurtlin.addition.aquatic_torch.title": "水底点秋香",
   "advancements.frankfurtlin.addition.aquatic_torch.description": "获取水火把",
+  "advancements.frankfurtlin.addition.ice_ball.title": "你要打雪仗吗",
+  "advancements.frankfurtlin.addition.ice_ball.description": "丢出所有的冰球",
 
   "advancements.frankfurtlin.foods.root.title": "食物",
   "advancements.frankfurtlin.foods.root.description": "丰富的食物",

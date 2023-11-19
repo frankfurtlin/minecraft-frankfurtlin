@@ -228,6 +228,22 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
             .criterion("got_aquatic_torch", InventoryChangedCriterion.Conditions.items(ModItems.AQUATIC_TORCH))
             .build(consumer, "frankfurtlin" + "/addition/aquatic_torch");
 
+        Advancement.Builder.create().parent(additionRootAdvancement)
+            .display(
+                ModItems.BLUE_ICE_BALL,
+                Text.translatable("advancements.frankfurtlin.addition.ice_ball.title"),
+                Text.translatable("advancements.frankfurtlin.addition.ice_ball.description"),
+                null, // children to parent advancements don't need a background set
+                AdvancementFrame.TASK,
+                true,
+                true,
+                false
+            )
+            .rewards(AdvancementRewards.Builder.experience(1000))
+            .criterion("use_ice_ball", InventoryChangedCriterion.Conditions.items(ModItems.ICE_BALL))
+            .criterion("use_packed_ice_ball", InventoryChangedCriterion.Conditions.items(ModItems.PACKED_ICE_BALL))
+            .criterion("use_blue_ice_ball", InventoryChangedCriterion.Conditions.items(ModItems.BLUE_ICE_BALL))
+            .build(consumer, "frankfurtlin" + "/addition/ice_ball");
 
 
         // -------------------------------------------------------------------------------------------------------------

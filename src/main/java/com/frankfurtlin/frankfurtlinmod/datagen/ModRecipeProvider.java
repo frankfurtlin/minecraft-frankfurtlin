@@ -25,10 +25,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .pattern("I ").pattern(" #")
             .criterion("has_glow_ink_sac", VanillaRecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC)).offerTo(exporter);
         // 水蜡烛
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.AQUATIC_TORCH, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModItems.AQUATIC_TORCH, 4)
             .input('#', Items.STICK).input('I', Items.GLOW_INK_SAC)
             .pattern("I").pattern("#")
             .criterion("has_glow_ink_sac", VanillaRecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC)).offerTo(exporter);
+        // 冰球
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_BALL, 9)
+            .input('#', Items.SNOWBALL).input('I', Items.ICE)
+            .pattern("###").pattern("#I#").pattern("###")
+            .criterion("has_ice", VanillaRecipeProvider.conditionsFromItem(Items.ICE)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PACKED_ICE_BALL, 9)
+            .input('#', ModItems.ICE_BALL).input('I', Items.ICE)
+            .pattern("###").pattern("#I#").pattern("###")
+            .criterion("has_packed_ice_ball", VanillaRecipeProvider.conditionsFromItem(ModItems.ICE_BALL)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BLUE_ICE_BALL, 9)
+            .input('#', ModItems.PACKED_ICE_BALL).input('I', Items.ICE)
+            .pattern("###").pattern("#I#").pattern("###")
+            .criterion("has_blue_ice_ball", VanillaRecipeProvider.conditionsFromItem(ModItems.PACKED_ICE_BALL)).offerTo(exporter);
+
+
 
         // 实用物品
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SUPER_BACKPACK).input('X', Items.LEATHER)

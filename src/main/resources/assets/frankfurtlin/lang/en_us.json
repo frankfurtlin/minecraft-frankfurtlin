@@ -91,6 +91,9 @@
   "entity.frankfurtlin.glow_stick": "glow_stick",
   "block.frankfurtlin.aquatic_torch": "aquatic_torch",
   "block.frankfurtlin.aquatic_wall_torch": "aquatic_wall_torch",
+  "item.frankfurtlin.ice_ball": "ice_ball",
+  "item.frankfurtlin.packed_ice_ball": "packed_ice_ball",
+  "item.frankfurtlin.blue_ice_ball": "blue_ice_ball",
 
   "block.frankfurtlin.strawberry_crop": "strawberry_crop",
   "item.frankfurtlin.strawberry": "strawberry",
@@ -167,6 +170,8 @@
   "advancements.frankfurtlin.addition.glow_stick.description": "get glow_stick",
   "advancements.frankfurtlin.addition.aquatic_torch.title": "aquatic_torch",
   "advancements.frankfurtlin.addition.aquatic_torch.description": "get aquatic_torch",
+  "advancements.frankfurtlin.addition.ice_ball.title": "ice_ball",
+  "advancements.frankfurtlin.addition.ice_ball.description": "use all ice_balls",
 
   "advancements.frankfurtlin.foods.root.title": "foods",
   "advancements.frankfurtlin.foods.root.description": "foods",

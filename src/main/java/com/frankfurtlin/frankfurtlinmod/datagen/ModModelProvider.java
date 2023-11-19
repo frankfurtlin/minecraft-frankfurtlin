@@ -151,9 +151,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SUPER_BACKPACK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUPER_ENDER_PACK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUPER_CRAFTING_TABLE, Models.GENERATED);
-
-        // 荧光棒
         itemModelGenerator.register(ModItems.GLOW_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_BALL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PACKED_ICE_BALL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_ICE_BALL, Models.GENERATED);
 
         // 水果
         itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);

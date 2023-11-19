@@ -34,9 +34,6 @@ public class ModItems {
     // 白金锭，可抗火
     public static final Item WHITE_GOLD_INGOT = registerItem("white_gold_ingot",
         new WhiteGoldIngot(new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 白金块
-    /*public static final Item WHITE_GOLD_BLOCK = registerItem("white_gold_block",
-        new AliasedBlockItem(ModBlocks.WHITE_GOLD_BLOCK, new Item.Settings().rarity(Rarity.EPIC).fireproof()));*/
 
 
     // 白金战盔
@@ -70,6 +67,10 @@ public class ModItems {
         new WhiteGoldHoe(ModToolMaterial.WHITE_GOLD, -5, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
 
 
+
+
+    // ----------------------------------------------------------------------------------------------------------------
+
     // 末影背包，可右键打开
     public static final Item SUPER_ENDER_PACK = registerItem("ender_pack",
         new EnderPack(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
@@ -79,10 +80,6 @@ public class ModItems {
     // 手持工作台,可右键打开
     public static final Item SUPER_CRAFTING_TABLE = registerItem("crafting_table",
         new CraftingTable(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
-
-
-    // ----------------------------------------------------------------------------------------------------------------
-
     // 荧光棒
     public static final Item GLOW_STICK = registerItem("glow_stick",
         new GlowStickItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
@@ -90,6 +87,13 @@ public class ModItems {
     public static final Item AQUATIC_TORCH = registerItem("aquatic_torch",
         new VerticallyAttachableBlockItem(ModBlocks.AQUATIC_TORCH, ModBlocks.AQUATIC_WALL_TORCH,
             new Item.Settings(), Direction.DOWN));
+    // 冰球
+    public static final Item ICE_BALL = registerItem("ice_ball",
+        new IceBallItem(new FabricItemSettings().maxCount(16).rarity(Rarity.COMMON), 2, 0));
+    public static final Item PACKED_ICE_BALL = registerItem("packed_ice_ball",
+        new IceBallItem(new FabricItemSettings().maxCount(16).rarity(Rarity.UNCOMMON), 4, 5));
+    public static final Item BLUE_ICE_BALL = registerItem("blue_ice_ball",
+        new IceBallItem(new FabricItemSettings().maxCount(16).rarity(Rarity.RARE), 6, 10));
 
 
 

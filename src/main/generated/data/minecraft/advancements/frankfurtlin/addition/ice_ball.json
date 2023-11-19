@@ -1,0 +1,71 @@
+{
+  "parent": "minecraft:frankfurtlin/addition/root",
+  "criteria": {
+    "use_blue_ice_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:blue_ice_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "use_ice_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:ice_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "use_packed_ice_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:packed_ice_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.addition.ice_ball.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:blue_ice_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.addition.ice_ball.title"
+    }
+  },
+  "requirements": [
+    [
+      "use_ice_ball"
+    ],
+    [
+      "use_packed_ice_ball"
+    ],
+    [
+      "use_blue_ice_ball"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}
