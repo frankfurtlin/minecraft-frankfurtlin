@@ -253,6 +253,15 @@ public class ModBlocks {
     public static final Block AQUATIC_WALL_TORCH = registerBlock("aquatic_wall_torch", new AquaticWallTorchBlock(
         AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14)
             .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.GLOW_SQUID_INK));
+    // 岩浆海绵
+    public static final Block LAVA_SPONGE = registerBlock("lava_sponge",
+        new LavaSpongeBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW)
+            .strength(0.6f).sounds(BlockSoundGroup.SPONGE)));
+    // 岩浆湿海绵
+    public static final Block LAVA_WET_SPONGE = registerBlock("lava_wet_sponge",
+        new LavaWetSpongeBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW)
+            .strength(0.6f).sounds(BlockSoundGroup.WET_SPONGE)));
+
 
 
     // ----------------------------------------------------------------------------------------------------------------

@@ -4,6 +4,7 @@ import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -30,20 +31,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .pattern("I").pattern("#")
             .criterion("has_glow_ink_sac", VanillaRecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC)).offerTo(exporter);
         // 冰球
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_BALL, 9)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_BALL, 8)
             .input('#', Items.SNOWBALL).input('I', Items.ICE)
             .pattern("###").pattern("#I#").pattern("###")
             .criterion("has_ice", VanillaRecipeProvider.conditionsFromItem(Items.ICE)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PACKED_ICE_BALL, 9)
-            .input('#', ModItems.ICE_BALL).input('I', Items.ICE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PACKED_ICE_BALL, 8)
+            .input('#', ModItems.ICE_BALL).input('I', Items.PACKED_ICE)
             .pattern("###").pattern("#I#").pattern("###")
             .criterion("has_packed_ice_ball", VanillaRecipeProvider.conditionsFromItem(ModItems.ICE_BALL)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BLUE_ICE_BALL, 9)
-            .input('#', ModItems.PACKED_ICE_BALL).input('I', Items.ICE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BLUE_ICE_BALL, 8)
+            .input('#', ModItems.PACKED_ICE_BALL).input('I', Items.BLUE_ICE)
             .pattern("###").pattern("#I#").pattern("###")
             .criterion("has_blue_ice_ball", VanillaRecipeProvider.conditionsFromItem(ModItems.PACKED_ICE_BALL)).offerTo(exporter);
-
-
+        // 岩浆海绵
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVA_SPONGE, 8)
+            .input('#', Items.SPONGE).input('M', Blocks.MAGMA_BLOCK)
+            .pattern("###").pattern("#M#").pattern("###")
+            .criterion("has_sponge", VanillaRecipeProvider.conditionsFromItem(Items.SPONGE)).offerTo(exporter);
 
         // 实用物品
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SUPER_BACKPACK).input('X', Items.LEATHER)

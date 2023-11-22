@@ -6,7 +6,7 @@
       "item": "frankfurtlin:packed_ice_ball"
     },
     "I": {
-      "item": "minecraft:ice"
+      "item": "minecraft:blue_ice"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     "###"
   ],
   "result": {
-    "count": 9,
+    "count": 8,
     "item": "frankfurtlin:blue_ice_ball"
   },
   "show_notification": true

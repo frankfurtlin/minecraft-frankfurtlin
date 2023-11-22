@@ -12,6 +12,7 @@
     "LivingEntityMixin",
     "OreConfiguredFeaturesMixin",
     "PlayerEntityMixin",
+    "SpongeBlockMixin",
     "VillagerEntityMixin",
     "WanderingTraderEntityMixin",
     "enchantment.AnvilScreenHandlerMixin",

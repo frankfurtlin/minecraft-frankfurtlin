@@ -34,6 +34,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GLOW_STICK_BLOCK);
         addDrop(ModBlocks.AQUATIC_TORCH);
         addDrop(ModBlocks.AQUATIC_WALL_TORCH);
+        addDrop(ModBlocks.LAVA_SPONGE);
+        addDrop(ModBlocks.LAVA_WET_SPONGE);
 
         addDrop(ModBlocks.WHITE_GOLD_BLOCK);
 

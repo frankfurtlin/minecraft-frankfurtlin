@@ -136,5 +136,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.MEDIUM_NETHERITE_BUD)
             .add(ModBlocks.LARGE_NETHERITE_BUD);
 
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+            .add(ModBlocks.LAVA_SPONGE)
+            .add(ModBlocks.LAVA_WET_SPONGE);
+
     }
 }

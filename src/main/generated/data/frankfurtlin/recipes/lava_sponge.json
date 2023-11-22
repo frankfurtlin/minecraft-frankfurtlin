@@ -1,22 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:snowball"
+      "item": "minecraft:sponge"
     },
-    "I": {
-      "item": "minecraft:ice"
+    "M": {
+      "item": "minecraft:magma_block"
     }
   },
   "pattern": [
     "###",
-    "#I#",
+    "#M#",
     "###"
   ],
   "result": {
     "count": 8,
-    "item": "frankfurtlin:ice_ball"
+    "item": "frankfurtlin:lava_sponge"
   },
   "show_notification": true
 }

@@ -56,6 +56,13 @@ public class ModConfig implements ConfigData {
     @Comment("set the experience drop by experience bottle")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 100)
     public int experienceBottle = 5;
+    @Comment("set the max depth of sponge")
+    @ConfigEntry.BoundedDiscrete(min = 1, max = 32)
+    public int maxDepth = 6;
+    @Comment("set the maxIterations of sponge")
+    @ConfigEntry.BoundedDiscrete(min = 32, max = 32768)
+    public int maxIterations = 64;
+
 
     /**
      * 铁砧附魔增强

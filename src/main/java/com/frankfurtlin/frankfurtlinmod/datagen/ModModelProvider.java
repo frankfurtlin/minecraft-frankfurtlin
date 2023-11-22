@@ -17,6 +17,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_GOLD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_SPONGE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_WET_SPONGE);
         blockStateModelGenerator.registerTorch(ModBlocks.AQUATIC_TORCH, ModBlocks.AQUATIC_WALL_TORCH);
 
         // 蔬菜水果
