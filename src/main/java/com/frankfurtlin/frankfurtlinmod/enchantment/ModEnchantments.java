@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
  */
 public class ModEnchantments {
     public static Enchantment AUTO_SMELT = registerEnchantment("auto_smelt", new AutoSmeltEnchantment());
+    public static Enchantment DROP_ON_PLAYER = registerEnchantment("drop_on_player", new DropOnPlayerEnchantment());
 
     private static Enchantment registerEnchantment(String name, Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, new Identifier(Frankfurtlinmod.MOD_ID, name), enchantment);

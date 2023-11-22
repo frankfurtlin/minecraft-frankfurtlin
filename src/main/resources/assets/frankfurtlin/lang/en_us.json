@@ -140,6 +140,8 @@
 
   "enchantment.frankfurtlin.auto_smelt": "Smelting Touch",
   "enchantment.frankfurtlin.auto_smelt.desc": "Smelts blocks you mine",
+  "enchantment.frankfurtlin.drop_on_player": "Drop on Player",
+  "enchantment.frankfurtlin.drop_on_player.desc": "drop loot and xp nearby player",
 
   "frankfurtlin.super_group": "super",
   "frankfurtlin.addition_item_group": "addition_item",
