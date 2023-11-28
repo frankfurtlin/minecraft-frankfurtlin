@@ -14,6 +14,10 @@ import net.minecraft.util.Identifier;
 public class ModEnchantments {
     public static Enchantment AUTO_SMELT = registerEnchantment("auto_smelt", new AutoSmeltEnchantment());
     public static Enchantment DROP_ON_PLAYER = registerEnchantment("drop_on_player", new DropOnPlayerEnchantment());
+    public static Enchantment ATTRACTION = registerEnchantment("attraction", new AttractionEnchantment());
+    public static Enchantment BOOST_JUMP = registerEnchantment("boost_jump", new BoostJumpEnchantment());
+    public static Enchantment WALK_ON_FLUID = registerEnchantment("walk_on_fluid", new WalkOnFluidEnchantment());
+    public static Enchantment REFLECTION = registerEnchantment("reflection", new ReflectionEnchantment());
 
     private static Enchantment registerEnchantment(String name, Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, new Identifier(Frankfurtlinmod.MOD_ID, name), enchantment);

@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -29,14 +30,15 @@ public class BackPack extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand)
     {
         if(player.getWorld().isClient) {
-            return TypedActionResult.pass(player.getStackInHand(hand));
+            return TypedActionResult.success(player.getStackInHand(hand));
         }
 
-        player.setCurrentHand(hand);
+        //player.setCurrentHand(hand);
         ItemStack stack = player.getStackInHand(hand);
+        player.incrementStat(Stats.USED.getOrCreateStat(stack.getItem()));
         player.openHandledScreen(createScreenHandlerFactory(stack));
 
-        return TypedActionResult.pass(player.getStackInHand(hand));
+        return TypedActionResult.consume(player.getStackInHand(hand));
     }
 
     private NamedScreenHandlerFactory createScreenHandlerFactory(ItemStack stack)

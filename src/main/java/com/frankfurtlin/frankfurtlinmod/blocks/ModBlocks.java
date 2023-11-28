@@ -248,11 +248,11 @@ public class ModBlocks {
     // 水蜡烛
     public static final Block AQUATIC_TORCH = registerBlock("aquatic_torch", new AquaticTorchBlock(
         AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14)
-            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.GLOW_SQUID_INK));
+            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.FLAME));
     // 墙壁水蜡烛
     public static final Block AQUATIC_WALL_TORCH = registerBlock("aquatic_wall_torch", new AquaticWallTorchBlock(
         AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14)
-            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.GLOW_SQUID_INK));
+            .sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.FLAME));
     // 岩浆海绵
     public static final Block LAVA_SPONGE = registerBlock("lava_sponge",
         new LavaSpongeBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW)

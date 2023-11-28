@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -26,15 +27,14 @@ public class CraftingTable extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        ItemStack itemStack = player.getStackInHand(hand);
-
-        if(!world.isClient)
-        {
-            player.openHandledScreen(createPortableScreenHandlerFactory(world, player.getBlockPos()));
-            return TypedActionResult.success(itemStack);
+        if(player.getWorld().isClient) {
+            return TypedActionResult.success(player.getStackInHand(hand));
         }
 
-        return TypedActionResult.pass(itemStack);
+        ItemStack itemStack = player.getStackInHand(hand);
+        player.incrementStat(Stats.USED.getOrCreateStat(itemStack.getItem()));
+        player.openHandledScreen(createPortableScreenHandlerFactory(world, player.getBlockPos()));
+        return TypedActionResult.consume(itemStack);
     }
 
     public NamedScreenHandlerFactory createPortableScreenHandlerFactory(World world, BlockPos pos) {

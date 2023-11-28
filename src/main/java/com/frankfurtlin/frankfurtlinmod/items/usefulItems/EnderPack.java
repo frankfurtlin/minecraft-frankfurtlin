@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.GenericContainerScreenHandler;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -40,6 +41,8 @@ public class EnderPack extends Item {
             {
                 player.openHandledScreen(new SimpleNamedScreenHandlerFactory((i, playerInventory, playerEntity) ->
                         GenericContainerScreenHandler.createGeneric9x3(i, playerInventory, enderChest), TITLE));
+                player.incrementStat(Stats.USED.getOrCreateStat(itemStack.getItem()));
+                return TypedActionResult.consume(itemStack);
             }
         }
 

@@ -5,20 +5,27 @@ import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.function.Consumer;
 
@@ -38,6 +45,8 @@ public abstract class LivingEntityMixin extends Entity {
     @Shadow protected int playerHitTimer;
 
     @Shadow @Nullable protected PlayerEntity attackingPlayer;
+
+    @Shadow protected abstract float getJumpVelocity();
 
     /**
      * 不死图腾可以在背包里面生效
@@ -70,6 +79,13 @@ public abstract class LivingEntityMixin extends Entity {
         }
     }
 
+    /**
+     * 燕归巢附魔对掉落物
+     * @param instance instance
+     * @param parameters parameters
+     * @param seed seed
+     * @param lootConsumer lootConsumer
+     */
     @Redirect(method = "dropLoot", at = @At(value = "INVOKE",
         target = "Lnet/minecraft/loot/LootTable;generateLoot(Lnet/minecraft/loot/context/LootContextParameterSet;JLjava/util/function/Consumer;)V"))
     private void whereToDropLoot(LootTable instance, LootContextParameterSet parameters, long seed, Consumer<ItemStack> lootConsumer){
@@ -88,13 +104,17 @@ public abstract class LivingEntityMixin extends Entity {
         PlayerEntity attackingPlayer = this.attackingPlayer;
         if(attackingPlayer != null) mainHandStack = attackingPlayer.getMainHandStack();
 
-        ItemEntity itemEntity = this.playerHitTimer > 0 && attackingPlayer != null
-            && EnchantmentHelper.getLevel(ModEnchantments.DROP_ON_PLAYER, mainHandStack) > 0
-            ? new ItemEntity(this.getWorld(), attackingPlayer.getX(), attackingPlayer.getY(), attackingPlayer.getZ(), stack)
-            : new ItemEntity(this.getWorld(), this.getX(), this.getY(), this.getZ(), stack);
+        ItemEntity itemEntity = new ItemEntity(this.getWorld(), this.getX(), this.getY(), this.getZ(), stack);
 
         itemEntity.setToDefaultPickupDelay();
         this.getWorld().spawnEntity(itemEntity);
+
+        if(this.playerHitTimer > 0 && attackingPlayer != null
+            && EnchantmentHelper.getLevel(ModEnchantments.DROP_ON_PLAYER, mainHandStack) > 0){
+            itemEntity.setPosition(attackingPlayer.getPos());
+            this.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(),
+                SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, SoundCategory.AMBIENT, 0.8F, 1.1f);
+        }
     }
 
     /**
@@ -118,4 +138,42 @@ public abstract class LivingEntityMixin extends Entity {
             ExperienceOrbEntity.spawn(world, pos, amount);
         }
     }
+
+    /**
+     * @author frankfurtlin
+     * @reason 弹跳附魔重塑
+     */
+    @Overwrite
+    public void jump() {
+        Vec3d vec3d = this.getVelocity();
+        this.setVelocity(vec3d.x, this.getJumpVelocity(), vec3d.z);
+
+        int level = 1;
+        if((Entity)this instanceof LivingEntity entity){
+            level = EnchantmentHelper.getEquipmentLevel(ModEnchantments.BOOST_JUMP, entity);
+        }
+
+        if (this.isSprinting()) {
+            float f = this.getYaw() * ((float) Math.PI / 180);
+            this.setVelocity(this.getVelocity().add(-MathHelper.sin(f) * level * 0.2f,
+                level * 0.1f, MathHelper.cos(f) * level * 0.2f));
+        }
+        this.velocityDirty = true;
+    }
+
+    /**
+     * 轻功水上漂附魔
+     * @param state state
+     * @param cir cir
+     */
+    @Inject(method = "canWalkOnFluid", at = @At("HEAD"), cancellable = true)
+    private void walkOnFluidEnchantment(FluidState state, CallbackInfoReturnable<Boolean> cir){
+        if((Entity)this instanceof LivingEntity entity){
+            int level = EnchantmentHelper.getEquipmentLevel(ModEnchantments.WALK_ON_FLUID, entity);
+            if(level > 0){
+                cir.setReturnValue(true);
+            }
+        }
+    }
+
 }
