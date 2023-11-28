@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
@@ -261,6 +262,11 @@ public class ModBlocks {
     public static final Block LAVA_WET_SPONGE = registerBlock("lava_wet_sponge",
         new LavaWetSpongeBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW)
             .strength(0.6f).sounds(BlockSoundGroup.WET_SPONGE)));
+    // 熔岩黑曜石
+    public static final Block HOT_OBSIDIAN = registerBlock("hot_obsidian",
+        new HotObsidianBlock(AbstractBlock.Settings.create().mapColor(MapColor.BLACK)
+            .ticksRandomly().strength(0.5f).sounds(BlockSoundGroup.LODESTONE).nonOpaque()
+            .allowsSpawning((state, world, pos, entityType) -> entityType == EntityType.STRIDER).solidBlock(Blocks::never)));
 
 
 

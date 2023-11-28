@@ -17,12 +17,12 @@ public class BoostJumpEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 15;
+        return level * 5;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return super.getMinPower(level) + 50;
+        return super.getMinPower(level) + 15;
     }
 
     @Override

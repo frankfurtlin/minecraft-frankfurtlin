@@ -34,6 +34,7 @@ public class FrankfurtlinmodClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AQUATIC_WALL_TORCH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAVA_SPONGE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAVA_WET_SPONGE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HOT_OBSIDIAN, RenderLayer.getCutout());
 
         // 矿物簇
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUDDING_COAL, RenderLayer.getCutout());

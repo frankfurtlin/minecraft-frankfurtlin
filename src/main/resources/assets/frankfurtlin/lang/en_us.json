@@ -96,6 +96,7 @@
   "item.frankfurtlin.blue_ice_ball": "blue_ice_ball",
   "block.frankfurtlin.lava_sponge": "lava_sponge",
   "block.frankfurtlin.lava_wet_sponge": "lava_wet_sponge",
+  "block.frankfurtlin.hot_obsidian": "hot_obsidian",
 
   "block.frankfurtlin.strawberry_crop": "strawberry_crop",
   "item.frankfurtlin.strawberry": "strawberry",
@@ -152,6 +153,8 @@
   "enchantment.frankfurtlin.walk_on_fluid.desc": "can walk on fluid",
   "enchantment.frankfurtlin.reflection": "Reflection",
   "enchantment.frankfurtlin.reflection.desc": "can reflection projectile",
+  "enchantment.frankfurtlin.lava_walker": "Lava Walker",
+  "enchantment.frankfurtlin.lava_walker.desc": "can hot lava",
 
   "frankfurtlin.super_group": "super",
   "frankfurtlin.addition_item_group": "addition_item",

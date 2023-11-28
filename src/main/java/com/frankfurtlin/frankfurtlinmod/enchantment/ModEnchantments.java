@@ -18,6 +18,7 @@ public class ModEnchantments {
     public static Enchantment BOOST_JUMP = registerEnchantment("boost_jump", new BoostJumpEnchantment());
     public static Enchantment WALK_ON_FLUID = registerEnchantment("walk_on_fluid", new WalkOnFluidEnchantment());
     public static Enchantment REFLECTION = registerEnchantment("reflection", new ReflectionEnchantment());
+    public static Enchantment LAVA_WALKER = registerEnchantment("lava_walker", new HotWalkerEnchantment());
 
     private static Enchantment registerEnchantment(String name, Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, new Identifier(Frankfurtlinmod.MOD_ID, name), enchantment);

@@ -20,6 +20,21 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_SPONGE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_WET_SPONGE);
         blockStateModelGenerator.registerTorch(ModBlocks.AQUATIC_TORCH, ModBlocks.AQUATIC_WALL_TORCH);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.HOT_OBSIDIAN)
+            .coordinate(BlockStateVariantMap.create(Properties.AGE_5)
+                .register(0, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_0", Models.CUBE_ALL, TextureMap::all)))
+                .register(1, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_1", Models.CUBE_ALL, TextureMap::all)))
+                .register(2, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_2", Models.CUBE_ALL, TextureMap::all)))
+                .register(3, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_3", Models.CUBE_ALL, TextureMap::all)))
+                .register(4, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_4", Models.CUBE_ALL, TextureMap::all)))
+                .register(5, BlockStateVariant.create().put(VariantSettings.MODEL,
+                    blockStateModelGenerator.createSubModel(ModBlocks.HOT_OBSIDIAN, "_5", Models.CUBE_ALL, TextureMap::all)))));
+        blockStateModelGenerator.registerItemModel(ModBlocks.HOT_OBSIDIAN, "_0");
 
         // 蔬菜水果
         blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, Properties.AGE_7, 0, 1, 1, 1, 2, 2, 2, 3);

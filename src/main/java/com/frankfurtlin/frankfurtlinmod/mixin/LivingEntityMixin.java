@@ -1,6 +1,7 @@
 package com.frankfurtlin.frankfurtlinmod.mixin;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
+import com.frankfurtlin.frankfurtlinmod.enchantment.HotWalkerEnchantment;
 import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.*;
@@ -14,6 +15,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -25,6 +27,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.function.Consumer;
@@ -176,4 +179,18 @@ public abstract class LivingEntityMixin extends Entity {
         }
     }
 
+    /**
+     * 熔岩行者附魔
+     * @param pos pos
+     * @param ci ci
+     */
+    @Inject(method = "applyMovementEffects", at = @At("HEAD"))
+    private void hotLavaWalkerEnchantment(BlockPos pos, CallbackInfo ci){
+        if((Entity)this instanceof LivingEntity entity){
+            int i = EnchantmentHelper.getEquipmentLevel(ModEnchantments.LAVA_WALKER, entity);
+            if (i > 0) {
+                HotWalkerEnchantment.hotLava(entity, this.getWorld(), pos, i);
+            }
+        }
+    }
 }

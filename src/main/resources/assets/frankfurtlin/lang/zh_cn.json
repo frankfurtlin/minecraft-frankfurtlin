@@ -96,6 +96,7 @@
   "item.frankfurtlin.blue_ice_ball": "蓝冰球",
   "block.frankfurtlin.lava_sponge": "岩浆海绵",
   "block.frankfurtlin.lava_wet_sponge": "岩浆湿海绵",
+  "block.frankfurtlin.hot_obsidian": "熔岩黑曜石",
 
   "block.frankfurtlin.strawberry_crop": "草莓丛",
   "item.frankfurtlin.strawberry": "草莓",
@@ -152,6 +153,8 @@
   "enchantment.frankfurtlin.walk_on_fluid.desc": "可以在流体上行走",
   "enchantment.frankfurtlin.reflection": "强力反弹",
   "enchantment.frankfurtlin.reflection.desc": "盾牌反弹弹射物",
+  "enchantment.frankfurtlin.lava_walker": "熔岩行者",
+  "enchantment.frankfurtlin.lava_walker.desc": "可以将岩浆硬化",
 
   "frankfurtlin.super_group": "物品",
   "frankfurtlin.addition_item_group": "杂项物品",
