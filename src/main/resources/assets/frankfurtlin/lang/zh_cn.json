@@ -155,6 +155,8 @@
   "enchantment.frankfurtlin.reflection.desc": "盾牌反弹弹射物",
   "enchantment.frankfurtlin.lava_walker": "熔岩行者",
   "enchantment.frankfurtlin.lava_walker.desc": "可以将岩浆硬化",
+  "enchantment.frankfurtlin.life_steal": "生命偷取",
+  "enchantment.frankfurtlin.life_steal.desc": "偷取攻击的目标血量",
 
   "frankfurtlin.super_group": "物品",
   "frankfurtlin.addition_item_group": "杂项物品",

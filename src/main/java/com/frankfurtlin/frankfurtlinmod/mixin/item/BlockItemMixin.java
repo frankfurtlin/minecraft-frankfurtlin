@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.item;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.block.Block;
@@ -27,6 +27,14 @@ public class BlockItemMixin extends Item {
         super(settings);
     }
 
+    /**
+     * 刷怪笼右键实体保存其NBT
+     * @param stack stack
+     * @param user user
+     * @param entity entity
+     * @param hand hand
+     * @return action result
+     */
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         Item item = stack.getItem();

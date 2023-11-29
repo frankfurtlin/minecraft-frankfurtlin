@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.block;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.block.SpongeBlock;

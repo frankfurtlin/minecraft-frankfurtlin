@@ -147,7 +147,6 @@ public class ModItemGroups {
             entries.add(ModItems.BLUE_ICE_BALL);
             entries.add(ModBlocks.LAVA_SPONGE);
             entries.add(ModBlocks.LAVA_WET_SPONGE);
-            entries.add(ModBlocks.HOT_OBSIDIAN);
         }).build();
 
     public static final ItemGroup FOOD_GROUP = FabricItemGroup.builder()

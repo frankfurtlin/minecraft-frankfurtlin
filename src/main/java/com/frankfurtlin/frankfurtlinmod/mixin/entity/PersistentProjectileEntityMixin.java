@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.entity;
 
 import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import net.minecraft.enchantment.EnchantmentHelper;

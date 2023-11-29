@@ -155,6 +155,8 @@
   "enchantment.frankfurtlin.reflection.desc": "can reflection projectile",
   "enchantment.frankfurtlin.lava_walker": "Lava Walker",
   "enchantment.frankfurtlin.lava_walker.desc": "can hot lava",
+  "enchantment.frankfurtlin.life_steal": "Life Steal",
+  "enchantment.frankfurtlin.life_steal.desc": "steal target life",
 
   "frankfurtlin.super_group": "super",
   "frankfurtlin.addition_item_group": "addition_item",

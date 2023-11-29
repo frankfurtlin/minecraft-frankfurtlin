@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.Slice;
 @Mixin(Blocks.class)
 public class BlocksMixin {
     @Redirect(slice = @Slice(from = @At(value = "CONSTANT", args = {"stringValue=budding_amethyst"}, ordinal = 0)),
-        at = @At(value = "NEW", target = "Lnet/minecraft/block/BuddingAmethystBlock;*", ordinal = 0),
+        at = @At(value = "NEW", target = "(Lnet/minecraft/block/AbstractBlock$Settings;)Lnet/minecraft/block/BuddingAmethystBlock;", ordinal = 0),
         method = "<clinit>")
     private static BuddingAmethystBlock buddingAmethyst(AbstractBlock.Settings settings) {
         return new BuddingAmethystBlock(AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).ticksRandomly()

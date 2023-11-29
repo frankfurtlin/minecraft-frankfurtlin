@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.player;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import net.minecraft.client.MinecraftClient;

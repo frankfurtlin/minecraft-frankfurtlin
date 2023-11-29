@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.entity;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
@@ -39,46 +39,6 @@ public abstract class WanderingTraderEntityMixin extends MerchantEntity {
             tradeOfferList.add(new TradeOffer(
                 new ItemStack(Items.EMERALD, 1),
                 new ItemStack(ModItems.WHITE_GOLD_INGOT, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_COAL, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_IRON, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_COPPER, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_GOLD, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_LAPIS, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_EMERALD, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_DIAMOND, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_REDSTONE, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_QUARTZ, 1),
-                1, 20, 0.02f));
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModBlocks.BUDDING_NETHERITE, 1),
                 1, 20, 0.02f));
 
             tradeOfferList.add(new TradeOffer(
