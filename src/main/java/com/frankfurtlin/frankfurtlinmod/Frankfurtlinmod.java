@@ -6,6 +6,7 @@ import com.frankfurtlin.frankfurtlinmod.enchantment.ModEnchantments;
 import com.frankfurtlin.frankfurtlinmod.entity.ModEntities;
 import com.frankfurtlin.frankfurtlinmod.items.ModItemGroups;
 import com.frankfurtlin.frankfurtlinmod.items.ModItems;
+import com.frankfurtlin.frankfurtlinmod.worldgen.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +31,8 @@ public class Frankfurtlinmod implements ModInitializer{
         ModEntities.registerModEntities();
 
         ModCommands.registerCommands();
+
+        ModFeatures.placeFeaturesInBiomes();
 
         ModConfig.init();
     }

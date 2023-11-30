@@ -1,0 +1,27 @@
+{
+  "feature": "frankfurtlin:netherite_geode",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 240
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": 16
+        },
+        "min_inclusive": {
+          "above_bottom": 5
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
