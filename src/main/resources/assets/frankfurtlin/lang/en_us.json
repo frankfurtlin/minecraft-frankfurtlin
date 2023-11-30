@@ -215,6 +215,7 @@
   "text.autoconfig.frankfurtlin.option.canBreakSpawner": "break spawner with silk touch",
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "open gui in nether portal",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "replace wander trade",
+  "text.autoconfig.frankfurtlin.option.chiseledBookshelfStoreMusicDiscs": "chiseled Bookshelf Store Music Discs",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "use TOTEM_OF_UNDYING in your inventory",
   "text.autoconfig.frankfurtlin.option.canStackTo64": "item can be stack to 64",

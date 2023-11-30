@@ -215,6 +215,7 @@
   "text.autoconfig.frankfurtlin.option.canBreakSpawner": "精准采集破坏刷怪笼",
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "地狱门可打开背包",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "优化流浪商人交易选项",
+  "text.autoconfig.frankfurtlin.option.chiseledBookshelfStoreMusicDiscs": "雕刻的书架可以存放音乐光盘",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "不死图腾可在背包里生效",
   "text.autoconfig.frankfurtlin.option.canStackTo64": "某些物品可堆叠至64",
