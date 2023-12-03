@@ -112,7 +112,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerWanderUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.TOOLS, ModItems.WARDEN_HOE);
         offerWanderUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.TOOLS, ModItems.WARDEN_SHOVEL);
         VanillaRecipeProvider.offerSmithingTemplateCopyingRecipe(exporter, ModItems.WARDEN_UPGRADE_SMITHING_TEMPLATE, Items.ECHO_SHARD);
-        
+
     }
 
     private void createFood(RecipeExporter exporter, Item input, Item output, float experience, int cookingTime){
