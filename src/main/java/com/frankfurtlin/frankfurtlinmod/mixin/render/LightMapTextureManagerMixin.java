@@ -1,4 +1,4 @@
-package com.frankfurtlin.frankfurtlinmod.mixin;
+package com.frankfurtlin.frankfurtlinmod.mixin.render;
 
 import com.frankfurtlin.frankfurtlinmod.event.KeyBindings;
 import net.minecraft.client.network.ClientPlayerEntity;

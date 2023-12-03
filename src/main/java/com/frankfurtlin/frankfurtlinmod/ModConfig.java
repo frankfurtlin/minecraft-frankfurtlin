@@ -45,6 +45,10 @@ public class ModConfig implements ConfigData {
     public boolean replaceWanderTrade = false;
     @Comment("If true, chiseled bookshelf can store music discs")
     public boolean chiseledBookshelfStoreMusicDiscs = false;
+    @Comment("If true, you can see in lava")
+    public boolean canSeeInLava = false;
+    @Comment("set the percent of fire overlay")
+    public float fireOverlayPercent = 0.5f;
 
 
     /**

@@ -32,10 +32,12 @@
     "villager.VillagerEntityMixin"
   ],
   "client": [
-    "LightMapTextureManagerMixin",
     "enchantment.AnvilScreenmixin",
     "entity.FishingBobberEntityMixin",
-    "player.ClientPlayerEntityMixin"
+    "player.ClientPlayerEntityMixin",
+    "render.BackgroundRendererMixin",
+    "render.InGameOverlayRendererMixin",
+    "render.LightMapTextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

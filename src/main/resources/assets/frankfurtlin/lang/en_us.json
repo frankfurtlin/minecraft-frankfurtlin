@@ -227,7 +227,8 @@
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "open gui in nether portal",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "replace warden trade",
   "text.autoconfig.frankfurtlin.option.chiseledBookshelfStoreMusicDiscs": "chiseled Bookshelf Store Music Discs",
-  "text.autoconfig.frankfurtlin.option.flowerRemoveOffset": "flower remove offset",
+  "text.autoconfig.frankfurtlin.option.canSeeInLava": "can see in lava",
+  "text.autoconfig.frankfurtlin.option.fireOverlayPercent": "fire overlay percent",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "use TOTEM_OF_UNDYING in your inventory",
   "text.autoconfig.frankfurtlin.option.canStackTo64": "item can be stack to 64",

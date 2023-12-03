@@ -161,7 +161,7 @@
   "enchantment.frankfurtlin.attraction": "万有引力",
   "enchantment.frankfurtlin.attraction.desc": "吸引你周围的物品和经验",
   "enchantment.frankfurtlin.boost_jump": "弹跳增幅",
-  "enchantment.frankfurtlin.boost_jump.desc": "跳的更高，蹦的更远",
+  "enchantment.frankfurtlin.boost_jump.desc": "跳的更高,蹦的更远",
   "enchantment.frankfurtlin.walk_on_fluid": "轻功水上漂",
   "enchantment.frankfurtlin.walk_on_fluid.desc": "可以在流体上行走",
   "enchantment.frankfurtlin.reflection": "强力反弹",
@@ -179,7 +179,7 @@
   "advancements.frankfurtlin.super.root.description": "外星科技",
   "advancements.frankfurtlin.super.warden_tool.title": "你家是开五金店的吗",
   "advancements.frankfurtlin.super.warden_tool.description": "获取所有一整套坚守者工具",
-  "advancements.frankfurtlin.super.warden_armor.title": "铠甲勇士，合体",
+  "advancements.frankfurtlin.super.warden_armor.title": "铠甲勇士,合体",
   "advancements.frankfurtlin.super.warden_armor.description": "装备一整套坚守者盔甲",
   "advancements.frankfurtlin.super.budding.title": "这就是可再生矿物?",
   "advancements.frankfurtlin.super.budding.description": "收集所有矿物母岩",
@@ -188,7 +188,7 @@
 
   "advancements.frankfurtlin.addition.root.title": "实用物品",
   "advancements.frankfurtlin.addition.root.description": "实用物品",
-  "advancements.frankfurtlin.addition.backpack.title": "背着包，去寻诗和远方",
+  "advancements.frankfurtlin.addition.backpack.title": "背着包,去寻诗和远方",
   "advancements.frankfurtlin.addition.backpack.description": "拥有背包",
   "advancements.frankfurtlin.addition.ender_pack.title": "保险柜还是密码箱",
   "advancements.frankfurtlin.addition.ender_pack.description": "拥有末影背包",
@@ -227,7 +227,8 @@
   "text.autoconfig.frankfurtlin.option.canOpenGuiInPortal": "地狱门可打开背包",
   "text.autoconfig.frankfurtlin.option.replaceWanderTrade": "优化流浪商人交易选项",
   "text.autoconfig.frankfurtlin.option.chiseledBookshelfStoreMusicDiscs": "雕刻的书架可以存放音乐光盘",
-  "text.autoconfig.frankfurtlin.option.flowerRemoveOffset": "放置花消除偏移量",
+  "text.autoconfig.frankfurtlin.option.canSeeInLava": "岩浆可视化",
+  "text.autoconfig.frankfurtlin.option.fireOverlayPercent": "设置自身燃烧火焰比例",
 
   "text.autoconfig.frankfurtlin.option.useTotemOFUndyingInInventory": "不死图腾可在背包里生效",
   "text.autoconfig.frankfurtlin.option.canStackTo64": "某些物品可堆叠至64",
@@ -250,8 +251,8 @@
   "text.autoconfig.frankfurtlin.option.zombifiedPiglinLootTableOptimize": "僵尸猪灵不掉落金剑",
   "text.autoconfig.frankfurtlin.option.witherSkeletonLootTableOptimize": "凋零骷髅不掉落石剑",
 
-  "text.autoconfig.frankfurtlin.option.drownedSpawnInRiverRate": "溺尸在河流生成概率，越小越好",
-  "text.autoconfig.frankfurtlin.option.drownedSpawnInOceanRate": "溺尸在海洋生成概率，越小越好",
+  "text.autoconfig.frankfurtlin.option.drownedSpawnInRiverRate": "溺尸在河流生成概率,越小越好",
+  "text.autoconfig.frankfurtlin.option.drownedSpawnInOceanRate": "溺尸在海洋生成概率,越小越好",
   "text.autoconfig.frankfurtlin.option.drownedSpawnWithEquipment": "溺尸生成带武器的概率",
   "text.autoconfig.frankfurtlin.option.drownedAlwaysDropWeapon": "溺尸总是掉落武器",
 
