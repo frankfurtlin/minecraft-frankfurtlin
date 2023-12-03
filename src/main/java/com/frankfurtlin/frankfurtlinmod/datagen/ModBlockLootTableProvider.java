@@ -38,7 +38,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LAVA_WET_SPONGE);
         addDrop(ModBlocks.HOT_OBSIDIAN, VanillaBlockLootTableGenerator.dropsNothing());
 
-        addDrop(ModBlocks.WHITE_GOLD_BLOCK);
         addDrop(ModBlocks.SCULKHYST_BLOCK);
 
         // 水果蔬菜

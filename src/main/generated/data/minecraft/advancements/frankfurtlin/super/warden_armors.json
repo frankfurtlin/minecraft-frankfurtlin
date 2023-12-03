@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:frankfurtlin/super/root",
+  "criteria": {
+    "got_warden_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.warden_armor.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:warden_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.super.warden_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_warden_helmet"
+    ],
+    [
+      "got_warden_chestplate"
+    ],
+    [
+      "got_warden_leggings"
+    ],
+    [
+      "got_warden_boots"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

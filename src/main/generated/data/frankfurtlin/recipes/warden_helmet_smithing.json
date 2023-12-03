@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "result": {
+    "item": "frankfurtlin:warden_helmet"
+  },
+  "template": {
+    "item": "frankfurtlin:warden_upgrade_smithing_template"
+  }
+}

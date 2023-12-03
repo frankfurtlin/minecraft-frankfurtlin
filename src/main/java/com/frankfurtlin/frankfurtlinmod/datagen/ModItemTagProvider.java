@@ -16,28 +16,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-            .add(ModItems.WHITE_GOLD_HELMET,
-                ModItems.WHITE_GOLD_CHESTPLATE,
-                ModItems.WHITE_GOLD_LEGGINGS,
-                ModItems.WHITE_GOLD_BOOTS);
+            .add(ModItems.WARDEN_HELMET,
+                ModItems.WARDEN_CHESTPLATE,
+                ModItems.WARDEN_LEGGINGS,
+                ModItems.WARDEN_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES)
-            .add(ModItems.WHITE_GOLD_PICKAXE);
+            .add(ModItems.WARDEN_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-            .add(ModItems.WHITE_GOLD_SWORD);
+            .add(ModItems.WARDEN_SWORD);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-            .add(ModItems.WHITE_GOLD_PICKAXE);
+            .add(ModItems.WARDEN_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.AXES)
-            .add(ModItems.WHITE_GOLD_AXE);
+            .add(ModItems.WARDEN_AXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-            .add(ModItems.WHITE_GOLD_SHOVEL);
+            .add(ModItems.WARDEN_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.HOES)
-            .add(ModItems.WHITE_GOLD_HOE);
+            .add(ModItems.WARDEN_HOE);
 
     }
 }

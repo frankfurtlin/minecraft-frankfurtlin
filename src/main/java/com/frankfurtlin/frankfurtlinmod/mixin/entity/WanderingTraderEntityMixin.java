@@ -2,7 +2,6 @@ package com.frankfurtlin.frankfurtlinmod.mixin.entity;
 
 import com.frankfurtlin.frankfurtlinmod.ModConfig;
 import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
-import com.frankfurtlin.frankfurtlinmod.items.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.WanderingTraderEntity;
@@ -36,10 +35,6 @@ public abstract class WanderingTraderEntityMixin extends MerchantEntity {
     private void addTradeOfferList(CallbackInfo ci){
         if(ModConfig.INSTANCE.replaceWanderTrade){
             TradeOfferList tradeOfferList = getOffers();
-            tradeOfferList.add(new TradeOffer(
-                new ItemStack(Items.EMERALD, 1),
-                new ItemStack(ModItems.WHITE_GOLD_INGOT, 1),
-                1, 20, 0.02f));
 
             tradeOfferList.add(new TradeOffer(
                 new ItemStack(Items.EMERALD, 1),

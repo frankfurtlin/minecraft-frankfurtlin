@@ -1,11 +1,11 @@
 {
   "criteria": {
-    "got_white_gold_ingot": {
+    "got_echo_shard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "frankfurtlin:white_gold_ingot"
+              "minecraft:echo_shard"
             ]
           }
         ]
@@ -22,7 +22,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "frankfurtlin:white_gold_ingot"
+      "item": "minecraft:echo_shard"
     },
     "show_toast": true,
     "title": {
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "got_white_gold_ingot"
+      "got_echo_shard"
     ]
   ],
   "sends_telemetry_event": true

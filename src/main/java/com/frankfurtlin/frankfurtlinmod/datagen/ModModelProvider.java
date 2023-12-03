@@ -16,7 +16,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_GOLD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCULKHYST_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_SPONGE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_WET_SPONGE);
@@ -208,21 +207,23 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LEMONADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEER, Models.GENERATED);
 
-        // 白金锭
-        itemModelGenerator.register(ModItems.WHITE_GOLD_INGOT, Models.GENERATED);
+        // 坚守者法杖
+        itemModelGenerator.register(ModItems.ECHO_STAFF, Models.GENERATED);
+        // 坚守者锻造模板
+        itemModelGenerator.register(ModItems.WARDEN_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
-        // 白金工具
-        itemModelGenerator.register(ModItems.WHITE_GOLD_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.WHITE_GOLD_AXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.WHITE_GOLD_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.WHITE_GOLD_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.WHITE_GOLD_HOE, Models.HANDHELD);
+        // 坚守者工具
+        itemModelGenerator.register(ModItems.WARDEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDEN_HOE, Models.HANDHELD);
 
-        // 白金盔甲
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WHITE_GOLD_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WHITE_GOLD_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WHITE_GOLD_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WHITE_GOLD_BOOTS));
+        // 坚守者盔甲
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WARDEN_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WARDEN_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WARDEN_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.WARDEN_BOOTS));
 
 
     }

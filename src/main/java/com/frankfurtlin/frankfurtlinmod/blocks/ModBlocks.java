@@ -22,9 +22,6 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     // ----------------------------------------------------------------------------------------------------------------
 
-    // 白金块
-    public static final Block WHITE_GOLD_BLOCK = registerBlock("white_gold_block",
-        new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     // 回声矿块
     public static final Block SCULKHYST_BLOCK = registerBlock("sculkhyst_block",
         new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));

@@ -95,47 +95,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createFood(exporter, ModItems.SHRIMP, ModItems.FRIED_SHRIMP, 0.35f, 200);
         createFood(exporter, ModItems.CRAB, ModItems.STEAMED_CRAB, 0.5f, 300);
 
-        VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.WHITE_GOLD_INGOT,
-            RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GOLD_BLOCK);
         VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ECHO_SHARD,
             RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCULKHYST_BLOCK);
 
-        // 工具
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WHITE_GOLD_AXE)
-            .input('#', Items.STICK).input('X', ModItems.WHITE_GOLD_INGOT)
-            .pattern("XX").pattern("X#").pattern(" #")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WHITE_GOLD_HOE)
-            .input('#', Items.STICK).input('X', ModItems.WHITE_GOLD_INGOT)
-            .pattern("XX").pattern(" #").pattern(" #")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WHITE_GOLD_PICKAXE)
-            .input('#', Items.STICK).input('X', ModItems.WHITE_GOLD_INGOT)
-            .pattern("XXX").pattern(" # ").pattern(" # ")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WHITE_GOLD_SHOVEL)
-            .input('#', Items.STICK).input('X', ModItems.WHITE_GOLD_INGOT)
-            .pattern("X").pattern("#").pattern("#")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WHITE_GOLD_SWORD)
-            .input('#', Items.STICK).input('X', ModItems.WHITE_GOLD_INGOT).pattern("X").pattern("X").pattern("#")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ECHO_STAFF)
+            .input('#', Items.STICK).input('X', Items.ECHO_SHARD).pattern("X").pattern("#").pattern("#")
+            .criterion("has_echo_shard", VanillaRecipeProvider.conditionsFromItem(Items.ECHO_SHARD)).offerTo(exporter);
 
-        // 装备
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WHITE_GOLD_BOOTS)
-            .input('X', ModItems.WHITE_GOLD_INGOT).pattern("X X").pattern("X X")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WHITE_GOLD_CHESTPLATE)
-            .input('X', ModItems.WHITE_GOLD_INGOT).input('E', Items.ELYTRA)
-            .pattern("X X").pattern("XEX").pattern("XXX")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WHITE_GOLD_HELMET)
-            .input('X', ModItems.WHITE_GOLD_INGOT).pattern("XXX").pattern("X X")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WHITE_GOLD_LEGGINGS)
-            .input('X', ModItems.WHITE_GOLD_INGOT).pattern("XXX").pattern("X X").pattern("X X")
-            .criterion("has_white_gold_ingot", VanillaRecipeProvider.conditionsFromItem(ModItems.WHITE_GOLD_INGOT)).offerTo(exporter);
-
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_CHESTPLATE, RecipeCategory.COMBAT, ModItems.WARDEN_CHESTPLATE);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_LEGGINGS, RecipeCategory.COMBAT, ModItems.WARDEN_LEGGINGS);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_HELMET, RecipeCategory.COMBAT, ModItems.WARDEN_HELMET);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_BOOTS, RecipeCategory.COMBAT, ModItems.WARDEN_BOOTS);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_SWORD, RecipeCategory.COMBAT, ModItems.WARDEN_SWORD);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_AXE, RecipeCategory.TOOLS, ModItems.WARDEN_AXE);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_PICKAXE, RecipeCategory.TOOLS, ModItems.WARDEN_PICKAXE);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.TOOLS, ModItems.WARDEN_HOE);
+        offerWanderUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.TOOLS, ModItems.WARDEN_SHOVEL);
+        VanillaRecipeProvider.offerSmithingTemplateCopyingRecipe(exporter, ModItems.WARDEN_UPGRADE_SMITHING_TEMPLATE, Items.ECHO_SHARD);
+        
     }
 
     private void createFood(RecipeExporter exporter, Item input, Item output, float experience, int cookingTime){
@@ -144,5 +121,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .criterion("has_" + input, VanillaRecipeProvider.conditionsFromItem(input)).offerTo(exporter);
         RecipeProvider.offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, cookingTime, input, output, experience);
         RecipeProvider.offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, cookingTime, input, output, experience);
+    }
+
+    private static void offerWanderUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.WARDEN_UPGRADE_SMITHING_TEMPLATE), 
+            Ingredient.ofItems(input), Ingredient.ofItems(Items.ECHO_SHARD), category, result)
+            .criterion("has_echo_shard", RecipeProvider.conditionsFromItem(Items.ECHO_SHARD))
+            .offerTo(exporter, RecipeProvider.getItemPath(result) + "_smithing");
     }
 }

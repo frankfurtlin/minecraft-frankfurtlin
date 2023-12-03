@@ -5,6 +5,7 @@ import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -29,24 +30,24 @@ public class ModItemGroups {
 
     public static final ItemGroup SUPER_GROUP = FabricItemGroup.builder()
         .displayName(Text.translatable("frankfurtlin.super_group"))
-        .icon(() -> new ItemStack(ModItems.WHITE_GOLD_INGOT))
+        .icon(() -> new ItemStack(Items.ECHO_SHARD))
         .entries((context, entries) -> {
-            entries.add(ModItems.WHITE_GOLD_INGOT);
-            entries.add(ModBlocks.WHITE_GOLD_BLOCK);
+            entries.add(ModItems.ECHO_STAFF);
+            entries.add(ModItems.WARDEN_UPGRADE_SMITHING_TEMPLATE);
             entries.add(ModBlocks.SCULKHYST_BLOCK);
 
-            // 白金盔甲
-            entries.add(ModItems.WHITE_GOLD_HELMET);
-            entries.add(ModItems.WHITE_GOLD_CHESTPLATE);
-            entries.add(ModItems.WHITE_GOLD_LEGGINGS);
-            entries.add(ModItems.WHITE_GOLD_BOOTS);
+            // 坚守者盔甲
+            entries.add(ModItems.WARDEN_HELMET);
+            entries.add(ModItems.WARDEN_CHESTPLATE);
+            entries.add(ModItems.WARDEN_LEGGINGS);
+            entries.add(ModItems.WARDEN_BOOTS);
 
-            // 白金工具
-            entries.add(ModItems.WHITE_GOLD_SWORD);
-            entries.add(ModItems.WHITE_GOLD_PICKAXE);
-            entries.add(ModItems.WHITE_GOLD_AXE);
-            entries.add(ModItems.WHITE_GOLD_SHOVEL);
-            entries.add(ModItems.WHITE_GOLD_HOE);
+            // 坚守者工具
+            entries.add(ModItems.WARDEN_SWORD);
+            entries.add(ModItems.WARDEN_PICKAXE);
+            entries.add(ModItems.WARDEN_AXE);
+            entries.add(ModItems.WARDEN_SHOVEL);
+            entries.add(ModItems.WARDEN_HOE);
 
             // 煤炭簇
             entries.add(ModBlocks.BUDDING_COAL);

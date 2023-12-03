@@ -1,0 +1,102 @@
+{
+  "parent": "minecraft:frankfurtlin/super/root",
+  "criteria": {
+    "got_warden_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_warden_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:warden_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.frankfurtlin.super.warden_tool.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "frankfurtlin:warden_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.frankfurtlin.super.warden_tool.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_warden_sword"
+    ],
+    [
+      "got_warden_pickaxe"
+    ],
+    [
+      "got_warden_axe"
+    ],
+    [
+      "got_warden_shovel"
+    ],
+    [
+      "got_warden_hoe"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

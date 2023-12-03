@@ -41,7 +41,7 @@ public class ModConfig implements ConfigData {
     public boolean canBreakSpawner = false;
     @Comment("If true, you can open gui in nether portal")
     public boolean canOpenGuiInPortal = false;
-    @Comment("If true, replace wander trade")
+    @Comment("If true, replace warden trade")
     public boolean replaceWanderTrade = false;
     @Comment("If true, chiseled bookshelf can store music discs")
     public boolean chiseledBookshelfStoreMusicDiscs = false;

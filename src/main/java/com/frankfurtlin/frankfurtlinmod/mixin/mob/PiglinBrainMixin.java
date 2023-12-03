@@ -25,7 +25,7 @@ public class PiglinBrainMixin {
      * @param iterable iterable
      * @param var2 var2
      * @param itemStack itemStack
-     * 猪灵看到白金盔甲无仇恨
+     * 猪灵看到坚守者盔甲无仇恨
      */
     @Inject(method = "wearsGoldArmor(Lnet/minecraft/entity/LivingEntity;)Z", at = @At(value = "INVOKE_ASSIGN",
             target = "Lnet/minecraft/item/ItemStack;getItem()Lnet/minecraft/item/Item;"),
@@ -33,7 +33,7 @@ public class PiglinBrainMixin {
     private static void wearWhiteGoldArmorInject(LivingEntity entity, CallbackInfoReturnable<Boolean> cir,
                                              Iterable<ItemStack> iterable, Iterator<ItemStack> var2, ItemStack itemStack) {
         Item item = itemStack.getItem();
-        if (item instanceof ArmorItem && ((ArmorItem)item).getMaterial() == ModItems.WHITE_GOLD_ARMOR_MATERIAL){
+        if (item instanceof ArmorItem && ((ArmorItem)item).getMaterial() == ModItems.WARDEN_ARMOR_MATERIAL){
             cir.setReturnValue(true);
         }
 

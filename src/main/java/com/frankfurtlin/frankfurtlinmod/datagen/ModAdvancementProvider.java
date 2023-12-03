@@ -32,7 +32,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
         // -------------------------------------------------------------------------------------------------------------
         AdvancementEntry superRootAdvancement = Advancement.Builder.create()
             .display(
-                ModItems.WHITE_GOLD_INGOT, // The display icon
+                Items.ECHO_SHARD, // The display icon
                 Text.translatable("advancements.frankfurtlin.super.root.title"),
                 Text.translatable("advancements.frankfurtlin.super.root.description"),
                 new Identifier("minecraft:textures/gui/advancements/backgrounds/stone.png"), // Background image used
@@ -42,14 +42,14 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 false // Hidden in the advancement tab
             )
             // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
-            .criterion("got_white_gold_ingot", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_INGOT))
+            .criterion("got_echo_shard", InventoryChangedCriterion.Conditions.items(Items.ECHO_SHARD))
             .build(consumer, "frankfurtlin" + "/super/root");
 
         Advancement.Builder.create().parent(superRootAdvancement)
             .display(
-                ModItems.WHITE_GOLD_CHESTPLATE,
-                Text.translatable("advancements.frankfurtlin.super.white_gold_armor.title"),
-                Text.translatable("advancements.frankfurtlin.super.white_gold_armor.description"),
+                ModItems.WARDEN_CHESTPLATE,
+                Text.translatable("advancements.frankfurtlin.super.warden_armor.title"),
+                Text.translatable("advancements.frankfurtlin.super.warden_armor.description"),
                 null, // children to parent advancements don't need a background set
                 AdvancementFrame.TASK,
                 true,
@@ -57,17 +57,17 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 false
             )
             .rewards(AdvancementRewards.Builder.experience(1000))
-            .criterion("got_white_gold_helmet", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_HELMET))
-            .criterion("got_white_gold_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_CHESTPLATE))
-            .criterion("got_white_gold_leggings", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_LEGGINGS))
-            .criterion("got_white_gold_boots", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_BOOTS))
-            .build(consumer, "frankfurtlin" + "/super/white_gold_armors");
+            .criterion("got_warden_helmet", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_HELMET))
+            .criterion("got_warden_chestplate", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_CHESTPLATE))
+            .criterion("got_warden_leggings", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_LEGGINGS))
+            .criterion("got_warden_boots", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_BOOTS))
+            .build(consumer, "frankfurtlin" + "/super/warden_armors");
 
         Advancement.Builder.create().parent(superRootAdvancement)
             .display(
-                ModItems.WHITE_GOLD_PICKAXE,
-                Text.translatable("advancements.frankfurtlin.super.white_gold_tool.title"),
-                Text.translatable("advancements.frankfurtlin.super.white_gold_tool.description"),
+                ModItems.WARDEN_PICKAXE,
+                Text.translatable("advancements.frankfurtlin.super.warden_tool.title"),
+                Text.translatable("advancements.frankfurtlin.super.warden_tool.description"),
                 null, // children to parent advancements don't need a background set
                 AdvancementFrame.TASK,
                 true,
@@ -75,12 +75,12 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
                 false
             )
             .rewards(AdvancementRewards.Builder.experience(1000))
-            .criterion("got_white_gold_sword", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_SWORD))
-            .criterion("got_white_gold_pickaxe", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_PICKAXE))
-            .criterion("got_white_gold_axe", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_AXE))
-            .criterion("got_white_gold_shovel", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_SHOVEL))
-            .criterion("got_white_gold_hoe", InventoryChangedCriterion.Conditions.items(ModItems.WHITE_GOLD_HOE))
-            .build(consumer, "frankfurtlin" + "/super/white_gold_tools");
+            .criterion("got_warden_sword", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_SWORD))
+            .criterion("got_warden_pickaxe", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_PICKAXE))
+            .criterion("got_warden_axe", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_AXE))
+            .criterion("got_warden_shovel", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_SHOVEL))
+            .criterion("got_warden_hoe", InventoryChangedCriterion.Conditions.items(ModItems.WARDEN_HOE))
+            .build(consumer, "frankfurtlin" + "/super/warden_tools");
 
         Advancement.Builder.create().parent(superRootAdvancement)
             .display(

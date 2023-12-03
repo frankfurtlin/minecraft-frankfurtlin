@@ -5,11 +5,12 @@ import com.frankfurtlin.frankfurtlinmod.blocks.ModBlocks;
 import com.frankfurtlin.frankfurtlinmod.items.usefulItems.BackPack;
 import com.frankfurtlin.frankfurtlinmod.items.usefulItems.CraftingTable;
 import com.frankfurtlin.frankfurtlinmod.items.usefulItems.EnderPack;
-import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldChestplate;
-import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldHoe;
-import com.frankfurtlin.frankfurtlinmod.items.whiteGold.WhiteGoldIngot;
-import com.frankfurtlin.frankfurtlinmod.materials.ModToolMaterial;
-import com.frankfurtlin.frankfurtlinmod.materials.WhiteGoldArmorMaterial;
+import com.frankfurtlin.frankfurtlinmod.items.warden.EchoStaff;
+import com.frankfurtlin.frankfurtlinmod.items.warden.WanderChestplate;
+import com.frankfurtlin.frankfurtlinmod.items.warden.WanderHoe;
+import com.frankfurtlin.frankfurtlinmod.materials.ModArmorMaterials;
+import com.frankfurtlin.frankfurtlinmod.materials.ModToolMaterials;
+import com.frankfurtlin.frankfurtlinmod.util.ModSmithingTemplateItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -27,44 +28,48 @@ import net.minecraft.util.math.Direction;
  */
 public class ModItems {
     // ----------------------------------------------------------------------------------------------------------------
-    // 白金盔甲材料
-    public static final ArmorMaterial WHITE_GOLD_ARMOR_MATERIAL = new WhiteGoldArmorMaterial();
+
+    // 坚守者材料
+    public static final ArmorMaterial WARDEN_ARMOR_MATERIAL = ModArmorMaterials.WARDEN;
 
 
-    // 白金锭，可抗火
-    public static final Item WHITE_GOLD_INGOT = registerItem("white_gold_ingot",
-        new WhiteGoldIngot(new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 回声法杖，可抗火，破坏基岩
+    public static final Item ECHO_STAFF = registerItem("echo_staff",
+        new EchoStaff(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(1)));
+    // 坚守者锻造模板
+    public static final Item WARDEN_UPGRADE_SMITHING_TEMPLATE = registerItem("warden_upgrade_smithing_template",
+        ModSmithingTemplateItem.createEchoShardUpgrade());
 
 
-    // 白金战盔
-    public static final Item WHITE_GOLD_HELMET = registerItem("white_gold_helmet",
-        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 白金战甲
-    public static final Item WHITE_GOLD_CHESTPLATE = registerItem("white_gold_chestplate",
-        new WhiteGoldChestplate(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 白金护腿
-    public static final Item WHITE_GOLD_LEGGINGS = registerItem("white_gold_leggings",
-        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
-    // 白金战靴
-    public static final Item WHITE_GOLD_BOOTS = registerItem("white_gold_boots",
-        new ArmorItem(WHITE_GOLD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者战盔
+    public static final Item WARDEN_HELMET = registerItem("warden_helmet",
+        new ArmorItem(WARDEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者战甲
+    public static final Item WARDEN_CHESTPLATE = registerItem("warden_chestplate",
+        new WanderChestplate(WARDEN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者护腿
+    public static final Item WARDEN_LEGGINGS = registerItem("warden_leggings",
+        new ArmorItem(WARDEN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者战靴
+    public static final Item WARDEN_BOOTS = registerItem("warden_boots",
+        new ArmorItem(WARDEN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().rarity(Rarity.EPIC).fireproof()));
 
 
-    // 白金剑
-    public static final Item WHITE_GOLD_SWORD = registerItem("white_gold_sword",
-        new SwordItem(ModToolMaterial.WHITE_GOLD, 3, -2.3f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
-    // 白金镐
-    public static final Item WHITE_GOLD_PICKAXE = registerItem("white_gold_pickaxe",
-        new PickaxeItem(ModToolMaterial.WHITE_GOLD, 1, -2.7f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
-    // 白金斧
-    public static final Item WHITE_GOLD_AXE = registerItem("white_gold_axe",
-        new AxeItem(ModToolMaterial.WHITE_GOLD, 5.0f, -2.8f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
-    // 白金铲
-    public static final Item WHITE_GOLD_SHOVEL= registerItem("white_gold_shovel",
-        new ShovelItem(ModToolMaterial.WHITE_GOLD, 1.5f, -3.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
-    // 白金锄
-    public static final Item WHITE_GOLD_HOE = registerItem("white_gold_hoe",
-        new WhiteGoldHoe(ModToolMaterial.WHITE_GOLD, -5, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者剑
+    public static final Item WARDEN_SWORD = registerItem("warden_sword",
+        new SwordItem(ModToolMaterials.WARDEN, 3, -2.3f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者镐
+    public static final Item WARDEN_PICKAXE = registerItem("warden_pickaxe",
+        new PickaxeItem(ModToolMaterials.WARDEN, 1, -2.7f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者斧
+    public static final Item WARDEN_AXE = registerItem("warden_axe",
+        new AxeItem(ModToolMaterials.WARDEN, 5.0f, -2.8f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者铲
+    public static final Item WARDEN_SHOVEL= registerItem("warden_shovel",
+        new ShovelItem(ModToolMaterials.WARDEN, 1.5f, -3.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
+    // 坚守者锄
+    public static final Item WARDEN_HOE = registerItem("warden_hoe",
+        new WanderHoe(ModToolMaterials.WARDEN, -5, 0.0f, new FabricItemSettings().rarity(Rarity.EPIC).fireproof()));
 
 
 
