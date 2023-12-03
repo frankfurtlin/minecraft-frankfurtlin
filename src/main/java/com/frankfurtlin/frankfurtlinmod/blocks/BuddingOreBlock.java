@@ -200,6 +200,20 @@ extends Block {
                     return ModBlocks.NETHERITE_CLUSTER;
                 }
             }
+            case "sculkhyst" -> {
+                if(age == 1){
+                    return ModBlocks.SMALL_SCULKHYST_BUD;
+                }
+                else if(age == 2){
+                    return ModBlocks.MEDIUM_SCULKHYST_BUD;
+                }
+                else if(age == 3){
+                    return ModBlocks.LARGE_SCULKHYST_BUD;
+                }
+                else if(age == 4){
+                    return ModBlocks.SCULKHYST_CLUSTER;
+                }
+            }
 
 
         }

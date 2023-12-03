@@ -105,6 +105,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
             .criterion("redstone_cluster", InventoryChangedCriterion.Conditions.items(ModBlocks.REDSTONE_CLUSTER))
             .criterion("quartz_cluster", InventoryChangedCriterion.Conditions.items(ModBlocks.QUARTZ_CLUSTER))
             .criterion("netherite_cluster", InventoryChangedCriterion.Conditions.items(ModBlocks.NETHERITE_CLUSTER))
+            .criterion("sculkhyst_cluster", InventoryChangedCriterion.Conditions.items(ModBlocks.SCULKHYST_CLUSTER))
             .build(consumer, "frankfurtlin" + "/super/cluster");
 
         Advancement.Builder.create().parent(superRootAdvancement)
@@ -130,6 +131,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
             .criterion("budding_redstone", InventoryChangedCriterion.Conditions.items(ModBlocks.BUDDING_REDSTONE))
             .criterion("budding_quartz", InventoryChangedCriterion.Conditions.items(ModBlocks.BUDDING_QUARTZ))
             .criterion("budding_netherite", InventoryChangedCriterion.Conditions.items(ModBlocks.BUDDING_NETHERITE))
+            .criterion("budding_sculkhyst", InventoryChangedCriterion.Conditions.items(ModBlocks.BUDDING_SCULKHYST))
             .build(consumer, "frankfurtlin" + "/super/budding");
 
 

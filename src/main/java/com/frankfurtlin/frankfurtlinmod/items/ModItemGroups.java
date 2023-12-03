@@ -33,6 +33,7 @@ public class ModItemGroups {
         .entries((context, entries) -> {
             entries.add(ModItems.WHITE_GOLD_INGOT);
             entries.add(ModBlocks.WHITE_GOLD_BLOCK);
+            entries.add(ModBlocks.SCULKHYST_BLOCK);
 
             // 白金盔甲
             entries.add(ModItems.WHITE_GOLD_HELMET);
@@ -116,6 +117,13 @@ public class ModItemGroups {
             entries.add(ModBlocks.LARGE_NETHERITE_BUD);
             entries.add(ModBlocks.MEDIUM_NETHERITE_BUD);
             entries.add(ModBlocks.SMALL_NETHERITE_BUD);
+
+            // 回声矿簇
+            entries.add(ModBlocks.BUDDING_SCULKHYST);
+            entries.add(ModBlocks.SCULKHYST_CLUSTER);
+            entries.add(ModBlocks.LARGE_SCULKHYST_BUD);
+            entries.add(ModBlocks.MEDIUM_SCULKHYST_BUD);
+            entries.add(ModBlocks.SMALL_SCULKHYST_BUD);
 
             // 矿物甘蔗块
             entries.add(ModBlocks.COAL_CANE);

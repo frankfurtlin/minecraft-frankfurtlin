@@ -11,6 +11,7 @@
     "frankfurtlin:budding_redstone",
     "frankfurtlin:budding_quartz",
     "frankfurtlin:budding_netherite",
+    "frankfurtlin:budding_sculkhyst",
     "frankfurtlin:coal_cluster",
     "frankfurtlin:iron_cluster",
     "frankfurtlin:copper_cluster",
@@ -21,6 +22,7 @@
     "frankfurtlin:redstone_cluster",
     "frankfurtlin:quartz_cluster",
     "frankfurtlin:netherite_cluster",
+    "frankfurtlin:sculkhyst_cluster",
     "frankfurtlin:small_coal_bud",
     "frankfurtlin:small_iron_bud",
     "frankfurtlin:small_copper_bud",
@@ -31,6 +33,7 @@
     "frankfurtlin:small_redstone_bud",
     "frankfurtlin:small_quartz_bud",
     "frankfurtlin:small_netherite_bud",
+    "frankfurtlin:small_sculkhyst_bud",
     "frankfurtlin:medium_coal_bud",
     "frankfurtlin:medium_iron_bud",
     "frankfurtlin:medium_copper_bud",
@@ -41,6 +44,7 @@
     "frankfurtlin:medium_redstone_bud",
     "frankfurtlin:medium_quartz_bud",
     "frankfurtlin:medium_netherite_bud",
+    "frankfurtlin:medium_sculkhyst_bud",
     "frankfurtlin:large_coal_bud",
     "frankfurtlin:large_iron_bud",
     "frankfurtlin:large_copper_bud",
@@ -50,6 +54,7 @@
     "frankfurtlin:large_diamond_bud",
     "frankfurtlin:large_redstone_bud",
     "frankfurtlin:large_quartz_bud",
-    "frankfurtlin:large_netherite_bud"
+    "frankfurtlin:large_netherite_bud",
+    "frankfurtlin:large_sculkhyst_bud"
   ]
 }

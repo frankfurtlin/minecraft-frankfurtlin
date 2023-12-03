@@ -27,6 +27,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.BUDDING_REDSTONE)
             .add(ModBlocks.BUDDING_QUARTZ)
             .add(ModBlocks.BUDDING_NETHERITE)
+            .add(ModBlocks.BUDDING_SCULKHYST)
 
             .add(ModBlocks.COAL_CLUSTER)
             .add(ModBlocks.IRON_CLUSTER)
@@ -38,6 +39,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.REDSTONE_CLUSTER)
             .add(ModBlocks.QUARTZ_CLUSTER)
             .add(ModBlocks.NETHERITE_CLUSTER)
+            .add(ModBlocks.SCULKHYST_CLUSTER)
 
             .add(ModBlocks.SMALL_COAL_BUD)
             .add(ModBlocks.SMALL_IRON_BUD)
@@ -49,6 +51,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.SMALL_REDSTONE_BUD)
             .add(ModBlocks.SMALL_QUARTZ_BUD)
             .add(ModBlocks.SMALL_NETHERITE_BUD)
+            .add(ModBlocks.SMALL_SCULKHYST_BUD)
 
             .add(ModBlocks.MEDIUM_COAL_BUD)
             .add(ModBlocks.MEDIUM_IRON_BUD)
@@ -60,6 +63,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.MEDIUM_REDSTONE_BUD)
             .add(ModBlocks.MEDIUM_QUARTZ_BUD)
             .add(ModBlocks.MEDIUM_NETHERITE_BUD)
+            .add(ModBlocks.MEDIUM_SCULKHYST_BUD)
 
             .add(ModBlocks.LARGE_COAL_BUD)
             .add(ModBlocks.LARGE_IRON_BUD)
@@ -70,7 +74,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.LARGE_DIAMOND_BUD)
             .add(ModBlocks.LARGE_REDSTONE_BUD)
             .add(ModBlocks.LARGE_QUARTZ_BUD)
-            .add(ModBlocks.LARGE_NETHERITE_BUD);
+            .add(ModBlocks.LARGE_NETHERITE_BUD)
+            .add(ModBlocks.LARGE_SCULKHYST_BUD);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
             .add(ModBlocks.BUDDING_COAL)
@@ -134,7 +139,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.NETHERITE_CLUSTER)
             .add(ModBlocks.SMALL_NETHERITE_BUD)
             .add(ModBlocks.MEDIUM_NETHERITE_BUD)
-            .add(ModBlocks.LARGE_NETHERITE_BUD);
+            .add(ModBlocks.LARGE_NETHERITE_BUD)
+            
+            .add(ModBlocks.BUDDING_SCULKHYST)
+            .add(ModBlocks.SCULKHYST_CLUSTER)
+            .add(ModBlocks.SMALL_SCULKHYST_BUD)
+            .add(ModBlocks.MEDIUM_SCULKHYST_BUD)
+            .add(ModBlocks.LARGE_SCULKHYST_BUD);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
             .add(ModBlocks.LAVA_SPONGE)

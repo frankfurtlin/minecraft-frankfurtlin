@@ -1,6 +1,7 @@
 {
   "item.frankfurtlin.white_gold_ingot": "white_gold_ingot",
   "block.frankfurtlin.white_gold_block": "white_gold_block",
+  "block.frankfurtlin.sculkhyst_block": "sculkhyst_block",
   "item.frankfurtlin.white_gold_helmet": "white_gold_helmet",
   "item.frankfurtlin.white_gold_chestplate": "white_gold_chestplate",
   "item.frankfurtlin.white_gold_leggings": "white_gold_leggings",
@@ -70,6 +71,12 @@
   "block.frankfurtlin.small_netherite_bud": "small_netherite_bud",
   "block.frankfurtlin.medium_netherite_bud": "medium_netherite_bud",
   "block.frankfurtlin.large_netherite_bud": "large_netherite_bud",
+
+  "block.frankfurtlin.budding_sculkhyst": "budding_sculkhyst",
+  "block.frankfurtlin.sculkhyst_cluster": "sculkhyst_cluster",
+  "block.frankfurtlin.small_sculkhyst_bud": "small_sculkhyst_bud",
+  "block.frankfurtlin.medium_sculkhyst_bud": "medium_sculkhyst_bud",
+  "block.frankfurtlin.large_sculkhyst_bud": "large_sculkhyst_bud",
 
   "block.frankfurtlin.coal_cane": "coal_cane",
   "block.frankfurtlin.iron_cane": "iron_cane",

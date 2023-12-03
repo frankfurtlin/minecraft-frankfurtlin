@@ -25,6 +25,9 @@ public class ModBlocks {
     // 白金块
     public static final Block WHITE_GOLD_BLOCK = registerBlock("white_gold_block",
         new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    // 回声矿块
+    public static final Block SCULKHYST_BLOCK = registerBlock("sculkhyst_block",
+        new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     // 煤炭簇
     public static final Block BUDDING_COAL = registerBlock("budding_coal",
@@ -204,6 +207,24 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
     public static final Block SMALL_NETHERITE_BUD = registerBlock("small_netherite_bud",
         new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(NETHERITE_CLUSTER)
+            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
+
+    // 回声矿簇
+    public static final Block BUDDING_SCULKHYST = registerBlock("budding_sculkhyst",
+        new BuddingOreBlock("sculkhyst", 4, AbstractBlock.Settings.create().mapColor(MapColor.CYAN)
+            .ticksRandomly().strength(1.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block SCULKHYST_CLUSTER = registerBlock("sculkhyst_cluster",
+        new OreClusterBlock(4, 7, 3, AbstractBlock.Settings.create()
+            .mapColor(MapColor.CYAN).solid().nonOpaque().ticksRandomly()
+            .sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.0f).luminance(state -> 5)));
+    public static final Block LARGE_SCULKHYST_BUD = registerBlock("large_sculkhyst_bud",
+        new OreClusterBlock(3, 5, 3, AbstractBlock.Settings.copy(SCULKHYST_CLUSTER)
+            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).solid().luminance(state -> 4)));
+    public static final Block MEDIUM_SCULKHYST_BUD = registerBlock("medium_sculkhyst_bud",
+        new OreClusterBlock(2, 4, 3, AbstractBlock.Settings.copy(SCULKHYST_CLUSTER)
+            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).solid().luminance(state -> 2)));
+    public static final Block SMALL_SCULKHYST_BUD = registerBlock("small_sculkhyst_bud",
+        new OreClusterBlock(1, 3, 4, AbstractBlock.Settings.copy(SCULKHYST_CLUSTER)
             .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).solid().luminance(state -> 1)));
 
     //矿物甘蔗方块

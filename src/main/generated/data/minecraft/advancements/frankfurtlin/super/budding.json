@@ -132,6 +132,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "budding_sculkhyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:budding_sculkhyst"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -182,6 +194,9 @@
     ],
     [
       "budding_netherite"
+    ],
+    [
+      "budding_sculkhyst"
     ]
   ],
   "rewards": {

@@ -39,6 +39,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.HOT_OBSIDIAN, VanillaBlockLootTableGenerator.dropsNothing());
 
         addDrop(ModBlocks.WHITE_GOLD_BLOCK);
+        addDrop(ModBlocks.SCULKHYST_BLOCK);
 
         // 水果蔬菜
         addDrop(ModBlocks.STRAWBERRY_CROP, applyExplosionDecay(ModBlocks.STRAWBERRY_CROP,
@@ -81,6 +82,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.BUDDING_REDSTONE);
         addDropWithSilkTouch(ModBlocks.BUDDING_QUARTZ);
         addDropWithSilkTouch(ModBlocks.BUDDING_NETHERITE);
+        addDropWithSilkTouch(ModBlocks.BUDDING_SCULKHYST);
         // 矿物簇
         addDrop(ModBlocks.COAL_CLUSTER, oreClusterDrops(ModBlocks.COAL_CLUSTER, Items.COAL));
         addDrop(ModBlocks.IRON_CLUSTER, oreClusterDrops(ModBlocks.IRON_CLUSTER, Items.IRON_INGOT));
@@ -92,6 +94,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REDSTONE_CLUSTER, oreClusterDrops(ModBlocks.REDSTONE_CLUSTER, Items.REDSTONE));
         addDrop(ModBlocks.QUARTZ_CLUSTER, oreClusterDrops(ModBlocks.QUARTZ_CLUSTER, Items.QUARTZ));
         addDrop(ModBlocks.NETHERITE_CLUSTER, oreClusterDrops(ModBlocks.NETHERITE_CLUSTER, Items.NETHERITE_INGOT));
+        addDrop(ModBlocks.SCULKHYST_CLUSTER, oreClusterDrops(ModBlocks.SCULKHYST_CLUSTER, Items.ECHO_SHARD));
         // 小型矿物簇
         addDropWithSilkTouch(ModBlocks.SMALL_COAL_BUD);
         addDropWithSilkTouch(ModBlocks.SMALL_IRON_BUD);
@@ -103,6 +106,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.SMALL_REDSTONE_BUD);
         addDropWithSilkTouch(ModBlocks.SMALL_QUARTZ_BUD);
         addDropWithSilkTouch(ModBlocks.SMALL_NETHERITE_BUD);
+        addDropWithSilkTouch(ModBlocks.SMALL_SCULKHYST_BUD);
         // 中型矿物簇
         addDropWithSilkTouch(ModBlocks.MEDIUM_COAL_BUD);
         addDropWithSilkTouch(ModBlocks.MEDIUM_IRON_BUD);
@@ -114,6 +118,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.MEDIUM_REDSTONE_BUD);
         addDropWithSilkTouch(ModBlocks.MEDIUM_QUARTZ_BUD);
         addDropWithSilkTouch(ModBlocks.MEDIUM_NETHERITE_BUD);
+        addDropWithSilkTouch(ModBlocks.MEDIUM_SCULKHYST_BUD);
         // 大型矿物簇
         addDropWithSilkTouch(ModBlocks.LARGE_COAL_BUD);
         addDropWithSilkTouch(ModBlocks.LARGE_IRON_BUD);
@@ -125,6 +130,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.LARGE_REDSTONE_BUD);
         addDropWithSilkTouch(ModBlocks.LARGE_QUARTZ_BUD);
         addDropWithSilkTouch(ModBlocks.LARGE_NETHERITE_BUD);
+        addDropWithSilkTouch(ModBlocks.LARGE_SCULKHYST_BUD);
         // 矿物甘蔗
         addDrop(ModBlocks.COAL_CANE);
         addDrop(ModBlocks.IRON_CANE);

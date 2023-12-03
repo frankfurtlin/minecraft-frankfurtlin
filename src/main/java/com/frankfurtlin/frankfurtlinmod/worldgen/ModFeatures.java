@@ -93,6 +93,13 @@ public class ModFeatures {
                 modifier(
                     ModPlacedFeature.NETHERITE_GEODE
                 )
+            )
+            .add(
+                ModificationPhase.ADDITIONS,
+                BiomeSelectors.tag(BiomeTags.IS_OVERWORLD),
+                modifier(
+                    ModPlacedFeature.SCULKHYST_GEODE
+                )
             );
     }
 

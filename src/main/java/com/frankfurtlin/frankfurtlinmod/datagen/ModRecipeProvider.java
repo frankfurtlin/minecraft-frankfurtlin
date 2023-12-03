@@ -97,6 +97,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.WHITE_GOLD_INGOT,
             RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GOLD_BLOCK);
+        VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ECHO_SHARD,
+            RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCULKHYST_BLOCK);
 
         // 工具
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WHITE_GOLD_AXE)

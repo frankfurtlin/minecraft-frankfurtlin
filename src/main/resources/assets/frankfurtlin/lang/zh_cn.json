@@ -1,6 +1,7 @@
 {
   "item.frankfurtlin.white_gold_ingot": "白金锭",
   "block.frankfurtlin.white_gold_block": "白金块",
+  "block.frankfurtlin.sculkhyst_block": "回声块",
   "item.frankfurtlin.white_gold_helmet": "白金战盔",
   "item.frankfurtlin.white_gold_chestplate": "白金战甲",
   "item.frankfurtlin.white_gold_leggings": "白金护腿",
@@ -70,6 +71,12 @@
   "block.frankfurtlin.small_netherite_bud": "小型远古残骸簇",
   "block.frankfurtlin.medium_netherite_bud": "中型远古残骸簇",
   "block.frankfurtlin.large_netherite_bud": "大型远古残骸簇",
+
+  "block.frankfurtlin.budding_sculkhyst": "回声矿母岩",
+  "block.frankfurtlin.sculkhyst_cluster": "回声矿簇",
+  "block.frankfurtlin.small_sculkhyst_bud": "小型回声矿簇",
+  "block.frankfurtlin.medium_sculkhyst_bud": "中型回声矿簇",
+  "block.frankfurtlin.large_sculkhyst_bud": "大型回声矿簇",
 
   "block.frankfurtlin.coal_cane": "煤炭甘蔗",
   "block.frankfurtlin.iron_cane": "铁矿甘蔗",

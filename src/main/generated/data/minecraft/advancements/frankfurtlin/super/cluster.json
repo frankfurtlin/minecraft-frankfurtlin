@@ -132,6 +132,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "sculkhyst_cluster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "frankfurtlin:sculkhyst_cluster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -182,6 +194,9 @@
     ],
     [
       "netherite_cluster"
+    ],
+    [
+      "sculkhyst_cluster"
     ]
   ],
   "rewards": {

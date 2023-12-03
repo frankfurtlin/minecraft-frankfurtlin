@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_GOLD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCULKHYST_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_SPONGE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_WET_SPONGE);
         blockStateModelGenerator.registerTorch(ModBlocks.AQUATIC_TORCH, ModBlocks.AQUATIC_WALL_TORCH);
@@ -56,6 +57,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_REDSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_QUARTZ);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_NETHERITE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_SCULKHYST);
 
         // 矿物簇
         blockStateModelGenerator.registerAmethyst(ModBlocks.COAL_CLUSTER);
@@ -68,7 +70,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAmethyst(ModBlocks.REDSTONE_CLUSTER);
         blockStateModelGenerator.registerAmethyst(ModBlocks.QUARTZ_CLUSTER);
         blockStateModelGenerator.registerAmethyst(ModBlocks.NETHERITE_CLUSTER);
-        
+        blockStateModelGenerator.registerAmethyst(ModBlocks.SCULKHYST_CLUSTER);
+
         blockStateModelGenerator.registerItemModel(ModBlocks.COAL_CLUSTER);
         blockStateModelGenerator.registerItemModel(ModBlocks.IRON_CLUSTER);
         blockStateModelGenerator.registerItemModel(ModBlocks.COPPER_CLUSTER);
@@ -79,6 +82,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerItemModel(ModBlocks.REDSTONE_CLUSTER);
         blockStateModelGenerator.registerItemModel(ModBlocks.QUARTZ_CLUSTER);
         blockStateModelGenerator.registerItemModel(ModBlocks.NETHERITE_CLUSTER);
+        blockStateModelGenerator.registerItemModel(ModBlocks.SCULKHYST_CLUSTER);
 
         // 小型矿物簇
         blockStateModelGenerator.registerAmethyst(ModBlocks.SMALL_COAL_BUD);
@@ -91,6 +95,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAmethyst(ModBlocks.SMALL_REDSTONE_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.SMALL_QUARTZ_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.SMALL_NETHERITE_BUD);
+        blockStateModelGenerator.registerAmethyst(ModBlocks.SMALL_SCULKHYST_BUD);
 
         blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_COAL_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_IRON_BUD);
@@ -102,6 +107,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_REDSTONE_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_QUARTZ_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_NETHERITE_BUD);
+        blockStateModelGenerator.registerItemModel(ModBlocks.SMALL_SCULKHYST_BUD);
 
         // 中型矿物簇
         blockStateModelGenerator.registerAmethyst(ModBlocks.MEDIUM_COAL_BUD);
@@ -114,6 +120,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAmethyst(ModBlocks.MEDIUM_REDSTONE_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.MEDIUM_QUARTZ_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.MEDIUM_NETHERITE_BUD);
+        blockStateModelGenerator.registerAmethyst(ModBlocks.MEDIUM_SCULKHYST_BUD);
 
         blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_COAL_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_IRON_BUD);
@@ -125,6 +132,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_REDSTONE_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_QUARTZ_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_NETHERITE_BUD);
+        blockStateModelGenerator.registerItemModel(ModBlocks.MEDIUM_SCULKHYST_BUD);
 
         // 大型矿物簇
         blockStateModelGenerator.registerAmethyst(ModBlocks.LARGE_COAL_BUD);
@@ -137,6 +145,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAmethyst(ModBlocks.LARGE_REDSTONE_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.LARGE_QUARTZ_BUD);
         blockStateModelGenerator.registerAmethyst(ModBlocks.LARGE_NETHERITE_BUD);
+        blockStateModelGenerator.registerAmethyst(ModBlocks.LARGE_SCULKHYST_BUD);
 
         blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_COAL_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_IRON_BUD);
@@ -148,6 +157,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_REDSTONE_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_QUARTZ_BUD);
         blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_NETHERITE_BUD);
+        blockStateModelGenerator.registerItemModel(ModBlocks.LARGE_SCULKHYST_BUD);
 
         // 矿物甘蔗
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.COAL_CANE, BlockStateModelGenerator.TintType.TINTED);

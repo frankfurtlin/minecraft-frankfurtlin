@@ -23,6 +23,7 @@ public class ModPlacedFeature {
     public static final RegistryKey<PlacedFeature> REDSTONE_GEODE = of("redstone_geode");
     public static final RegistryKey<PlacedFeature> QUARTZ_GEODE = of("quartz_geode");
     public static final RegistryKey<PlacedFeature> NETHERITE_GEODE = of("netherite_geode");
+    public static final RegistryKey<PlacedFeature> SCULKHYST_GEODE = of("sculkhyst_geode");
 
     public static RegistryKey<PlacedFeature> of(String id) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Frankfurtlinmod.MOD_ID, id));
