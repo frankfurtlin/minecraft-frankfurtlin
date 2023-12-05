@@ -1,5 +1,12 @@
 {
     "values": [
-    "minibossbars:load"
+    {
+      "id": "minibossbars:load",
+      "required": false
+    },
+        {
+      "id": "terralith:setup",
+      "required": false
+    }
     ]
    }
