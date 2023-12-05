@@ -3,6 +3,7 @@
   "values": [
     "minecraft:blackstone",
     "minecraft:deepslate_tiles",
-    "minecraft:netherrack"
+    "minecraft:netherrack",
+    "minecraft:end_stone"
   ]
 }

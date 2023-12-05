@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:blue_ice"
+    "minecraft:blue_ice",
+    "minecraft:bone_block"
   ]
 }
