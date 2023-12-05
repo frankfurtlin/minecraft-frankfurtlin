@@ -173,6 +173,13 @@
   - 添加坚守者装备升级锻造模版(可从远古城市的战利品宝箱获得)
   - 添加可配置的岩浆可视化以及火焰燃烧比例
 
+- 2023/12/05
+  - 添加 主世界群系模组 Terralith
+  - 添加 结构模组 Dungeons and Towers
+  - 添加 地狱群系模组 Incendium
+  - 添加 末地群系模组 Nullscape
+  - 添加 结构模组 Immersive Structures
+
 
 
 

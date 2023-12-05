@@ -1,0 +1,15 @@
+{
+    "name": "imst:cocoa_farm/start",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:cocoa_farm/house",
+                "location": "imst:cocoa_farm/house"
+            }
+        }
+    ]
+}

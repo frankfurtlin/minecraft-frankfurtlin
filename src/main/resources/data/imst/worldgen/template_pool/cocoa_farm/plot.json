@@ -1,0 +1,42 @@
+{
+    "name": "imst:cocoa_farm/plot",
+    "fallback": "imst:cocoa_farm/plot",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "imst:cocoa_farm/animal_farm"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "imst:cocoa_farm/cocoa_farm"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:cocoa_farm/farm",
+                "location": "imst:cocoa_farm/farm"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "imst:cocoa_farm/greenhouse"
+            }
+        }
+    ]
+}

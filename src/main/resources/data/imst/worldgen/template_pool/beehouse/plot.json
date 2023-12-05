@@ -1,0 +1,68 @@
+{
+    "name": "imst:beehouse/plot",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/road",
+                "location": "imst:beehouse/beehive"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/road",
+                "location": "imst:beehouse/factory"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/farm",
+                "location": "imst:beehouse/farm"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/garden",
+                "location": "imst:beehouse/garden"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/road",
+                "location": "imst:beehouse/greenhouse"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "imst:beehouse/road",
+                "location": "imst:beehouse/well"
+            }
+        },
+        {
+            "weight":1,
+            "element":{
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "minecraft:trees_meadow"
+            }
+        }
+    ]
+}
