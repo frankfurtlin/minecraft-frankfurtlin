@@ -1,0 +1,99 @@
+{
+    "parent": "minecraft:nether/find_bastion",
+    "criteria": {
+        "dungeons_taverns:hamlet": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:hamlet"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "dungeons_taverns:piglin_outstation": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:piglin_outstation"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:donjon": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:donjon"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "dungeons_taverns:piglin_camp": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:piglin_camp"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Explore a Piglin Camp, Piglin Outstation, Hamlet and Donjon"
+        },
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:piglin_head"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Hog Hunt"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:hamlet"
+        ],
+        [
+            "dungeons_taverns:piglin_outstation"
+        ],
+        [
+            "dungeons_taverns:piglin_camp"
+        ],
+		[
+            "dungeons_taverns:donjon"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

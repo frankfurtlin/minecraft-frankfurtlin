@@ -1,0 +1,99 @@
+{
+    "parent": "dungeons_taverns:nether/find_nether_skeleton",
+    "criteria": {
+        "dungeons_taverns:nether_skeleton_tower_basalt": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_basalt"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_soul": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_soul"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_crimson": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_crimson"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_warped": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_warped"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Visit all Nether Skeleton Towers"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:bone_block"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Bone Crusher"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:nether_skeleton_tower_basalt"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_crimson"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_soul"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_warped"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

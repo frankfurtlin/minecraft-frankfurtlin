@@ -1,0 +1,15 @@
+{
+	"name": "dungeons_taverns:badlands_miner_outpost_start",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_tower",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}

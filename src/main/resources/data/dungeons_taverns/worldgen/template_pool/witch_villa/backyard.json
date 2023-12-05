@@ -1,0 +1,42 @@
+{
+	"name": "dungeons_taverns:witch_villa/backyard",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:witch_villa/backyard/witch_villa_backyard_1",
+        "processors": "dungeons_taverns:witch_villa_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:witch_villa/backyard/witch_villa_backyard_2",
+        "processors": "dungeons_taverns:witch_villa_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:witch_villa/backyard/witch_villa_backyard_3",
+        "processors": "dungeons_taverns:witch_villa_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:witch_villa/backyard/witch_villa_backyard_4",
+        "processors": "dungeons_taverns:witch_villa_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

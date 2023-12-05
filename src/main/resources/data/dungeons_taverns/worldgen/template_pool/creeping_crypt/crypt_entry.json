@@ -1,0 +1,24 @@
+{
+	"name": "dungeons_taverns:creeping_crypt/crypt_entry",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:creeping_crypt/crypt_entry/creeping_crypit_entry_stairs",
+				"projection": "rigid",
+				"processors": "minecraft:creeping_crypt_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:creeping_crypt/crypt_entry/creeping_crypit_entry_hall",
+				"projection": "rigid",
+				"processors": "minecraft:creeping_crypt_degradation"
+			}
+		}
+	]
+}

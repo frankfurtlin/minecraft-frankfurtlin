@@ -1,0 +1,15 @@
+{
+	"name": "dungeons_taverns:conduit_ruin/starting_room",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:conduit_ruin/main/conduit_ruin_starting_room",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:conduit_ruin_degradation"
+			}
+		}
+	]
+}

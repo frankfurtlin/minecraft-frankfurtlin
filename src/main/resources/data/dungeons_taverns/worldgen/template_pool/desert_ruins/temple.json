@@ -1,0 +1,78 @@
+{
+	"name": "dungeons_taverns:temple",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/temple/desert_ruins_temple_exit_lower",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/temple/desert_ruins_temple_main_lower",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/temple/desert_ruins_temple_exit",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/temple/desert_ruins_temple_exit_corner",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/temple/desert_ruins_temple_exit_corner_lower",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/mob/desert_ruins_mob_skeleton",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/mob/desert_ruins_mob_husk",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:desert_ruin/mob/desert_ruins_mob_creeper",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:desert_temple_degradation"
+			}
+		}
+	]
+}

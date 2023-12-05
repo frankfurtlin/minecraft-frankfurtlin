@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:adventure/find_all_illager_structures",
+    "criteria": {
+        "minecraft:village_swamp": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:village_swamp"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Visit an Swamp Village"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:glass_bottle"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Bewitched"
+        }
+    },
+    "requirements": [
+        [
+            "minecraft:village_swamp"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

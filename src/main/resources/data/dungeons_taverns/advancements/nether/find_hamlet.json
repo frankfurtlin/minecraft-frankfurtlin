@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:nether/find_piglins",
+    "criteria": {
+        "dungeons_taverns:hamlet": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:hamlet"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Walk into an Hamlet"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:polished_blackstone"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "The Learned Piglins"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:hamlet"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,51 @@
+{
+	"name": "dungeons_taverns:donjon/donjon_bridge",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/donjon_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/donjon_rail_part",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/donjon_rail_part_curve",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/donjon_rail_part_t_curve",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/donjon_rail_part_crossroad",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "dungeons_taverns:donjon/donjon_bridge_lock"
+}

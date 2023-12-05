@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5894302,
+    "separation": 40,
+    "spacing": 85
+  },
+  "structures": [
+    {
+      "structure": "dungeons_taverns:nether_port",
+      "weight": 20
+    },
+	{
+      "structure": "dungeons_taverns:nether_keep",
+      "weight": 10
+    },
+    {
+      "structure": "dungeons_taverns:hamlet",
+      "weight": 40
+    },
+	{
+      "structure": "dungeons_taverns:piglin_outstation",
+      "weight": 20
+    },
+	{
+      "structure": "dungeons_taverns:donjon",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+    "parent": "minecraft:adventure/root",
+    "criteria": {
+        "dungeons_taverns:adventure/find_tavern": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:adventure/find_tavern": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:adventure/find_illager_manor": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:adventure/find_illager_manor": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:adventure/find_witch_villa": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:adventure/find_witch_villa": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:adventure/loot_illager_hideout": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:adventure/loot_illager_hideout": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:adventure/conquer_miner_outpost": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:adventure/conquer_miner_outpost": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:nether/find_keep": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:nether/find_keep": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:nether/find_piglins": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:nether/find_piglins": true
+                        }
+                    }
+                }
+            }
+        },
+        "dungeons_taverns:nether/find_donjon": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "dungeons_taverns:nether/find_donjon": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "description": {
+            "translate": "Made by nova_wostra, loot tables by walls, advancements by badooga"
+        },
+        "frame": "task",
+        "hidden": true,
+        "icon": {
+            "item": "minecraft:leather_chestplate"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Welcome to Dungeons and Taverns"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:adventure/find_tavern",
+            "dungeons_taverns:adventure/find_illager_manor",
+            "dungeons_taverns:adventure/find_witch_villa",
+            "dungeons_taverns:adventure/loot_illager_hideout",
+            "dungeons_taverns:adventure/conquer_miner_outpost",
+            "dungeons_taverns:nether/find_keep",
+            "dungeons_taverns:nether/find_piglins",
+            "dungeons_taverns:nether/find_donjon"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

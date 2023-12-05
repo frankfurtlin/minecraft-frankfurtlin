@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#dungeons_taverns:collections/stronghold_related_ruins_biomes",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "dungeons_taverns:underground_house",
+  "size": 2,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -50
+    },
+    "max_inclusive": {
+      "absolute": 50
+    }
+  },
+  "max_distance_from_center": 8,
+  "use_expansion_hack": false
+}

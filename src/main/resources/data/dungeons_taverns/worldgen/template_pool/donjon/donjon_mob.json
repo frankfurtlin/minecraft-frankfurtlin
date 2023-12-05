@@ -1,0 +1,87 @@
+{
+	"name": "dungeons_taverns:donjon/donjon_mob",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_empty",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 20
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_piglin_sword",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_piglin_crossbow",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_piglin_brute",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_hooglin",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_hooglin_fail",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_skeleton",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_skeleton_wither",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/mob/donjon_mob_skeleton_empty",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

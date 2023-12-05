@@ -1,0 +1,393 @@
+{
+	"name": "dungeons_taverns:donjon/donjon_frame",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_center_foundation",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_center_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_center_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_center_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_center_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_backdoor",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_bottom_rails",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_foundation_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_foundation_backdoor",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_foundation_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_foundation_rails",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_backdoor",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_middle_rails",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_backdoor",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_3x3_top_rails",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_basalt",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_basalt_roof",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_roof",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_bridge",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_bridge_roof",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_rails",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_rails_roof",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_backdoor",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/frame/donjon_frame_spike_backdoor_roof",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

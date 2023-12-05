@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "dungeons_taverns:creeping_crypt",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"spacing": 100,
+		"separation": 10,
+		"salt": 7498398,
+		"type": "minecraft:random_spread"
+	}
+}

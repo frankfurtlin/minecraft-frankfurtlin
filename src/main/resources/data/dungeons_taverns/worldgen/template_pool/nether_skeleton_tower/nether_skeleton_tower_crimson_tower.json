@@ -1,0 +1,33 @@
+{
+	"name": "dungeons_taverns:nether_skeleton_tower_crimson_tower",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:nether_skeleton_tower/nether_skeleton_tower_1_crimson",
+				"projection": "rigid",
+				"processors": "minecraft:nether_fortress_generic_degradation"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:nether_skeleton_tower/nether_skeleton_tower_2_crimson",
+				"projection": "rigid",
+				"processors": "minecraft:nether_fortress_generic_degradation"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:nether_skeleton_tower/nether_skeleton_tower_3_crimson",
+				"projection": "rigid",
+				"processors": "minecraft:nether_fortress_generic_degradation"
+			}
+		}
+	]
+}

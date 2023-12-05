@@ -1,0 +1,15 @@
+{
+	"name": "dungeons_taverns:tavern_start_spruce",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:tavern/tavern_house_spruce",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}

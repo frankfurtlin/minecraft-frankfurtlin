@@ -1,0 +1,232 @@
+{
+    "parent": "minecraft:nether/find_fortress",
+    "criteria": {
+        "dungeons_taverns:nether_port": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_port"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"minecraft:fortress": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "minecraft:fortress"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "dungeons_taverns:nether_skeleton_tower_basalt": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_basalt"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_soul": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_soul"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_crimson": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_crimson"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:nether_skeleton_tower_warped": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_skeleton_tower_warped"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"minecraft:nether_keep": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_keep"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "dungeons_taverns:skeleton_camp_basalt": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:skeleton_camp_basalt"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:skeleton_camp_crimson": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:skeleton_camp_crimson"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:skeleton_camp_soul": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:skeleton_camp_soul"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+		"dungeons_taverns:skeleton_camp_warped": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:skeleton_camp_warped"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Explore all Skeleton Camps, Skeleton Towers, Nether Port, Fortress and Nether keep"
+        },
+        "frame": "challenge",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Skull Collector"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:nether_port"
+        ],
+        [
+            "minecraft:fortress"
+        ],
+		[
+            "minecraft:nether_keep"
+        ],
+        [
+            "dungeons_taverns:nether_skeleton_tower_basalt"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_crimson"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_soul"
+        ],
+		[
+            "dungeons_taverns:nether_skeleton_tower_warped"
+        ],
+		[
+            "dungeons_taverns:skeleton_camp_basalt"
+        ],
+		[
+            "dungeons_taverns:skeleton_camp_crimson"
+        ],
+		[
+            "dungeons_taverns:skeleton_camp_soul"
+        ],
+		[
+            "dungeons_taverns:skeleton_camp_warped"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

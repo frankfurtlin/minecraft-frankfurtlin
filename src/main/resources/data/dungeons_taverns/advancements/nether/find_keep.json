@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:nether/find_nether_skeleton",
+    "criteria": {
+        "minecraft:nether_keep": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:nether_keep"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Stumble upon a Nether Keep"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:chiseled_nether_bricks"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Concrete Halls"
+        }
+    },
+    "requirements": [
+        [
+            "minecraft:nether_keep"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

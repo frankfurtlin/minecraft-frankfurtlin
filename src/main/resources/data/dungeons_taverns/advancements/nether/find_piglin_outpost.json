@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:nether/find_piglins",
+    "criteria": {
+        "dungeons_taverns:piglin_outstation": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:piglin_outstation"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Break into an Piglin Outstation"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:gilded_blackstone"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Vault Breaker"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:piglin_outstation"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

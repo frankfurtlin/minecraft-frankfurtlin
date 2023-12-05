@@ -1,0 +1,249 @@
+{
+	"name": "dungeons_taverns:donjon/donjon_house",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_6",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_7",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_8",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_9",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_10",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_11",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_small_house_12",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_medium_house_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_medium_house_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_medium_house_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_medium_house_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_medium_house_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_large_house_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_large_house_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_large_house_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_large_house_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_large_house_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_huge_house_1",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_huge_house_2",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_huge_house_3",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_huge_house_4",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+	{
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "dungeons_taverns:donjon/house/donjon_huge_house_5",
+        "processors": "dungeons_taverns:hamlet_generic_degradation",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

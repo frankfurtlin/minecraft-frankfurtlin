@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:adventure/find_all_illager_structures",
+    "criteria": {
+        "dungeons_taverns:illager_manor": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:illager_manor"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Locate an Illager Manor"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Mind Your Manors"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:illager_manor"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

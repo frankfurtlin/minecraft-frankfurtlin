@@ -1,0 +1,384 @@
+{
+	"name": "dungeons_taverns:badlands_miner_outpost",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_1",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_2",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_3",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_4",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_5",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_6",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_7",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_8",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_9",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_10",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_11",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_12",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_13",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_14",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_15",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 6,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_17",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_18",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_19",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_20",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_21",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_22",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_23",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_event_24",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_cross",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_cross_tall",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_crurve_1",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_crurve_2",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_dirt",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_entry",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 9,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_long",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_long_spawner",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 9,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_crurve_1",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 9,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_straight",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_mine_stairs",
+				"projection": "rigid",
+				"processors": "dungeons_taverns:badland_miner_mine"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_crossroad_big",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_crossroad_small",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_curve_big",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_curve_small",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_t_curve_big",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_t_curve_small",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_straight_large",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "dungeons_taverns:badlands_miner_outpost/badlands_miner_outpost_path_straight_medium",
+				"projection": "terrain_matching",
+				"processors": "dungeons_taverns:badland_street"
+			}
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 940354935,
+    "separation": 20,
+    "spacing": 54,
+	"exclusion_zone": {
+      "other_set": [
+		"minecraft:nether_complexes",
+		"dungeons_taverns:nether_structures"
+					],
+      "chunk_count": 17
+    }
+  },
+  "structures": [
+    {
+      "structure": "dungeons_taverns:nether_skeleton_tower_basalt",
+      "weight": 1
+    },
+	{
+      "structure": "dungeons_taverns:nether_skeleton_tower_warped",
+      "weight": 1
+    },
+	{
+      "structure": "dungeons_taverns:nether_skeleton_tower_crimson",
+      "weight": 1
+    },
+	{
+      "structure": "dungeons_taverns:nether_skeleton_tower_soul",
+      "weight": 1
+    }
+  ]
+}

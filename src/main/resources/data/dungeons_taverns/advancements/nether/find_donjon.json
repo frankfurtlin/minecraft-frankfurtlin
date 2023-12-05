@@ -1,0 +1,42 @@
+{
+    "parent": "dungeons_taverns:nether/find_piglins",
+    "criteria": {
+        "dungeons_taverns:donjon": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "dungeons_taverns:donjon"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Locate a Piglin Donjon"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:chiseled_polished_blackstone"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "Bastion of Bastions"
+        }
+    },
+    "requirements": [
+        [
+            "dungeons_taverns:donjon"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

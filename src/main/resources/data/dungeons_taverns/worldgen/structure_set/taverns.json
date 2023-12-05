@@ -1,0 +1,58 @@
+{
+	"structures": [
+		{
+			"structure": "dungeons_taverns:tavern_acacia",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_birch",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_cherry",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_dark_oak",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_desert",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_jungle",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_mangrove",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_oak",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_snowy",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_spruce",
+			"weight": 1
+		},
+		{
+			"structure": "dungeons_taverns:tavern_swamp",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    },
+		"spacing": 44,
+		"separation": 15,
+		"salt": 783,
+		"type": "minecraft:random_spread"
+	}
+}

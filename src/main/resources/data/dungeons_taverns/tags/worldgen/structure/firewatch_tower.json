@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_taverns:firewatch_tower_birch",
+    "dungeons_taverns:firewatch_tower_dark_oak",
+    "dungeons_taverns:firewatch_tower_forest",
+    "dungeons_taverns:firewatch_tower_jungle",
+    "dungeons_taverns:firewatch_tower_mangrove",
+    "dungeons_taverns:firewatch_tower_savanna",
+    "dungeons_taverns:firewatch_tower_taiga"
+  ]
+}
