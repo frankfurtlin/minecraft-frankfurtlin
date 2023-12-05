@@ -4,9 +4,12 @@
       "id": "minibossbars:load",
       "required": false
     },
-        {
+    {
       "id": "terralith:setup",
       "required": false
+    },
+    {
+      "#load:_private/load"
     }
     ]
    }

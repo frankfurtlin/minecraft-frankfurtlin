@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "minecraft:blue_ice"
+    "minecraft:blue_ice",
+    "minecraft:soul_soil",
+    "minecraft:soul_sand",
+    "minecraft:smooth_quartz"
   ]
 }
