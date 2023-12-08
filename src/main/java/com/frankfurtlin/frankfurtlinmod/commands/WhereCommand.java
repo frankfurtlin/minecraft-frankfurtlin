@@ -27,7 +27,7 @@ public class WhereCommand {
     }
 
 
-    public static int execute(ServerCommandSource source, ServerPlayerEntity target) {
+    private static int execute(ServerCommandSource source, ServerPlayerEntity target) {
 
         BlockPos playerPos = target.getBlockPos();
         String pos = "(" + playerPos.getX() + ", " + playerPos.getY() + ", " + playerPos.getZ() + ") in " +

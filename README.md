@@ -180,6 +180,9 @@
   - 添加 末地群系模组 Nullscape
   - 添加 结构模组 Immersive Structures
 
+- 2023/12/08
+  - 添加 /structure 指令获取当前结构
+
 
 
 

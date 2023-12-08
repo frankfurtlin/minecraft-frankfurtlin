@@ -11,5 +11,7 @@ public class ModCommands {
     public static void registerCommands(){
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
                 WhereCommand.register(dispatcher));
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
+                StructureCommand.register(dispatcher));
     }
 }
